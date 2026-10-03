@@ -3,8 +3,8 @@
 // - Pages: network first (always fresh when online), cache as fallback.
 // - Hashed assets (assets/*): cache first, their content never changes.
 // - Fonts and piano sounds from CDNs: cache first.
-const CACHE = 'ppt-a876f4fe5f';
-const CORE = ["./","assets/index-DMQm1x4D.js","assets/midi-test-Dh-aXxoT.js","assets/piece-Ad8EB7Fn.js","assets/play-C3L222-S.js","assets/practice-DMfRrhCB.js","assets/activity-B6dbzzGW.js","assets/charts-Kc89xubq.js","assets/common-CaQePJOz.js","assets/stats-CbacNgsl.js","assets/common-DbGhtBCt.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
+const CACHE = 'ppt-dc08018fa6';
+const CORE = ["./","assets/index-uI_OTxIK.js","assets/log-B2GjANjW.js","assets/midi-test-DAJ3G0AT.js","assets/piece-Dc5uNChG.js","assets/play-DYhpkKmx.js","assets/practice-ienobof6.js","assets/activity-Be-62c7b.js","assets/charts-BVBdhgAd.js","assets/common-Cn4lgwry.js","assets/stats-vh1suweH.js","assets/common-0goYS1Wl.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
