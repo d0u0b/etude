@@ -1,23 +1,71 @@
 {
-  "name": "Piano Page Turner",
-  "short_name": "琴譜練習",
-  "description": "看 PDF 樂譜用踏板翻頁，彈課本練習題標出彈對彈錯",
+  "name": "Étude",
+  "short_name": "Étude",
+  "description": "鋼琴練習：彈課本練習題判斷對錯和節奏、看 PDF 樂譜用踏板翻頁、記錄每天練琴",
   "lang": "zh-Hant",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
-  "display_override": ["fullscreen", "standalone"],
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
   "orientation": "any",
   "background_color": "#f4f3ed",
   "theme_color": "#efe4dd",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "shortcuts": [
-    { "name": "練習模式", "short_name": "練習", "url": "practice.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
-    { "name": "彈奏模式", "short_name": "彈奏", "url": "play.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
-    { "name": "MIDI 測試", "short_name": "MIDI", "url": "midi-test.html", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+    {
+      "name": "練習模式",
+      "short_name": "練習",
+      "url": "practice.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "彈奏模式",
+      "short_name": "彈奏",
+      "url": "play.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "MIDI 測試",
+      "short_name": "MIDI",
+      "url": "midi-test.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
   ]
 }

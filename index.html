@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#efe4dd">
-<title>Piano Page Turner</title>
+<title>Étude</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -12,12 +12,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('ppt.theme')||'cotton'}catch(e){document.documentElement.dataset.theme='cotton'}</script>
-<style>.top{align-items:center;gap:10px;padding-top:6px;display:flex}.top .date{color:var(--muted);letter-spacing:.04em;flex:1;font-size:15px}h1.app{letter-spacing:.02em;margin:6px 0 0;font-size:30px;font-weight:600}.greet{margin:12px 0 0;font-size:19px}.cheer{color:var(--muted);min-height:1.6em;margin:2px 0 0;font-size:14px}.modes{grid-template-columns:repeat(3,1fr);gap:12px;display:grid}.mode{background:var(--surface);border:1px solid var(--line);color:var(--ink);-webkit-backdrop-filter:blur(8px);border-radius:18px;flex-direction:column;gap:4px;min-height:132px;padding:18px 18px 16px;display:flex}.mode:active{background:var(--accent-soft)}.mode wa-icon{color:var(--accent);margin-bottom:8px;font-size:24px}.mode .t{font-size:18px;font-weight:600}.mode .d{color:var(--muted);font-size:13px;line-height:1.55}@media (width<=560px){.modes{grid-template-columns:1fr}.mode{flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 16px}.mode wa-icon{flex:none;margin:0}}.score{font-variant-numeric:tabular-nums;font-size:20px}.score small{color:var(--muted);font-size:12px;display:block}.themes{grid-template-columns:repeat(3,1fr);gap:12px;display:grid}.theme{border:1px solid var(--line);cursor:pointer;background:var(--surface);text-align:left;color:var(--ink);border-radius:14px;flex-direction:column;gap:10px;padding:12px;display:flex}.theme.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}.theme .sw{border:1px solid #00000010;border-radius:9px;height:48px;position:relative;overflow:hidden}.theme .sw i{border:2px solid #fff;border-radius:50%;width:14px;height:14px;position:absolute;bottom:8px}.theme .n{font-size:15px}.small{font-size:14px}.week{grid-template-columns:1fr minmax(220px,300px);align-items:end;gap:24px;margin-top:22px;padding:20px 22px;display:grid}.facts{border-top:1px solid var(--line);flex-wrap:wrap;gap:24px;margin-top:16px;padding-top:14px;display:flex}.facts div{color:var(--muted);font-size:13px}.facts b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:20px;font-weight:500;display:block}.facts .up{color:var(--c-ok);margin-left:4px;font-size:13px;font-weight:400}.facts .down{color:var(--c-bad);margin-left:4px;font-size:13px;font-weight:400}.week-more{grid-column:1/-1;justify-self:end;margin-top:-6px;font-size:14px}.week .empty-hint{color:var(--muted);margin-top:14px;font-size:14px;line-height:1.7}@media (width<=600px){.week{grid-template-columns:1fr}}.sugs{grid-template-columns:1fr 1fr;gap:12px;display:grid}@media (width<=600px){.sugs{grid-template-columns:1fr}}.sug{background:var(--surface);border:1px solid var(--line);color:var(--ink);-webkit-backdrop-filter:blur(8px);border-radius:18px;flex-direction:column;gap:2px;padding:14px 18px 16px;display:flex}.sug:active{background:var(--accent-soft)}.sug .why{color:var(--accent);align-items:center;gap:6px;margin-bottom:4px;font-size:13px;display:flex}.sug .t{font-size:18px;font-weight:600}.sug .d{color:var(--muted);font-variant-numeric:tabular-nums;margin-bottom:10px;font-size:14px}.piece-row{color:inherit;grid-template-columns:1fr 120px 56px;align-items:center;gap:16px;min-height:64px;padding:14px 20px;display:grid}.piece-row:active{background:var(--accent-soft)}.piece-row .t{font-size:17px;font-weight:500}.piece-row .d{color:var(--muted);font-size:13px}.piece-row .pct{text-align:right;font-variant-numeric:tabular-nums;font-size:18px}.piece-row .pct small{color:var(--muted);font-size:11px;display:block}@media (width<=480px){.piece-row{grid-template-columns:1fr 56px}.piece-row .bar-track{display:none}}.tip{gap:12px;margin-top:18px}.tip wa-icon{color:var(--accent);flex:none;font-size:22px}.tip b{font-weight:500}.backup{flex-direction:column;gap:12px;display:flex}.facts-list{flex-direction:column;gap:4px;margin:0;padding:0;font-size:14px;list-style:none;display:flex}.facts-list li:before{content:"";background:var(--faint);vertical-align:2px;border-radius:50%;width:6px;height:6px;margin-right:8px;display:inline-block}.facts-list li.ok:before{background:var(--c-ok)}.facts-list li.warn:before{background:var(--c-off)}.confirm{background:var(--accent-soft);border-radius:12px;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 14px;font-size:14px;display:flex}footer{color:var(--muted);margin-top:36px;font-size:13px;line-height:1.7}</style>
-  <script type="module" crossorigin src="./assets/index-CYl8K2H4.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/common-BxPjDjJd.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-vh1suweH.js">
-  <link rel="modulepreload" crossorigin href="./assets/charts-BVBdhgAd.js">
-  <link rel="stylesheet" crossorigin href="./assets/common-CbyWhTZy.css">
+<style>.top{align-items:center;gap:10px;padding-top:6px;display:flex}.top .date{color:var(--muted);letter-spacing:.04em;flex:1;font-size:15px}h1.app{letter-spacing:.02em;margin:6px 0 0;font-size:30px;font-weight:600}.greet{margin:12px 0 0;font-size:19px}.cheer{color:var(--muted);min-height:1.6em;margin:2px 0 0;font-size:14px}.modes{grid-template-columns:repeat(3,1fr);gap:12px;display:grid}.mode{background:var(--surface);border:1px solid var(--line);color:var(--ink);-webkit-backdrop-filter:blur(8px);border-radius:18px;flex-direction:column;gap:4px;min-height:132px;padding:18px 18px 16px;display:flex}.mode:active{background:var(--accent-soft)}.mode wa-icon{color:var(--accent);margin-bottom:8px;font-size:24px}.mode .t{font-size:18px;font-weight:600}.mode .d{color:var(--muted);font-size:13px;line-height:1.55}@media (width<=560px){.modes{grid-template-columns:1fr}.mode{flex-direction:row;align-items:center;gap:14px;min-height:0;padding:14px 16px}.mode wa-icon{flex:none;margin:0}}.score{font-variant-numeric:tabular-nums;font-size:20px}.score small{color:var(--muted);font-size:12px;display:block}.themes{grid-template-columns:repeat(3,1fr);gap:12px;display:grid}.theme{border:1px solid var(--line);cursor:pointer;background:var(--surface);text-align:left;color:var(--ink);border-radius:14px;flex-direction:column;gap:10px;padding:12px;display:flex}.theme.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}.theme .sw{border:1px solid #00000010;border-radius:9px;height:48px;position:relative;overflow:hidden}.theme .sw i{border:2px solid #fff;border-radius:50%;width:14px;height:14px;position:absolute;bottom:8px}.theme .n{font-size:15px}.small{font-size:14px}.week{grid-template-columns:1fr minmax(220px,300px);align-items:end;gap:24px;margin-top:22px;padding:20px 22px;display:grid}.facts{border-top:1px solid var(--line);flex-wrap:wrap;gap:24px;margin-top:16px;padding-top:14px;display:flex}.facts div{color:var(--muted);font-size:13px}.facts b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:20px;font-weight:500;display:block}.facts .up{color:var(--c-ok);margin-left:4px;font-size:13px;font-weight:400}.facts .down{color:var(--c-bad);margin-left:4px;font-size:13px;font-weight:400}.today-goal{border-bottom:1px solid var(--line);flex-direction:column;grid-column:1/-1;gap:6px;padding-bottom:14px;display:flex}.today-goal .row{gap:8px;font-size:15px}.today-goal b{font-variant-numeric:tabular-nums;font-weight:600}.today-goal .done{color:var(--c-ok)}.today-goal .bar-track{border-radius:4px;height:8px}.today-goal .bar-track i{border-radius:4px;transition:width .4s}.goal-pop{flex-direction:column;gap:10px;max-width:340px;display:flex}.goal-pop b{font-weight:600}.goal-pop p{margin:0;line-height:1.6}.week-more{grid-column:1/-1;justify-self:end;margin-top:-6px;font-size:14px}.week .empty-hint{color:var(--muted);margin-top:14px;font-size:14px;line-height:1.7}@media (width<=600px){.week{grid-template-columns:1fr}}.sugs{grid-template-columns:1fr 1fr;gap:12px;display:grid}@media (width<=600px){.sugs{grid-template-columns:1fr}}.sug{background:var(--surface);border:1px solid var(--line);color:var(--ink);-webkit-backdrop-filter:blur(8px);border-radius:18px;flex-direction:column;gap:2px;padding:14px 18px 16px;display:flex}.sug:active{background:var(--accent-soft)}.sug .why{color:var(--accent);align-items:center;gap:6px;margin-bottom:4px;font-size:13px;display:flex}.sug .t{font-size:18px;font-weight:600}.sug .d{color:var(--muted);font-variant-numeric:tabular-nums;margin-bottom:10px;font-size:14px}.piece-row{color:inherit;grid-template-columns:1fr 120px 56px;align-items:center;gap:16px;min-height:64px;padding:14px 20px;display:grid}.piece-row:active{background:var(--accent-soft)}.piece-row .t{font-size:17px;font-weight:500}.piece-row .d{color:var(--muted);font-size:13px}.piece-row .pct{text-align:right;font-variant-numeric:tabular-nums;font-size:18px}.piece-row .pct small{color:var(--muted);font-size:11px;display:block}@media (width<=480px){.piece-row{grid-template-columns:1fr 56px}.piece-row .bar-track{display:none}}.tip{gap:12px;margin-top:18px}.tip wa-icon{color:var(--accent);flex:none;font-size:22px}.tip b{font-weight:500}.backup{flex-direction:column;gap:12px;display:flex}.facts-list{flex-direction:column;gap:4px;margin:0;padding:0;font-size:14px;list-style:none;display:flex}.facts-list li:before{content:"";background:var(--faint);vertical-align:2px;border-radius:50%;width:6px;height:6px;margin-right:8px;display:inline-block}.facts-list li.ok:before{background:var(--c-ok)}.facts-list li.warn:before{background:var(--c-off)}.confirm{background:var(--accent-soft);border-radius:12px;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 14px;font-size:14px;display:flex}footer{color:var(--muted);margin-top:36px;font-size:13px;line-height:1.7}</style>
+  <script type="module" crossorigin src="./assets/index-B1XGKXlS.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-CfAGAFXz.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-qCGNtBEw.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-n57op-lT.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-s_4rlJ3A.css">
 </head>
 <body>
 <main class="page">
@@ -25,7 +25,7 @@
     <span class="date" id="date"></span>
     <button class="pill" id="midi-pill"><span class="dot"></span>連接 MIDI</button>
   </div>
-  <h1 class="app">Piano Page Turner</h1>
+  <h1 class="app">Étude</h1>
   <p class="greet" id="greet">今天也來練一下琴～</p>
   <p class="cheer" id="cheer"></p>
   <div id="install" class="card pad row" style="margin-top:18px" hidden>
@@ -41,6 +41,13 @@
   </div>
 
   <section class="card pad week" id="week">
+    <div class="today-goal" id="today">
+      <div class="row">
+        <span class="grow" id="today-text"></span>
+        <wa-button size="small" appearance="plain" id="goal-btn"><wa-icon slot="start" name="target"></wa-icon><span id="goal-label"></span></wa-button>
+      </div>
+      <div class="bar-track" id="today-track"><i id="today-bar"></i></div>
+    </div>
     <div>
       <div class="muted small row" style="gap:0"><span class="grow">本週練琴</span></div>
       <div class="big-num" id="w-total"></div>
@@ -50,6 +57,13 @@
     <div id="w-bars"></div>
     <a class="week-more" href="log.html" id="to-log">看每天、每月的紀錄 ›</a>
   </section>
+  <wa-popover for="goal-btn" id="goal-pop" placement="bottom-end">
+    <div class="goal-pop">
+      <b>每天練琴目標</b>
+      <wa-radio-group id="goal" orientation="horizontal" size="small"></wa-radio-group>
+      <p class="muted small">練琴時間包含練習模式和看 PDF 彈奏。達到目標的日子，在練琴紀錄裡會有一個小點。</p>
+    </div>
+  </wa-popover>
 
   <div id="sug-wrap" hidden>
     <div class="label">今天可以練</div>
@@ -97,7 +111,7 @@
     <div class="msg" id="bk-msg"></div>
   </section>
 
-  <footer>Piano Page Turner ・ 給自己練琴用</footer>
+  <footer>Étude ・ 給自己練琴用</footer>
 </main>
 
 </body>

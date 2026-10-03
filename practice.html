@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#efe4dd">
-<title>練習模式 · Piano Page Turner</title>
+<title>練習模式 · Étude</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -12,12 +12,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('ppt.theme')||'cotton'}catch(e){document.documentElement.dataset.theme='cotton'}</script>
-<style>textarea{width:100%;min-height:200px;font-family:ui-monospace,SF Mono,Menlo,Consolas,monospace;font-size:13px;line-height:1.55}textarea.short{min-height:110px}.paper{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:8px 6px;overflow-x:auto}.paper svg{display:block}.paper{width:auto!important;display:block!important}.info-pop{max-width:320px;font-size:14px;line-height:1.7}.info-pop b{font-weight:600}.info-pop p{margin:6px 0}.info-pop ul{margin:0 0 6px;padding-left:20px}.info-pop code{background:var(--sunken);border-radius:4px;padding:0 4px;font-family:inherit}#abc-info{color:var(--muted);margin-left:-8px}.tag{color:var(--accent);background:var(--accent-soft);vertical-align:2px;border-radius:999px;margin-left:8px;padding:1px 9px;font-size:12px}#practice-view .sticky{z-index:20;position:sticky;top:0}#practice-view .topbar{position:relative;top:auto}.back-btn{margin-left:-12px}.controls{background:var(--surface);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);flex-wrap:wrap;align-items:center;gap:10px 14px;padding:10px 14px;display:flex}.tempo{color:var(--muted);align-items:center;gap:6px;font-size:15px;display:inline-flex}.tempo wa-number-input{width:4.6em}.tempo wa-number-input::part(input){text-align:center;font-variant-numeric:tabular-nums;padding:0}.metro{flex-direction:column;gap:8px;min-width:260px;display:flex}.metro .k{color:var(--muted);font-size:13px}.metro wa-slider{--track-color-active:var(--accent)}wa-switch{font-size:15px}.range{flex:1;align-items:center;gap:10px;min-width:220px;display:flex}.range .k{color:var(--muted);white-space:nowrap;font-size:14px}.range wa-slider{--track-color-active:var(--accent);flex:1}.range b{white-space:nowrap;font-variant-numeric:tabular-nums;min-width:6.5em;font-size:14px;font-weight:500}@media (width<=600px){.controls .lbl{display:none}#start-btn .lbl{display:inline}.controls{gap:8px;padding:8px 12px}.controls wa-button:not(#start-btn)::part(button){padding-inline:10px}.controls wa-button:not(#start-btn)::part(start){margin-inline-end:0}.controls wa-button::part(caret),#bpm-down,#bpm-up{display:none}.range{flex-basis:100%;order:9}}#edit-bar,#drill-bar{background:var(--accent-soft);color:var(--ink);border-bottom:1px solid var(--line);padding:10px 14px;font-size:15px}#edit-warn{color:var(--c-bad);font-size:14px}#status{background:var(--surface);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);align-items:center;gap:14px;height:44px;padding:0 16px;display:flex}#beats{gap:7px;display:inline-flex}#beats i{border:1.5px solid var(--faint);border-radius:50%;width:12px;height:12px;transition:background 50ms;display:inline-block}#beats i.on{background:var(--beat);border-color:var(--beat)}#beats i.on.first{background:var(--accent);border-color:var(--accent)}#feedback{white-space:nowrap;text-overflow:ellipsis;min-width:0;color:var(--muted);flex:1;overflow:hidden}#feedback.bad{color:var(--c-bad)}#feedback.good{color:var(--c-ok)}#count{color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:14px}.legend{color:var(--muted);flex-wrap:wrap;gap:16px;padding:12px 18px 8px;font-size:13px;display:flex}.legend i{vertical-align:0;border-radius:50%;width:9px;height:9px;margin-right:6px;display:inline-block}#score{min-width:0;margin:0 12px 14px}#score.editing .abcjs-note,#score.editing .abcjs-rest{cursor:pointer}#countdown{pointer-events:none;z-index:40;color:var(--accent);opacity:.8;place-items:center;font-size:120px;font-weight:600;display:grid;position:fixed;inset:0}#score svg path,#score svg text{fill:var(--ink)}#score svg text{font-family:var(--font)}#score .st-current path,#score .st-current text{fill:var(--c-cur)}#score .st-correct path,#score .st-correct text{fill:var(--c-ok)}#score .st-off path,#score .st-off text{fill:var(--c-off)}#score .st-recovered path,#score .st-recovered text{fill:var(--c-rec)}#score .st-missed path,#score .st-missed text{fill:var(--c-bad)}#score .st-play path,#score .st-play text{fill:var(--c-cur)}#score .st-pick path,#score .st-pick text{fill:var(--accent)}#score .st-dim{opacity:.28}#result{flex-direction:column;gap:14px;margin:0 12px 20px;padding:20px;display:flex}#result .big{font-variant-numeric:tabular-nums;font-size:40px;font-weight:600;line-height:1.2}#result .stats{color:var(--muted);grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;font-size:14px;display:grid}#result .stats b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:22px;font-weight:500;display:block}#weak{background:var(--accent-soft);border-radius:12px;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 14px;display:flex}#history{color:var(--muted);font-size:14px;line-height:1.8}#note-pop{z-index:50;background:var(--surface-solid);border:1px solid var(--line);border-radius:16px;width:min(440px,100vw - 16px);max-height:calc(100vh - 16px);padding:14px 16px;position:fixed;overflow-y:auto;box-shadow:0 16px 40px #0000002e}#note-pop h4{align-items:center;margin:0 0 4px;font-size:17px;font-weight:500;display:flex}#note-pop h4 .x{margin-left:auto}#note-pop .grp{flex-wrap:wrap;align-items:center;gap:6px;padding:7px 0;display:flex}#note-pop .grp+.grp{border-top:1px solid var(--line)}#note-pop .k{width:3.2em;color:var(--muted);flex:none;font-size:13px}#note-pop .chip{min-width:40px;padding:5px 10px}#note-pop .sub{border:1px solid var(--line);border-radius:12px;margin:6px 0;padding:4px 10px}#note-pop .sub-title{align-items:center;padding-top:4px;font-size:14px;display:flex}</style>
-  <script type="module" crossorigin src="./assets/practice-OYLkuCf1.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/common-BxPjDjJd.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-vh1suweH.js">
-  <link rel="modulepreload" crossorigin href="./assets/activity-BdkkBcgl.js">
-  <link rel="stylesheet" crossorigin href="./assets/common-CbyWhTZy.css">
+<style>textarea{width:100%;min-height:200px;font-family:ui-monospace,SF Mono,Menlo,Consolas,monospace;font-size:13px;line-height:1.55}textarea.short{min-height:110px}.paper{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:8px 6px;overflow-x:auto}.paper svg{display:block}.paper{width:auto!important;display:block!important}.list-tools{flex-wrap:wrap;gap:10px;margin-bottom:10px;display:flex}.list-tools wa-input{flex:1;min-width:180px}.list-tools wa-select{width:180px}.group-label{color:var(--muted);align-items:center;gap:6px;margin:16px 4px 8px;font-size:13px;display:flex}.group-label:first-child{margin-top:0}.piece-item{cursor:pointer;align-items:center;gap:4px;min-height:64px;padding:12px 10px 12px 20px;display:flex}.piece-item:active{background:var(--accent-soft)}.piece-item .t{font-size:17px;font-weight:500}.piece-item .d{color:var(--muted);font-size:14px;line-height:1.5}.piece-item .score{font-variant-numeric:tabular-nums;text-align:right;min-width:2.8em;margin:0 8px;font-size:17px}.cat-tag{color:var(--muted);background:var(--sunken);vertical-align:2px;white-space:nowrap;border-radius:999px;margin-left:8px;padding:1px 9px;font-size:12px}.info-pop{max-width:320px;font-size:14px;line-height:1.7}.info-pop b{font-weight:600}.info-pop p{margin:6px 0}.info-pop ul{margin:0 0 6px;padding-left:20px}.info-pop code{background:var(--sunken);border-radius:4px;padding:0 4px;font-family:inherit}#abc-info{color:var(--muted);margin-left:-8px}.tag{color:var(--accent);background:var(--accent-soft);vertical-align:2px;border-radius:999px;margin-left:8px;padding:1px 9px;font-size:12px}#practice-view .sticky{z-index:20;position:sticky;top:0}#practice-view .topbar{position:relative;top:auto}.back-btn{margin-left:-12px}.controls{background:var(--surface);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);flex-wrap:wrap;align-items:center;gap:10px 14px;padding:10px 14px;display:flex}.tempo{color:var(--muted);align-items:center;gap:6px;font-size:15px;display:inline-flex}.tempo wa-number-input{width:4.6em}.tempo wa-number-input::part(input){text-align:center;font-variant-numeric:tabular-nums;padding:0}.metro{flex-direction:column;gap:8px;min-width:260px;display:flex}.metro .k{color:var(--muted);font-size:13px}.metro wa-slider{--track-color-active:var(--accent)}wa-switch{font-size:15px}.small{color:var(--muted);font-size:13px}.cal{font-size:15px;line-height:1.7}.cal p{margin:0 0 8px}.cal ol{margin:0 0 14px;padding-left:22px}.cal-dots{justify-content:center;gap:10px;margin:8px 0 12px;display:flex}.cal-dots i{border:1.5px solid var(--faint);border-radius:50%;width:16px;height:16px}.cal-dots i.now{border-color:var(--accent)}.cal-dots i.hit{background:var(--accent);border-color:var(--accent)}.cal-result{text-align:center;min-height:1.7em;color:var(--ink);font-weight:500}.range{flex:1;align-items:center;gap:10px;min-width:220px;display:flex}.range .k{color:var(--muted);white-space:nowrap;font-size:14px}.range wa-slider{--track-color-active:var(--accent);flex:1}.range b{white-space:nowrap;font-variant-numeric:tabular-nums;min-width:6.5em;font-size:14px;font-weight:500}@media (width<=600px){.controls .lbl{display:none}#start-btn .lbl{display:inline}.controls{gap:8px;padding:8px 12px}.controls wa-button:not(#start-btn)::part(button){padding-inline:10px}.controls wa-button:not(#start-btn)::part(start){margin-inline-end:0}.controls wa-button::part(caret),#bpm-down,#bpm-up{display:none}.range{flex-basis:100%;order:9}}#edit-bar,#drill-bar{background:var(--accent-soft);color:var(--ink);border-bottom:1px solid var(--line);padding:10px 14px;font-size:15px}#edit-warn{color:var(--c-bad);font-size:14px}#status{background:var(--surface);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);align-items:center;gap:14px;height:44px;padding:0 16px;display:flex}#beats{gap:7px;display:inline-flex}#beats i{border:1.5px solid var(--faint);border-radius:50%;width:12px;height:12px;transition:background 50ms;display:inline-block}#beats i.on{background:var(--beat);border-color:var(--beat)}#beats i.on.first{background:var(--accent);border-color:var(--accent)}#feedback{white-space:nowrap;text-overflow:ellipsis;min-width:0;color:var(--muted);flex:1;overflow:hidden}#feedback.bad{color:var(--c-bad)}#feedback.good{color:var(--c-ok)}#count{color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:14px}.legend{color:var(--muted);flex-wrap:wrap;gap:16px;padding:12px 18px 8px;font-size:13px;display:flex}.legend i{vertical-align:0;border-radius:50%;width:9px;height:9px;margin-right:6px;display:inline-block}#score{min-width:0;margin:0 12px 14px}#score.editing .abcjs-note,#score.editing .abcjs-rest{cursor:pointer}#countdown{pointer-events:none;z-index:40;color:var(--accent);opacity:.8;place-items:center;font-size:120px;font-weight:600;display:grid;position:fixed;inset:0}#score svg path,#score svg text{fill:var(--ink)}#score svg text{font-family:var(--font)}#score .st-current path,#score .st-current text{fill:var(--c-cur)}#score .st-correct path,#score .st-correct text{fill:var(--c-ok)}#score .st-off path,#score .st-off text{fill:var(--c-off)}#score .st-recovered path,#score .st-recovered text{fill:var(--c-rec)}#score .st-missed path,#score .st-missed text{fill:var(--c-bad)}#score .st-play path,#score .st-play text{fill:var(--c-cur)}#score .st-pick path,#score .st-pick text{fill:var(--accent)}#score .st-dim{opacity:.28}#result{flex-direction:column;gap:14px;margin:0 12px 20px;padding:20px;display:flex}#result .big{font-variant-numeric:tabular-nums;font-size:40px;font-weight:600;line-height:1.2}#result .stats{color:var(--muted);grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;font-size:14px;display:grid}#result .stats b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:22px;font-weight:500;display:block}#weak{background:var(--accent-soft);border-radius:12px;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 14px;display:flex}#history{color:var(--muted);font-size:14px;line-height:1.8}#note-pop{z-index:50;background:var(--surface-solid);border:1px solid var(--line);border-radius:16px;width:min(440px,100vw - 16px);max-height:calc(100vh - 16px);padding:14px 16px;position:fixed;overflow-y:auto;box-shadow:0 16px 40px #0000002e}#note-pop h4{align-items:center;margin:0 0 4px;font-size:17px;font-weight:500;display:flex}#note-pop h4 .x{margin-left:auto}#note-pop .grp{flex-wrap:wrap;align-items:center;gap:6px;padding:7px 0;display:flex}#note-pop .grp+.grp{border-top:1px solid var(--line)}#note-pop .k{width:3.2em;color:var(--muted);flex:none;font-size:13px}#note-pop .chip{min-width:40px;padding:5px 10px}#note-pop .sub{border:1px solid var(--line);border-radius:12px;margin:6px 0;padding:4px 10px}#note-pop .sub-title{align-items:center;padding-top:4px;font-size:14px;display:flex}</style>
+  <script type="module" crossorigin src="./assets/practice-RMTi5DTu.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-CfAGAFXz.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-qCGNtBEw.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-n57op-lT.js">
+  <link rel="modulepreload" crossorigin href="./assets/activity-Lh6lXbIb.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-s_4rlJ3A.css">
 </head>
 <body>
 
@@ -28,7 +29,18 @@
   <p class="muted" style="margin:4px 0 0">把課本練習題轉成譜，邊彈邊判斷彈對、彈錯和節奏。</p>
 
   <div class="label">我的練習曲</div>
-  <div class="card list" id="pieces"></div>
+  <div class="list-tools" id="list-tools" hidden>
+    <wa-input id="search" size="small" placeholder="找曲名或分類" with-clear><wa-icon slot="start" name="search"></wa-icon></wa-input>
+    <wa-select id="sort" size="small" value="recent">
+      <wa-icon slot="start" name="arrow-down-up"></wa-icon>
+      <wa-option value="recent">最近練習</wa-option>
+      <wa-option value="added">新加入的</wa-option>
+      <wa-option value="name">曲名</wa-option>
+      <wa-option value="weak">正確率低的先</wa-option>
+      <wa-option value="category">依分類</wa-option>
+    </wa-select>
+  </div>
+  <div id="pieces"></div>
   <div class="row" style="margin-top:10px"><wa-button size="small" appearance="plain" variant="brand" id="import-btn"><wa-icon slot="start" name="file-up"></wa-icon>匯入 .abc 檔</wa-button><wa-button size="small" appearance="plain" id="abc-info"><wa-icon name="info" label="什麼是 .abc 檔"></wa-icon></wa-button><input id="import-file" type="file" accept=".abc,.txt,text/plain" hidden></div>
   <wa-popover for="abc-info" placement="bottom-start">
     <div class="info-pop">
@@ -69,6 +81,9 @@
   <textarea id="abc-input" spellcheck="false" placeholder="把 Claude 回覆的 ABC 貼在這裡（整段回覆也可以）"></textarea>
   <div id="editor-msg" class="msg" style="margin:6px 0"></div>
   <div class="paper" id="preview" hidden></div>
+  <div class="label">分類（選填）</div>
+  <input type="text" id="cat-input" list="cat-list" placeholder="例如：成人快速進程 1、第 3 單元" style="width:100%;max-width:420px">
+  <datalist id="cat-list"></datalist>
   <div class="label">老師伴奏（選填）</div>
   <textarea id="acc-input" class="short" spellcheck="false" placeholder="有老師伴奏才需要。拍號、調號、弱起拍要和上面一樣"></textarea>
   <div id="acc-msg" class="msg" style="margin:6px 0"></div>
@@ -92,6 +107,9 @@
         <wa-dropdown-item type="checkbox" value="cursor" id="opt-cursor">顯示目前位置（藍色）</wa-dropdown-item>
         <wa-dropdown-item type="checkbox" value="strict" id="opt-strict">音高模式：彈錯要改對才前進</wa-dropdown-item>
         <wa-dropdown-item type="checkbox" value="acc" id="acc-check">老師伴奏（播放和節奏模式）</wa-dropdown-item>
+        <wa-divider></wa-divider>
+        <wa-dropdown-item type="checkbox" value="loop" id="opt-loop">節奏模式：練完自動再來一次</wa-dropdown-item>
+        <wa-dropdown-item type="checkbox" value="faster" id="opt-faster">循環時 90% 以上自動加快 4</wa-dropdown-item>
       </wa-dropdown>
     </div>
     <div class="controls">
@@ -119,6 +137,10 @@
           <wa-radio-group id="sounds" orientation="horizontal" size="small"></wa-radio-group>
           <div class="k">音量</div>
           <wa-slider id="volume" min="0" max="1" step="0.05"></wa-slider>
+          <div class="k">延遲校正（節奏判斷整體偏早或偏晚時）</div>
+          <div class="row" style="gap:8px"><span class="grow small" id="cal-now"></span>
+            <wa-button size="small" appearance="plain" id="cal-reset">歸零</wa-button>
+            <wa-button size="small" appearance="outlined" id="cal-open"><wa-icon slot="start" name="timer"></wa-icon>校正</wa-button></div>
         </div>
       </wa-popover>
       <span class="grow"></span>
@@ -141,6 +163,17 @@
     <div id="history"></div>
   </div>
 </section>
+
+<wa-dialog id="cal-dialog" label="延遲校正">
+  <div class="cal">
+    <p>平板、USB 或藍牙都會有一點延遲，可能讓節奏判斷整體偏早或偏晚。校正一次就好：</p>
+    <ol><li>按「開始」，先聽 4 下預備拍</li><li>接著跟著節拍器，每一拍在琴上彈一個音（哪個鍵都可以），共 8 下</li></ol>
+    <div class="cal-dots" id="cal-dots"></div>
+    <p class="cal-result" id="cal-result"></p>
+  </div>
+  <wa-button slot="footer" appearance="plain" id="cal-close">關閉</wa-button>
+  <wa-button slot="footer" variant="brand" id="cal-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button>
+</wa-dialog>
 
 <div id="note-pop" hidden></div>
 <div id="countdown" hidden></div>
