@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#efe4dd">
+<title>Piano Page Turner</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('ppt.theme')||'cotton'}catch(e){document.documentElement.dataset.theme='cotton'}</script>
+<style>header{align-items:center;gap:12px;padding:12px 0 0;display:flex}header h1{letter-spacing:.02em;flex:1;margin:0;font-size:26px;font-weight:600}.greet{margin:14px 0 0;font-size:18px}.cheer{color:var(--muted);min-height:1.6em;margin:2px 0 0;font-size:14px}.mode{min-height:84px}.mode .dot{border:2px solid var(--accent);border-radius:50%;flex:none;width:11px;height:11px}.mode.main .dot{background:var(--accent)}.mode .t{font-size:21px;font-weight:500}.score{font-variant-numeric:tabular-nums;font-size:20px}.score small{color:var(--muted);font-size:12px;display:block}.themes{grid-template-columns:repeat(3,1fr);gap:12px;display:grid}.theme{border:1px solid var(--line);cursor:pointer;background:var(--surface);text-align:left;color:var(--ink);border-radius:14px;flex-direction:column;gap:10px;padding:12px;display:flex}.theme.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}.theme .sw{border:1px solid #00000010;border-radius:9px;height:48px;position:relative;overflow:hidden}.theme .sw i{border:2px solid #fff;border-radius:50%;width:14px;height:14px;position:absolute;bottom:8px}.theme .n{font-size:15px}footer{color:var(--muted);margin-top:36px;font-size:13px;line-height:1.7}</style>
+  <script type="module" crossorigin src="./assets/index-Do-lbjGD.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-ClmbWr1c.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-BgfBpFeZ.css">
+</head>
+<body>
+<main class="page">
+  <header>
+    <h1>Piano Page Turner</h1>
+    <button class="pill" id="midi-pill"><span class="dot"></span>連接 MIDI</button>
+  </header>
+  <p class="greet" id="greet">今天也來練一下琴～</p>
+  <p class="cheer" id="cheer"></p>
+  <div id="install" class="card pad row" style="margin-top:18px" hidden>
+    <div class="grow"><b style="font-weight:500">加到主畫面</b><div class="muted" style="font-size:14px">像 App 一樣全螢幕打開，沒有網址列，沒網路也能用</div></div>
+    <button class="btn" id="install-btn">安裝</button>
+  </div>
+
+  <div class="label">選擇模式</div>
+  <nav class="card list">
+    <a class="list-row mode main" href="practice.html"><span class="dot"></span><div><div class="t">練習模式</div><div class="d">彈課本練習題，標出彈對、彈錯和節奏</div></div><span class="chev">›</span></a>
+    <a class="list-row mode" href="play.html"><span class="dot"></span><div><div class="t">彈奏模式</div><div class="d">看 PDF 樂譜，用左、中踏板翻頁</div></div><span class="chev">›</span></a>
+    <a class="list-row mode" href="midi-test.html"><span class="dot"></span><div><div class="t">MIDI 測試</div><div class="d">確認電鋼琴和踏板有連上</div></div><span class="chev">›</span></a>
+  </nav>
+
+  <div id="recent-wrap" hidden>
+    <div class="label">最近練習</div>
+    <div class="card list" id="recent"></div>
+  </div>
+  <div id="pdf-wrap" hidden>
+    <div class="label">最近看的樂譜</div>
+    <div class="card list" id="pdfs"></div>
+  </div>
+
+  <div class="label">外觀</div>
+  <div class="themes" id="themes"></div>
+
+  <footer>樂譜和練習紀錄只存在這台平板的瀏覽器裡，不會上傳到任何地方。</footer>
+</main>
+
+</body>
+</html>
