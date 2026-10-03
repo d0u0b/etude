@@ -3,8 +3,8 @@
 // - Pages: network first (always fresh when online), cache as fallback.
 // - Hashed assets (assets/*): cache first, their content never changes.
 // - Fonts and piano sounds from CDNs: cache first.
-const CACHE = 'ppt-b7fabcfe88';
-const CORE = ["./","assets/drill-BDSuGYeH.js","assets/index-BYNsRz16.js","assets/log-DRuibiVS.js","assets/midi-test-CMCJBxa0.js","assets/piece-OCzOHg-y.js","assets/play-BKvlqM1F.js","assets/practice-CHkKBhLE.js","assets/settings-Da0qBhid.js","assets/activity-BQvNdVSo.js","assets/backup-DD5nz5h_.js","assets/charts-Gm_WNYtc.js","assets/common-4BBQHXWn.js","assets/sound-zl3qv0vw.js","assets/stats-CLo0mvxX.js","assets/common-DK2Lsw1G.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
+const CACHE = 'ppt-9330f512ac';
+const CORE = ["./","assets/drill-CVohjsFl.js","assets/index-DAmAgtO1.js","assets/log-dH-4YERB.js","assets/midi-test-CYpN_Tef.js","assets/piece-BQUAsP1K.js","assets/play-iphQ908f.js","assets/practice-Bptg1maL.js","assets/settings-BQtijRRT.js","assets/activity-xuByXWEX.js","assets/backup-B6vnby-R.js","assets/charts-DFPBc_5G.js","assets/common-zkFIcuoB.js","assets/sound-zl3qv0vw.js","assets/stats-B9Aci9io.js","assets/common-DVVQknXR.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
