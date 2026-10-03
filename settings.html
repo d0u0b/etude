@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#efe4dd">
+<title>設定 · Étude</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>(function(d){var t='cotton';try{t=localStorage.getItem('ppt.theme')||t}catch(e){}d.dataset.theme=t;if(t==='night')d.classList.add('wa-dark');var m=document.querySelector('meta[name=theme-color]');if(m&&t==='night')m.content='#2b2421'})(document.documentElement)</script>
+<style>.page-head h1{font-size:28px}.sec{flex-direction:column;gap:12px;padding:18px 20px;display:flex}.small{font-size:14px}.themes{grid-template-columns:repeat(4,1fr);gap:12px;display:grid}@media (width<=600px){.themes{grid-template-columns:1fr 1fr}}.theme{border:1px solid var(--line);cursor:pointer;background:var(--surface);text-align:left;color:var(--ink);border-radius:14px;flex-direction:column;gap:10px;padding:12px;display:flex}.theme.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}.theme .sw{border:1px solid #00000010;border-radius:9px;height:48px;position:relative;overflow:hidden}.theme .sw i{border:2px solid #fff;border-radius:50%;width:14px;height:14px;position:absolute;bottom:8px}.theme .n{font-size:15px}.backup{flex-direction:column;gap:12px;display:flex}.facts-list{flex-direction:column;gap:4px;margin:0;padding:0;font-size:14px;list-style:none;display:flex}.facts-list li:before{content:"";background:var(--faint);vertical-align:2px;border-radius:50%;width:6px;height:6px;margin-right:8px;display:inline-block}.facts-list li.ok:before{background:var(--c-ok)}.facts-list li.warn:before{background:var(--c-off)}.confirm{background:var(--accent-soft);border-radius:12px;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 14px;font-size:14px;display:flex}#goal{flex-wrap:wrap}.backup .msg:empty{display:none}</style>
+  <script type="module" crossorigin src="./assets/settings-CYJsYwQH.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-BodSvP-1.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-CLo0mvxX.js">
+  <link rel="modulepreload" crossorigin href="./assets/backup-D3W2hgDd.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-DK2Lsw1G.css">
+</head>
+<body>
+<main class="page">
+  <nav class="site-nav" data-page="settings"></nav>
+  <div class="page-head"><h1>設定</h1></div>
+
+  <div class="label">外觀</div>
+  <div class="themes" id="themes"></div>
+
+  <div class="label">每日目標</div>
+  <section class="card sec">
+    <wa-radio-group id="goal" orientation="horizontal" size="small"></wa-radio-group>
+    <p class="muted small" style="margin:0">首頁會顯示今天練了多久、離目標還差多少；改目標不會影響以前的日子。</p>
+  </section>
+
+  <div class="label">安裝成 App</div>
+  <section class="card sec">
+    <div class="row">
+      <div class="grow small" id="install-text"></div>
+      <wa-button variant="brand" id="install-btn" hidden>安裝</wa-button>
+    </div>
+  </section>
+
+  <div class="label" id="backup-label">資料與備份</div>
+  <section class="card pad backup" id="backup">
+    <p class="muted small" style="margin:0">樂譜和練習紀錄只存在這台平板的瀏覽器裡，不會上傳到任何地方。換平板、清除 Chrome 資料或重裝之前，先備份一份。</p>
+    <ul class="facts-list">
+      <li id="bk-last"></li>
+      <li id="bk-persist"></li>
+    </ul>
+    <div class="row">
+      <wa-switch id="bk-pdf" checked>包含 PDF 樂譜</wa-switch>
+      <span class="grow"></span>
+      <wa-button appearance="outlined" id="bk-restore"><wa-icon slot="start" name="upload"></wa-icon>從備份還原</wa-button>
+      <wa-button variant="brand" id="bk-save"><wa-icon slot="start" name="download"></wa-icon>備份</wa-button>
+      <input type="file" id="bk-file" accept=".json,application/json" hidden>
+    </div>
+    <div id="bk-confirm" class="confirm" hidden>
+      <div class="grow" id="bk-summary"></div>
+      <wa-button size="small" appearance="plain" id="bk-cancel">取消</wa-button>
+      <wa-button size="small" variant="brand" id="bk-apply">還原</wa-button>
+    </div>
+    <div class="msg" id="bk-msg"></div>
+  </section>
+
+  <div class="label">工具</div>
+  <div class="card list">
+    <a class="list-row" href="midi-test.html"><div class="grow"><div class="t">MIDI 測試</div><div class="d">確認琴和踏板有連上、看每個音的力度</div></div><span class="chev">›</span></a>
+  </div>
+</main>
+</body>
+</html>
