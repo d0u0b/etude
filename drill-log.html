@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#efe4dd">
+<title>基本功紀錄 · Étude</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>(function(d){var t='cotton';try{t=localStorage.getItem('ppt.theme')||t}catch(e){}d.dataset.theme=t;if(t==='night')d.classList.add('wa-dark');var m=document.querySelector('meta[name=theme-color]');if(m&&t==='night')m.content='#2b2421'})(document.documentElement)</script>
+<style>.page-head h1{font-size:28px}.sec{flex-direction:column;gap:14px;padding:16px 20px;display:flex}.muted.small,.small{font-size:14px}.recent .item{align-items:center;gap:10px;padding:10px 0;font-size:14px;display:flex}.recent .item+.item{border-top:1px solid var(--line)}.recent .item .grow{min-width:0}.recent .item .when{color:var(--muted);white-space:nowrap;font-size:13px}.recent .item .score{font-variant-numeric:tabular-nums;text-align:right;min-width:3em}.recent .item wa-button{flex:none;margin:-6px -8px -6px 0}.day-label{color:var(--muted);letter-spacing:.04em;margin:22px 0 8px;font-size:13px}.tiles{grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;display:grid}.tiles div{color:var(--muted);font-size:13px}.tiles b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:20px;font-weight:500;display:block}#h-kind{flex-wrap:wrap}.grid-wrap{overflow-x:auto}table.prog{border-collapse:collapse;min-width:100%;font-size:14px}table.prog th,table.prog td{text-align:center;border-bottom:1px solid var(--line);white-space:nowrap;padding:7px 8px}table.prog th{color:var(--muted);font-size:13px;font-weight:500}table.prog td:first-child,table.prog th:first-child{text-align:left}table.prog td.ok{color:var(--c-ok)}table.prog td.mid{color:var(--c-off)}table.prog td.none{color:var(--faint)}table.prog td[data-k]{cursor:pointer}</style>
+  <script type="module" crossorigin src="./assets/drill-log-CTXEABLl.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-DdHWL-Wp.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-B7Q2jbNP.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-BZRnj89E.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-DVVQknXR.css">
+</head>
+<body>
+<main class="page">
+  <nav class="site-nav" data-page="log"></nav>
+  <div class="page-head"><h1>基本功紀錄</h1></div>
+  <div class="row" style="margin:6px 0 12px"><wa-radio-group id="h-kind" orientation="horizontal" size="small" value="all"><wa-radio appearance="button" value="all">全部</wa-radio><wa-radio appearance="button" value="sight">視譜</wa-radio><wa-radio appearance="button" value="scale">音階和弦</wa-radio><wa-radio appearance="button" value="rhythm">節奏</wa-radio></wa-radio-group></div>
+  <section class="card sec" id="h-summary"></section>
+  <div id="prog-wrap" hidden>
+    <div class="label">音階和弦進度<span class="muted"> ・ 每一格是最好的分數，點了直接去練</span></div>
+    <section class="card sec grid-wrap" id="k-progress"></section>
+  </div>
+  <div id="h-list"></div>
+  <div class="row" style="justify-content:center;margin-top:12px"><wa-button appearance="outlined" id="h-more" hidden>顯示更多</wa-button></div>
+</main>
+</body>
+</html>

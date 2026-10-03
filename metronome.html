@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#efe4dd">
+<title>節拍器 · Étude</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>(function(d){var t='cotton';try{t=localStorage.getItem('ppt.theme')||t}catch(e){}d.dataset.theme=t;if(t==='night')d.classList.add('wa-dark');var m=document.querySelector('meta[name=theme-color]');if(m&&t==='night')m.content='#2b2421'})(document.documentElement)</script>
+<style>.page-head h1{font-size:28px}.sec{flex-direction:column;gap:16px;padding:20px;display:flex}.tempo{justify-content:center;align-items:center;gap:18px;display:flex}.tempo .num{font-variant-numeric:tabular-nums;text-align:center;min-width:2.2em;font-size:72px;font-weight:600;line-height:1}.tempo .num small{color:var(--muted);margin-top:6px;font-size:14px;font-weight:400;display:block}.tempo wa-button::part(base){border-radius:50%;width:52px;height:52px;font-size:22px}#bpm-slider{width:100%}.dots{justify-content:center;gap:14px;min-height:22px;display:flex}.dots i{border:2px solid var(--line);border-radius:50%;width:18px;height:18px;transition:background 50ms}.dots i.on{background:var(--beat);border-color:var(--beat)}.dots i.on.first{background:var(--accent);border-color:var(--accent)}.go{flex-wrap:wrap;justify-content:center;gap:12px;display:flex}.go wa-button::part(base){min-width:140px}.opt{flex-wrap:wrap;align-items:center;gap:12px;display:flex}.opt>.k{width:4.5em;color:var(--muted);flex:none;font-size:14px}.opt wa-radio-group{flex-wrap:wrap}#volume{flex:1;min-width:160px}</style>
+  <script type="module" crossorigin src="./assets/metronome-y4f-TwUx.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-DdHWL-Wp.js">
+  <link rel="modulepreload" crossorigin href="./assets/sound-GEpjTBHR.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-DVVQknXR.css">
+</head>
+<body>
+<main class="page">
+  <nav class="site-nav" data-page="settings"></nav>
+  <div class="page-head"><h1>節拍器</h1></div>
+  <section class="card sec">
+    <div class="tempo">
+      <wa-button appearance="outlined" id="slower" aria-label="慢一點"><wa-icon name="minus"></wa-icon></wa-button>
+      <div class="num"><span id="bpm-num">80</span><small id="bpm-name"></small></div>
+      <wa-button appearance="outlined" id="faster" aria-label="快一點"><wa-icon name="plus"></wa-icon></wa-button>
+    </div>
+    <wa-slider id="bpm-slider" min="30" max="220" step="1" value="80" aria-label="速度"></wa-slider>
+    <div class="dots" id="dots"></div>
+    <div class="go">
+      <wa-button appearance="outlined" id="tap"><wa-icon slot="start" name="audio-lines"></wa-icon>點拍子測速度</wa-button>
+      <wa-button variant="brand" id="go"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button>
+    </div>
+  </section>
+  <section class="card sec" style="margin-top:14px">
+    <div class="opt"><span class="k">拍號</span><wa-radio-group id="meter" orientation="horizontal" size="small" value="4"><wa-radio appearance="button" value="2">2/4</wa-radio><wa-radio appearance="button" value="3">3/4</wa-radio><wa-radio appearance="button" value="4">4/4</wa-radio><wa-radio appearance="button" value="6">6/8</wa-radio><wa-radio appearance="button" value="1">不分</wa-radio></wa-radio-group></div>
+    <div class="opt"><span class="k">細分</span><wa-radio-group id="subdiv" orientation="horizontal" size="small" value="1"><wa-radio appearance="button" value="1">不細分</wa-radio><wa-radio appearance="button" value="2">八分</wa-radio><wa-radio appearance="button" value="3">三連音</wa-radio><wa-radio appearance="button" value="4">十六分</wa-radio></wa-radio-group></div>
+    <div class="opt"><span class="k">音色</span><wa-radio-group id="sound" orientation="horizontal" size="small"></wa-radio-group></div>
+    <div class="opt"><span class="k">音量</span><wa-slider id="volume" min="0.1" max="1" step="0.05" aria-label="音量"></wa-slider></div>
+    <p class="muted small" style="margin:0">音色和音量跟練習曲、基本功的節拍器是同一個設定。空白鍵也可以開始 / 停止；開著的時候螢幕不會關。</p>
+  </section>
+</main>
+</body>
+</html>
