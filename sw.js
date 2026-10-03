@@ -3,8 +3,8 @@
 // - Pages: network first (always fresh when online), cache as fallback.
 // - Hashed assets (assets/*): cache first, their content never changes.
 // - Fonts and piano sounds from CDNs: cache first.
-const CACHE = 'ppt-a03db04dce';
-const CORE = ["./","assets/index-Do-lbjGD.js","assets/midi-test-tPetBh5A.js","assets/play-cVriW-gY.js","assets/practice-DSbxvoLn.js","assets/common-ClmbWr1c.js","assets/common-BgfBpFeZ.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
+const CACHE = 'ppt-d4c3c6a29d';
+const CORE = ["./","assets/index-D00eWJ9_.js","assets/midi-test-5-cHEY22.js","assets/play-Bv0mHEYu.js","assets/practice-BSJtnQZe.js","assets/common-CAwuZLFW.js","assets/common-DcbqM8nR.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
