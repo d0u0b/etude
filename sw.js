@@ -3,8 +3,8 @@
 // - Pages: network first (always fresh when online), cache as fallback.
 // - Hashed assets (assets/*): cache first, their content never changes.
 // - Fonts and piano sounds from CDNs: cache first.
-const CACHE = 'ppt-c3e04a0072';
-const CORE = ["./","assets/drill-FA5EaVIu.js","assets/drill-log-CTXEABLl.js","assets/index-DRen-TqB.js","assets/log-Cvmtkew5.js","assets/metronome-y4f-TwUx.js","assets/midi-test-D-ftsKgM.js","assets/piece-BZ1lLQB7.js","assets/play-CdiAP4tD.js","assets/practice-0lA_ySDJ.js","assets/records-BNubCNTU.js","assets/settings-DJUgNPo8.js","assets/abcjs-BJDglxSQ.js","assets/activity-DMH_UoRB.js","assets/backup-DrDKtXyQ.js","assets/charts-B7Q2jbNP.js","assets/common-DdHWL-Wp.js","assets/data-BZRnj89E.js","assets/sound-GEpjTBHR.js","assets/stats-Db0Dhrk0.js","assets/common-DVVQknXR.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
+const CACHE = 'ppt-1197f10e42';
+const CORE = ["./","assets/drill-BdMsnA2_.js","assets/drill-log-3urXPywv.js","assets/index-BcKBzwIs.js","assets/log-D-9gTEfI.js","assets/metronome-CM29qibw.js","assets/midi-test-BXZWt6wQ.js","assets/piece-Cia2ubV2.js","assets/play-Dregak9B.js","assets/practice-BcGS4PAE.js","assets/records-DgscYsFV.js","assets/settings-DdwAxHyx.js","assets/activity-C3SQiCai.js","assets/backup-CSuQFiKP.js","assets/calibrate-B3C1GLWZ.js","assets/charts-B7Q2jbNP.js","assets/common-DMOLx15n.js","assets/data-C1sxzwu8.js","assets/sound-CRK1LQMa.js","assets/stats-Db0Dhrk0.js","assets/common-CuQQOm_F.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
