@@ -3,8 +3,8 @@
 // - Pages: network first (always fresh when online), cache as fallback.
 // - Hashed assets (assets/*): cache first, their content never changes.
 // - Fonts and piano sounds from CDNs: cache first.
-const CACHE = 'ppt-dbe26aa860';
-const CORE = ["./","assets/drill-DefwVUiM.js","assets/drill-log-CIWUuKX_.js","assets/index-BcKBzwIs.js","assets/log-D-9gTEfI.js","assets/metronome-CM29qibw.js","assets/midi-test-BXZWt6wQ.js","assets/piece-Cia2ubV2.js","assets/play-Dregak9B.js","assets/practice-BcGS4PAE.js","assets/records-DgscYsFV.js","assets/settings-DdwAxHyx.js","assets/activity-C3SQiCai.js","assets/backup-CSuQFiKP.js","assets/calibrate-B3C1GLWZ.js","assets/charts-B7Q2jbNP.js","assets/common-DMOLx15n.js","assets/data-BGftNYIw.js","assets/sound-CRK1LQMa.js","assets/stats-Db0Dhrk0.js","assets/common-CuQQOm_F.css","assets/pdf.worker.min-yatZIOMy.mjs","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
+const CACHE = 'ppt-8d1cd524a1';
+const CORE = ["./","assets/drill-CSTzpuTn.js","assets/drill-log-DIg1hk3i.js","assets/index-BIAY3sFA.js","assets/log-BA2hrtKZ.js","assets/metronome-BAT_4Fz9.js","assets/midi-test-DBUSqedW.js","assets/piece-aeYZz64D.js","assets/play-CZRHJM-o.js","assets/practice-D6cdwDzL.js","assets/records-1ytUKZEt.js","assets/settings-usdimeQT.js","assets/theory-BvMDZ07j.js","assets/abcjs-BJDglxSQ.js","assets/activity-DwgQP-mD.js","assets/backup-BULT3UW3.js","assets/calibrate-8M8bMQkl.js","assets/charts-B7Q2jbNP.js","assets/common-C6J4oxCC.js","assets/data-CwE5cMYo.js","assets/sound-CRK1LQMa.js","assets/stats-D4UE40mf.js","assets/stats-Db0Dhrk0.js","assets/tone-CdnClXST.js","assets/common-BEqrzrff.css","assets/pdf.worker.min-yatZIOMy.mjs","assets/tone-COkaR9CQ.css","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","manifest.webmanifest","samples/fur-elise.pdf","samples/minuet-g.pdf"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
