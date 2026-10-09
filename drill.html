@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>(function(d){var t='cotton';try{t=localStorage.getItem('ppt.theme')||t}catch(e){}d.dataset.theme=t;d.classList.add('booting');setTimeout(function(){d.classList.remove('booting')},4000);if(t==='night')d.classList.add('wa-dark');var m=document.querySelector('meta[name=theme-color]');if(m&&t==='night')m.content='#2b2421'})(document.documentElement)</script>
 <style>html{background:#f4f3ed}html[data-theme=nude]{background:#fbf8f6}html[data-theme=mist]{background:#f6f4ef}html[data-theme=night]{background:#1e1a18}html.booting body{visibility:hidden}html.booting:before{content:"載入中…";letter-spacing:.2em;color:#9a8f88;place-items:center;font:15px serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}@keyframes boot{0%{opacity:0}to{opacity:1}}</style>
-  <script type="module" crossorigin src="./assets/drill-D55oSiML.js"></script>
+  <script type="module" crossorigin src="./assets/drill-CyAoNSaJ.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/common-BSD70CEJ.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
   <link rel="modulepreload" crossorigin href="./assets/charts-B7Q2jbNP.js">
@@ -21,11 +21,11 @@
   <link rel="modulepreload" crossorigin href="./assets/sound-CRK1LQMa.js">
   <link rel="modulepreload" crossorigin href="./assets/calibrate-DH56OEUe.js">
   <link rel="modulepreload" crossorigin href="./assets/abcjs-BJDglxSQ.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-DNx9vJwp.js">
-  <link rel="modulepreload" crossorigin href="./assets/shared-Dx8bM0WL.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-B7KHaT2W.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-BfYdea03.js">
+  <link rel="modulepreload" crossorigin href="./assets/shared-CYCFVh6p.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-ClHyTf0j.js">
   <link rel="stylesheet" crossorigin href="./assets/common-XVbAMElX.css">
-  <link rel="stylesheet" crossorigin href="./assets/shared-CsO5x6Tc.css">
+  <link rel="stylesheet" crossorigin href="./assets/shared-Ev6qAjkf.css">
 </head>
 <body>
 <main class="page">
@@ -167,11 +167,11 @@
       <section class="card sec">
         <a class="learn-link" href="theory.html#intervals"><wa-icon name="book-open"></wa-icon>不熟？先看「音程（度數）」</a>
         <p class="muted small" style="margin:0">每題兩個音，說出差幾度（「度」只看音名差幾個，不分大小）。看譜、彈、聽三種方式，練到一眼就看出來。</p>
-        <div class="opt"><span class="k">方式</span><wa-radio-group id="i-mode" orientation="horizontal" size="small" value="read"><wa-radio appearance="button" value="read">看譜說度數</wa-radio><wa-radio appearance="button" value="play">彈出度數</wa-radio><wa-radio appearance="button" value="ear">聽音辨度數</wa-radio><wa-radio appearance="button" value="tonal">調性聽音</wa-radio></wa-radio-group></div>
+        <div class="opt"><span class="k">方式</span><wa-radio-group id="i-mode" orientation="horizontal" size="small" value="read"><wa-radio appearance="button" value="read">看譜說度數</wa-radio><wa-radio appearance="button" value="quality">看譜答性質</wa-radio><wa-radio appearance="button" value="play">彈出度數</wa-radio><wa-radio appearance="button" value="ear">聽音辨度數</wa-radio><wa-radio appearance="button" value="tonal">調性聽音</wa-radio></wa-radio-group></div>
         <p class="muted small" id="i-tonal-text" style="margin:0" hidden>先聽一次這個調的 I–IV–V–I 和弦，讓耳朵記住 Do 在哪裡，再聽 Do 和另一個音。可以按選項，也可以直接在琴上彈出第二個音（哪個八度都可以）。</p>
         <div class="opt" id="i-answer-row" hidden><span class="k">回答</span><wa-radio-group id="i-answer" orientation="horizontal" size="small" value="degree"><wa-radio appearance="button" value="degree">度數</wa-radio><wa-radio appearance="button" value="solfege">唱名</wa-radio></wa-radio-group></div>
         <div class="opt"><span class="k">範圍</span><wa-radio-group id="i-range" orientation="horizontal" size="small" value="5"><wa-radio appearance="button" value="5">2–5 度</wa-radio><wa-radio appearance="button" value="8">2–8 度</wa-radio></wa-radio-group></div>
-        <div class="opt"><span class="k">調</span><wa-radio-group id="i-key" orientation="horizontal" size="small" value="mine"></wa-radio-group></div>
+        <div class="opt" id="i-key-row"><span class="k">調</span><wa-radio-group id="i-key" orientation="horizontal" size="small" value="mine"></wa-radio-group></div>
         <div class="opt" id="i-clef-row"><span class="k">譜號</span><wa-radio-group id="i-clef" orientation="horizontal" size="small" value="treble"><wa-radio appearance="button" value="treble">高音譜</wa-radio><wa-radio appearance="button" value="bass">低音譜</wa-radio></wa-radio-group></div>
         <div class="opt" id="i-shape-row"><span class="k">呈現</span><wa-radio-group id="i-shape" orientation="horizontal" size="small" value="melodic"><wa-radio appearance="button" value="melodic">一前一後</wa-radio><wa-radio appearance="button" value="harmonic">同時</wa-radio></wa-radio-group></div>
         <div class="opt"><span class="k">題數</span><wa-radio-group id="i-total" orientation="horizontal" size="small" value="10"><wa-radio appearance="button" value="10">10 題</wa-radio><wa-radio appearance="button" value="20">20 題</wa-radio></wa-radio-group></div>
@@ -199,7 +199,7 @@
       <section class="card sec">
         <a class="learn-link" href="theory.html#triads"><wa-icon name="book-open"></wa-icon>不熟？先看「三和弦與轉位」</a>
         <p class="muted small" style="margin:0">認和弦：看譜彈出來、說出名字，或用耳朵分辨大三和弦（明亮）和小三和弦（暗）。</p>
-        <div class="opt"><span class="k">方式</span><wa-radio-group id="c-mode" orientation="horizontal" size="small" value="play"><wa-radio appearance="button" value="play">看譜彈和弦</wa-radio><wa-radio appearance="button" value="name">認和弦名稱</wa-radio><wa-radio appearance="button" value="ear">聽大小和弦</wa-radio></wa-radio-group></div>
+        <div class="opt"><span class="k">方式</span><wa-radio-group id="c-mode" orientation="horizontal" size="small" value="play"><wa-radio appearance="button" value="play">看譜彈和弦</wa-radio><wa-radio appearance="button" value="name">認和弦名稱</wa-radio><wa-radio appearance="button" value="number">看級數彈</wa-radio><wa-radio appearance="button" value="symbol">看和弦記號彈</wa-radio><wa-radio appearance="button" value="ear">聽大小和弦</wa-radio></wa-radio-group></div>
         <div class="opt" id="c-set-row"><span class="k">和弦</span><wa-radio-group id="c-set" orientation="horizontal" size="small" value="textbook"><wa-radio appearance="button" value="textbook">I・IV・V7（課本）</wa-radio><wa-radio appearance="button" value="diatonic">調裡的七個三和弦</wa-radio><wa-radio appearance="button" value="all">12 個大小三和弦</wa-radio></wa-radio-group></div>
         <div class="opt" id="c-inv-row"><span class="k">轉位</span><wa-radio-group id="c-inv" orientation="horizontal" size="small" value="0"><wa-radio appearance="button" value="0">原位</wa-radio><wa-radio appearance="button" value="1">加上轉位</wa-radio></wa-radio-group></div>
         <div class="opt" id="c-key-row"><span class="k">調</span><wa-radio-group id="c-key" orientation="horizontal" size="small" value="mine"></wa-radio-group></div>
