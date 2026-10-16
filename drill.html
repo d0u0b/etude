@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>(function(d){var t='cotton';try{t=localStorage.getItem('ppt.theme')||t}catch(e){}d.dataset.theme=t;d.classList.add('booting');setTimeout(function(){d.classList.remove('booting')},4000);if(t==='night')d.classList.add('wa-dark');var m=document.querySelector('meta[name=theme-color]');if(m&&t==='night')m.content='#2b2421'})(document.documentElement)</script>
 <style>html{background:#f4f3ed}html[data-theme=nude]{background:#fbf8f6}html[data-theme=mist]{background:#f6f4ef}html[data-theme=night]{background:#1e1a18}html.booting body{visibility:hidden}html.booting:before{content:"載入中…";letter-spacing:.2em;color:#9a8f88;place-items:center;font:15px serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}@keyframes boot{0%{opacity:0}to{opacity:1}}</style>
-  <script type="module" crossorigin src="./assets/drill-C_keDNMx.js"></script>
+  <script type="module" crossorigin src="./assets/drill-CNWeH2sX.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/common-JHoU27tE.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
   <link rel="modulepreload" crossorigin href="./assets/charts-B7Q2jbNP.js">
@@ -22,11 +22,11 @@
   <link rel="modulepreload" crossorigin href="./assets/calibrate-B58KHc7f.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-Dfsipog1.js">
   <link rel="modulepreload" crossorigin href="./assets/abcjs-BJDglxSQ.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-CpkvMpDw.js">
-  <link rel="modulepreload" crossorigin href="./assets/lesson-_uALleif.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-BppGEkNk.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-DHPSdocY.js">
+  <link rel="modulepreload" crossorigin href="./assets/lesson-DcNUPp2N.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-7jh3lpLg.js">
   <link rel="stylesheet" crossorigin href="./assets/common-XVbAMElX.css">
-  <link rel="stylesheet" crossorigin href="./assets/lesson-C3lUJz3w.css">
+  <link rel="stylesheet" crossorigin href="./assets/lesson-Br9vMfWR.css">
 </head>
 <body>
 <main class="page">
@@ -267,11 +267,15 @@
     <div class="view-head"><h1>聽音模仿</h1></div>
     <div id="e-setup">
       <section class="card sec">
-        <p class="muted small" style="margin:0">聽一小段旋律，用琴彈回來。第一個音會告訴你，聽完後答案會出現在譜上。</p>
-        <div class="opt"><span class="k">長度</span><wa-radio-group id="e-len" orientation="horizontal" size="small" value="3"><wa-radio appearance="button" value="3">3 個音</wa-radio><wa-radio appearance="button" value="4">4 個音</wa-radio><wa-radio appearance="button" value="5">5 個音</wa-radio></wa-radio-group></div>
-        <div class="opt"><span class="k">音域</span><wa-radio-group id="e-range" orientation="horizontal" size="small" value="five"><wa-radio appearance="button" value="five">五指位置</wa-radio><wa-radio appearance="button" value="octave">一個八度</wa-radio></wa-radio-group></div>
-        <div class="opt"><span class="k">跳進</span><wa-radio-group id="e-skip" orientation="horizontal" size="small" value="0"><wa-radio appearance="button" value="0">只有一級一級</wa-radio><wa-radio appearance="button" value="1">可以跳</wa-radio></wa-radio-group></div>
-        <div class="opt"><span class="k">調</span><wa-radio-group id="e-key" orientation="horizontal" size="small" value="mine"></wa-radio-group></div>
+        <p class="muted small" style="margin:0">聽一小段旋律，用琴彈回來。第一個音會告訴你，彈完會跟正確的對照。</p>
+        <div class="opt"><span class="k">題目</span><wa-radio-group id="e-src" orientation="horizontal" size="small" value="random"><wa-radio appearance="button" value="random">隨機旋律</wa-radio><wa-radio appearance="button" value="songs">有名的曲子</wa-radio></wa-radio-group></div>
+        <p class="muted small" id="e-songs-text" style="margin:0" hidden>小星星、快樂頌、瑪莉有隻小綿羊、兩隻老虎、小蜜蜂、倫敦鐵橋、生日快樂、聖誕鈴聲、驪歌、布拉姆斯搖籃曲，每題一句，照原本的節奏。</p>
+        <div class="opt" id="e-len-row"><span class="k">長度</span><wa-radio-group id="e-len" orientation="horizontal" size="small" value="3"><wa-radio appearance="button" value="3">3 個音</wa-radio><wa-radio appearance="button" value="4">4 個音</wa-radio><wa-radio appearance="button" value="5">5 個音</wa-radio></wa-radio-group></div>
+        <div class="opt" id="e-range-row"><span class="k">音域</span><wa-radio-group id="e-range" orientation="horizontal" size="small" value="five"><wa-radio appearance="button" value="five">五指位置</wa-radio><wa-radio appearance="button" value="octave">一個八度</wa-radio></wa-radio-group></div>
+        <div class="opt" id="e-skip-row"><span class="k">跳進</span><wa-radio-group id="e-skip" orientation="horizontal" size="small" value="0"><wa-radio appearance="button" value="0">只有一級一級</wa-radio><wa-radio appearance="button" value="1">可以跳</wa-radio></wa-radio-group></div>
+        <div class="opt" id="e-notes-row"><span class="k">用的音</span><wa-radio-group id="e-notes" orientation="horizontal" size="small" value="key"><wa-radio appearance="button" value="white">只有白鍵</wa-radio><wa-radio appearance="button" value="key">調裡的音</wa-radio><wa-radio appearance="button" value="chromatic">偶爾有黑鍵</wa-radio></wa-radio-group></div>
+        <div class="opt" id="e-first-row"><span class="k">第一個音</span><wa-radio-group id="e-first" orientation="horizontal" size="small" value="tonic"><wa-radio appearance="button" value="tonic">主音（Do）</wa-radio><wa-radio appearance="button" value="any">隨機</wa-radio></wa-radio-group></div>
+        <div class="opt" id="e-key-row"><span class="k">調</span><wa-radio-group id="e-key" orientation="horizontal" size="small" value="mine"></wa-radio-group></div>
         <div class="opt"><span class="k">速度</span><wa-radio-group id="e-speed" orientation="horizontal" size="small" value="72"><wa-radio appearance="button" value="72">慢</wa-radio><wa-radio appearance="button" value="100">一般</wa-radio></wa-radio-group></div>
         <div class="opt"><span class="k">題數</span><wa-radio-group id="e-total" orientation="horizontal" size="small" value="10"><wa-radio appearance="button" value="10">10 題</wa-radio><wa-radio appearance="button" value="20">20 題</wa-radio></wa-radio-group></div>
         <wa-switch id="e-show" checked>答錯時顯示正確答案</wa-switch>
@@ -283,6 +287,7 @@
     <div id="e-run" hidden>
       <div class="run-bar"><span class="fb" id="e-fb"></span><span class="count" id="e-count"></span>
         <wa-button size="small" appearance="outlined" id="e-replay" hidden><wa-icon slot="start" name="audio-lines"></wa-icon>再聽一次</wa-button>
+        <wa-button size="small" appearance="outlined" id="e-clear" hidden><wa-icon slot="start" name="rotate-ccw"></wa-icon>清除重彈</wa-button>
         <wa-button size="small" appearance="outlined" id="e-stop">結束</wa-button></div>
       <div class="narrow"><div class="paper quiz-paper" id="e-paper"></div></div>
       <div class="quiz-opts" id="e-opts"></div>
