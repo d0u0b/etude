@@ -1,4 +1,4 @@
-import{_ as e,h as t,n,t as r,u as i,v as a,y as o}from"./common-zDPW168Y.js";import{_ as s,c,i as l,t as u}from"./stats-Db0Dhrk0.js";import{a as d,c as f,i as p,n as m,o as h,r as g,s as _,t as v}from"./backup-eJUSouon.js";var y=e=>document.getElementById(e);function b(){let e=i();y(`themes`).innerHTML=n.map(t=>`
+import{_ as e,h as t,n,t as r,u as i,v as a,y as o}from"./common-iKybLBqy.js";import{_ as s,c,i as l,t as u}from"./stats-Db0Dhrk0.js";import{a as d,c as f,i as p,n as m,o as h,r as g,s as _,t as v}from"./backup-C6n0uPrp.js";var y=e=>document.getElementById(e);function b(){let e=i();y(`themes`).innerHTML=n.map(t=>`
     <button class="theme${t.id===e?` on`:``}" data-id="${t.id}">
       <span class="sw" style="background:linear-gradient(180deg, ${t.colors[0]}, ${t.colors[1]})">
         <i style="left:10px;background:${t.colors[2]}"></i><i style="left:28px;background:${t.colors[3]}"></i>
