@@ -13,20 +13,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>(function(d){var t='cotton';try{t=localStorage.getItem('ppt.theme')||t}catch(e){}d.dataset.theme=t;d.classList.add('booting');setTimeout(function(){d.classList.remove('booting')},4000);if(t==='night')d.classList.add('wa-dark');var m=document.querySelector('meta[name=theme-color]');if(m&&t==='night')m.content='#2b2421'})(document.documentElement)</script>
 <style>html{background:#f4f3ed}html[data-theme=nude]{background:#fbf8f6}html[data-theme=mist]{background:#f6f4ef}html[data-theme=night]{background:#1e1a18}html.booting body{visibility:hidden}html.booting:before{content:"載入中…";letter-spacing:.2em;color:#9a8f88;place-items:center;font:15px serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}@keyframes boot{0%{opacity:0}to{opacity:1}}</style>
-  <script type="module" crossorigin src="./assets/drill-0d3WQp8z.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/common-BDX0oPMv.js">
+  <script type="module" crossorigin src="./assets/drill-BA_aPIqs.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-zDPW168Y.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
   <link rel="modulepreload" crossorigin href="./assets/charts-Dzllvh6Q.js">
-  <link rel="modulepreload" crossorigin href="./assets/activity-JswcnrqW.js">
+  <link rel="modulepreload" crossorigin href="./assets/activity-C2t2Pn39.js">
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
   <link rel="modulepreload" crossorigin href="./assets/calibrate-B58KHc7f.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-Dfsipog1.js">
   <link rel="modulepreload" crossorigin href="./assets/abcjs-BJDglxSQ.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-JDwLpfK7.js">
-  <link rel="modulepreload" crossorigin href="./assets/lesson-I7Ly4xBC.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-CPwseLlP.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-DD0U2GeH.js">
+  <link rel="modulepreload" crossorigin href="./assets/lesson-BIxLj1Ju.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-1P6aJhv4.js">
   <link rel="stylesheet" crossorigin href="./assets/common-XVbAMElX.css">
-  <link rel="stylesheet" crossorigin href="./assets/lesson-DqF59Bs3.css">
+  <link rel="stylesheet" crossorigin href="./assets/lesson-BbSj7WYC.css">
 </head>
 <body>
 <main class="page">
@@ -57,11 +57,15 @@
       <a href="#interval"><wa-icon name="arrow-down-up"></wa-icon><div class="t">音程</div><div class="d">兩個音差幾度：看譜、彈出來、用聽的</div><div class="last" id="last-interval"></div></a>
       <a href="#chord"><wa-icon name="music"></wa-icon><div class="t">和弦</div><div class="d">看譜彈和弦（含轉位）、認名稱、聽大小三和弦</div><div class="last" id="last-chord"></div></a>
       <a href="#keysig"><wa-icon name="tag"></wa-icon><div class="t">調號</div><div class="d">看調號說出大調，或彈出主音</div><div class="last" id="last-keysig"></div></a>
+      <a href="#transpose"><wa-icon name="arrow-up-down"></wa-icon><div class="t">轉調彈奏</div><div class="d">看 C 大調的譜，換到 G、F 等學過的調彈出來</div><div class="last" id="last-transpose"></div></a>
     </div>
     <div class="label">手指</div>
     <div class="hub">
       <a href="#five"><wa-icon name="hand"></wa-icon><div class="t">五指位置</div><div class="d">C、G、F 位置的五指手型：上下行、三度、和弦音、模進，右手、左手、雙手</div><div class="last" id="last-five"></div></a>
       <a href="#scales"><wa-icon name="keyboard-music"></wa-icon><div class="t">音階和弦</div><div class="d">12 個大調的音階、琶音、I–IV–V7、左手伴奏型，附指法</div><div class="last" id="last-scale"></div></a>
+      <a href="#hands"><wa-icon name="hand"></wa-icon><div class="t">雙手獨立</div><div class="d">左右手不同的節奏：長音對四分、伴奏型配旋律、錯開的節奏</div><div class="last" id="last-hands"></div></a>
+      <a href="#dynamics"><wa-icon name="gauge"></wa-icon><div class="t">力度控制</div><div class="d">彈出 p、mf、f 的差別，漸強漸弱要均勻，旋律比伴奏大聲（要接琴）</div><div class="last" id="last-dynamics"></div></a>
+      <a href="#pedal"><wa-icon name="footprints"></wa-icon><div class="t">踏板</div><div class="d">換和弦時換踏板：先彈、再放開踩下，聲音才連而不混（要接琴）</div><div class="last" id="last-pedal"></div></a>
     </div>
     <div class="label">節奏與聽力</div>
     <div class="hub">
@@ -329,6 +333,71 @@
     </div>
     <section class="card result" id="improv-result" hidden></section>
   </section>
+  <!-- ============ technique ============ -->
+  <section id="hands-view" hidden>
+    <div class="view-head"><h1>雙手獨立</h1></div>
+    <section class="card sec">
+      <div class="levels" id="h2-levels"></div>
+      <div class="opt"><span class="k">調</span><wa-radio-group id="h2-key" orientation="horizontal" size="small" value="C"></wa-radio-group></div>
+      <div class="opt"><span class="k">速度</span><wa-number-input id="h2-bpm" size="small" min="40" max="140" step="4" value="60"></wa-number-input><wa-button size="small" appearance="plain" id="h2-cal"><wa-icon slot="start" name="timer"></wa-icon>延遲校正</wa-button></div>
+      <p class="muted small" style="margin:0">先數一小節預備拍，接著跟著節拍器彈完，彈錯也不要停。熟了再加快。</p>
+    </section>
+    <div class="run-bar"><span class="beats" id="h2-beats"><i></i><i></i><i></i><i></i></span><span class="fb" id="h2-fb"></span><wa-button size="small" appearance="outlined" id="h2-new"><wa-icon slot="start" name="sparkles"></wa-icon>換一題</wa-button><wa-button size="small" appearance="outlined" id="h2-listen"><wa-icon slot="start" name="audio-lines"></wa-icon>聽範例</wa-button><wa-button size="small" variant="brand" id="h2-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
+    <div class="paper" id="h2-score"></div>
+    <section class="card result" id="hands-result" hidden></section>
+  </section>
+
+  <section id="dynamics-view" hidden>
+    <div class="view-head"><h1>力度控制</h1></div>
+    <div id="d-setup">
+      <section class="card sec">
+        <a class="learn-link" href="theory.html#expression"><wa-icon name="book-open"></wa-icon>不熟？先看「表情記號」</a>
+        <p class="muted small" style="margin:0">每個人的手感和琴的觸鍵設定都不一樣，所以先彈幾下「你的 p」和「你的 f」當基準，之後都跟自己比。這個練習要接琴（MIDI 才知道多大聲）。</p>
+        <div class="opt"><span class="k">練習</span><wa-radio-group id="d-mode" orientation="horizontal" size="small" value="levels"><wa-radio appearance="button" value="levels">p・mf・f</wa-radio><wa-radio appearance="button" value="ramp">漸強漸弱</wa-radio><wa-radio appearance="button" value="voice">旋律比伴奏大聲</wa-radio></wa-radio-group></div>
+        <p class="muted small" style="margin:0" id="d-mode-text"></p>
+        <p class="muted small" style="margin:0" id="d-base"></p>
+        <div class="row"><wa-button appearance="outlined" id="d-calib"><wa-icon slot="start" name="gauge"></wa-icon>重新量基準</wa-button><span class="grow"></span><wa-button variant="brand" id="d-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
+        <p class="tp-hint" id="d-nomidi" hidden>現在用的不是琴（MIDI）。麥克風和螢幕鍵盤聽不出力度，請在右上角換成「鋼琴」。</p>
+      </section>
+    </div>
+    <div id="d-run" hidden>
+      <div class="run-bar"><span class="fb" id="d-fb"></span><span class="count" id="d-count"></span><wa-button size="small" appearance="outlined" id="d-stop">結束</wa-button></div>
+      <div class="dyn-stage card"><div class="dyn-target" id="d-target"></div><div class="dyn-meter" id="d-meter"></div><div class="dyn-hint muted" id="d-hint"></div></div>
+      <div class="paper" id="d-score" hidden></div>
+    </div>
+    <section class="card result" id="dynamics-result" hidden></section>
+  </section>
+
+  <section id="pedal-view" hidden>
+    <div class="view-head"><h1>踏板</h1></div>
+    <section class="card sec">
+      <a class="learn-link" href="theory.html#octave"><wa-icon name="book-open"></wa-icon>不熟？先看「八度記號與踏板」</a>
+      <p class="muted small" style="margin:0">「切分踏板」：每個和弦<b>先彈下去</b>，馬上把踏板<b>放開再踩下</b>。這樣上一個和弦的聲音剛好被切掉、新的和弦被接住，連在一起又不會混。要接琴（右邊的延音踏板）。</p>
+      <div class="opt"><span class="k">調</span><wa-radio-group id="pd-key" orientation="horizontal" size="small" value="C"></wa-radio-group></div>
+      <div class="opt"><span class="k">和弦</span><wa-radio-group id="pd-per" orientation="horizontal" size="small" value="1"><wa-radio appearance="button" value="1">每小節一個</wa-radio><wa-radio appearance="button" value="2">每小節兩個</wa-radio></wa-radio-group></div>
+      <div class="opt"><span class="k">速度</span><wa-number-input id="pd-bpm" size="small" min="40" max="120" step="4" value="60"></wa-number-input></div>
+      <p class="tp-hint" id="pd-nomidi" hidden>現在用的不是琴（MIDI）。麥克風和螢幕鍵盤沒有踏板，請在右上角換成「鋼琴」。</p>
+    </section>
+    <div class="run-bar"><span class="beats" id="pd-beats"><i></i><i></i><i></i><i></i></span><span class="fb" id="pd-fb"></span><span class="pedal-dot" id="pd-state"></span><wa-button size="small" appearance="outlined" id="pd-listen"><wa-icon slot="start" name="audio-lines"></wa-icon>聽範例</wa-button><wa-button size="small" variant="brand" id="pd-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
+    <div class="paper" id="pd-score"></div>
+    <section class="card result" id="pedal-result" hidden></section>
+  </section>
+
+  <section id="transpose-view" hidden>
+    <div class="view-head"><h1>轉調彈奏</h1></div>
+    <section class="card sec">
+      <a class="learn-link" href="theory.html#scales"><wa-icon name="book-open"></wa-icon>不熟？先看「大調音階與調號」</a>
+      <p class="muted small" style="margin:0">譜是 C 大調，你在選的調彈出來：每個音往上（或往下）移同樣的距離，記得那個調的升降記號。照自己的速度，彈錯要改對才前進。</p>
+      <div class="opt"><span class="k">曲子</span><wa-select id="tr-song" size="small"></wa-select></div>
+      <div class="opt"><span class="k">彈成</span><wa-radio-group id="tr-key" orientation="horizontal" size="small" value="G"></wa-radio-group></div>
+      <wa-switch id="tr-hint" checked>提示第一個音</wa-switch>
+    </section>
+    <div class="run-bar"><span class="fb" id="tr-fb"></span><span class="count" id="tr-count"></span><wa-button size="small" appearance="outlined" id="tr-play"><wa-icon slot="start" name="audio-lines"></wa-icon>聽原曲</wa-button><wa-button size="small" variant="brand" id="tr-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
+    <div class="paper" id="tr-score"></div>
+    <div class="answer" id="tr-ans"></div>
+    <section class="card result" id="transpose-result" hidden></section>
+  </section>
+
   <div id="countdown" hidden></div>
   <wa-dialog id="my-keys-dialog" label="我的程度">
     <p class="muted small" style="margin:0 0 12px">選你學過的大調。音階、五指位置、單音、音程、和弦、調號、聽音模仿和每日基本功，會先出這些調（其他調還是可以手動選）。</p>
