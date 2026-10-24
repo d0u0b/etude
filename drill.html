@@ -11,23 +11,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
-<script>(function(d){var t='cotton';try{t=localStorage.getItem('ppt.theme')||t}catch(e){}d.dataset.theme=t;d.classList.add('booting');setTimeout(function(){d.classList.remove('booting')},4000);if(t==='night')d.classList.add('wa-dark');var m=document.querySelector('meta[name=theme-color]');if(m&&t==='night')m.content='#2b2421'})(document.documentElement)</script>
-<style>html{background:#f4f3ed}html[data-theme=nude]{background:#fbf8f6}html[data-theme=mist]{background:#f6f4ef}html[data-theme=night]{background:#1e1a18}html.booting body{visibility:hidden}html.booting:before{content:"載入中…";letter-spacing:.2em;color:#9a8f88;place-items:center;font:15px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}@keyframes boot{0%{opacity:0}to{opacity:1}}</style>
-  <script type="module" crossorigin src="./assets/drill-Cq6ZrYGr.js"></script>
+<script>(function(d){var t='cotton',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='cotton';m='dark'}var L={cotton:'#efe4dd',sage:'#e3eae1',mist:'#e3e9f0',terra:'#f2e2d9',lilac:'#e8e3ee',graphite:'#e7e7e6'},D={cotton:'#2b2421',sage:'#232a25',mist:'#232a33',terra:'#2d221e',lilac:'#28232f',graphite:'#232427'};if(!L[t])t='cotton';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
+<style>html{background:#f5f4ef}html[data-mode=dark]{background:#1d1b1a}html.booting body{visibility:hidden}html.booting:before{content:"載入中…";letter-spacing:.2em;color:#9a8f88;place-items:center;font:15px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}@keyframes boot{0%{opacity:0}to{opacity:1}}</style>
+  <script type="module" crossorigin src="./assets/drill-CW5r7qBq.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
   <link rel="modulepreload" crossorigin href="./assets/tone-BqrRrPma.js">
-  <link rel="modulepreload" crossorigin href="./assets/common-SLuiYG_B.js">
+  <link rel="modulepreload" crossorigin href="./assets/common-Bd5N7mSE.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
   <link rel="modulepreload" crossorigin href="./assets/charts-Dzllvh6Q.js">
-  <link rel="modulepreload" crossorigin href="./assets/activity-p52t7FiY.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-CNI8d685.js">
+  <link rel="modulepreload" crossorigin href="./assets/activity-C8VCPiT_.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-BUF82u2a.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-DPENKkrJ.js">
-  <link rel="modulepreload" crossorigin href="./assets/touch-JDbzuHpE.js">
-  <link rel="modulepreload" crossorigin href="./assets/lesson-GCTl7ylb.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-UoB9htR8.js">
-  <link rel="stylesheet" crossorigin href="./assets/common-DiWz0Hai.css">
+  <link rel="modulepreload" crossorigin href="./assets/touch-DZFwtGgm.js">
+  <link rel="modulepreload" crossorigin href="./assets/lesson-Dg265HuP.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-CAIgSLPH.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-HMfXmgOx.css">
   <link rel="stylesheet" crossorigin href="./assets/touch-B3C_SgXV.css">
-  <link rel="stylesheet" crossorigin href="./assets/lesson-DRMJPSh7.css">
+  <link rel="stylesheet" crossorigin href="./assets/lesson-D1ydCNyk.css">
 </head>
 <body>
 <main class="page">
@@ -46,7 +46,6 @@
         <wa-dropdown-item type="checkbox" value="mic"><wa-icon slot="icon" name="mic"></wa-icon>麥克風<small>聽鋼琴的聲音</small></wa-dropdown-item>
         <wa-dropdown-item type="checkbox" value="screen"><wa-icon slot="icon" name="smartphone"></wa-icon>螢幕鍵盤<small>點畫面</small></wa-dropdown-item>
       </wa-dropdown></div>
-    <p class="muted" style="margin:4px 0 6px">每天幾分鐘，讀譜更快、手指更穩、拍子更準。</p>
     <section class="card daily-card" id="daily-card">
       <div class="daily-top"><div class="grow"><div class="t">每日基本功</div><div class="muted small" id="daily-week"></div></div><wa-button variant="brand" id="daily-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
       <ol class="daily-list" id="daily-plan"></ol>
@@ -54,32 +53,32 @@
     <div id="quick-box" hidden><div class="label">最近練的</div><div class="quick" id="quick"></div></div>
     <div class="label">讀譜</div>
     <div class="hub">
-      <a href="#sight"><wa-icon name="eye"></wa-icon><div class="t">視譜</div><div class="d">分級練習：拍節奏、觀察、看譜、不停下來彈完；還有單音暖身</div><div class="last" id="last-sight"></div></a>
-      <a href="#interval"><wa-icon name="arrow-down-up"></wa-icon><div class="t">音程</div><div class="d">兩個音差幾度：看譜、彈出來、用聽的</div><div class="last" id="last-interval"></div></a>
-      <a href="#chord"><wa-icon name="music"></wa-icon><div class="t">和弦</div><div class="d">看譜彈和弦（含轉位）、認名稱、聽大小三和弦</div><div class="last" id="last-chord"></div></a>
-      <a href="#keysig"><wa-icon name="tag"></wa-icon><div class="t">調號</div><div class="d">看調號說出大調，或彈出主音</div><div class="last" id="last-keysig"></div></a>
-      <a href="#transpose"><wa-icon name="arrow-up-down"></wa-icon><div class="t">轉調彈奏</div><div class="d">看 C 大調的譜，換到 G、F 等學過的調彈出來</div><div class="last" id="last-transpose"></div></a>
+      <a href="#sight" title="分級練習：拍節奏、觀察、看譜、不停下來彈完；還有單音暖身"><wa-icon name="eye"></wa-icon><div class="t">視譜</div><div class="last" id="last-sight"></div></a>
+      <a href="#interval" title="兩個音差幾度：看譜、彈出來、用聽的"><wa-icon name="arrow-down-up"></wa-icon><div class="t">音程</div><div class="last" id="last-interval"></div></a>
+      <a href="#chord" title="看譜彈和弦（含轉位）、認名稱、聽大小三和弦"><wa-icon name="music"></wa-icon><div class="t">和弦</div><div class="last" id="last-chord"></div></a>
+      <a href="#keysig" title="看調號說出大調，或彈出主音"><wa-icon name="tag"></wa-icon><div class="t">調號</div><div class="last" id="last-keysig"></div></a>
+      <a href="#transpose" title="看 C 大調的譜，換到 G、F 等學過的調彈出來"><wa-icon name="arrow-up-down"></wa-icon><div class="t">轉調彈奏</div><div class="last" id="last-transpose"></div></a>
     </div>
     <div class="label">手指</div>
     <div class="hub">
-      <a href="#five"><wa-icon name="hand"></wa-icon><div class="t">五指位置</div><div class="d">C、G、F 位置的五指手型：上下行、三度、和弦音、模進，右手、左手、雙手</div><div class="last" id="last-five"></div></a>
-      <a href="#scales"><wa-icon name="keyboard-music"></wa-icon><div class="t">音階和弦</div><div class="d">12 個大調的音階、琶音、I–IV–V7、左手伴奏型，附指法</div><div class="last" id="last-scale"></div></a>
-      <a href="#hands"><wa-icon name="hand"></wa-icon><div class="t">雙手獨立</div><div class="d">左右手不同的節奏：長音對四分、伴奏型配旋律、錯開的節奏</div><div class="last" id="last-hands"></div></a>
-      <a href="#dynamics"><wa-icon name="gauge"></wa-icon><div class="t">力度控制</div><div class="d">彈出 p、mf、f 的差別，漸強漸弱要均勻，旋律比伴奏大聲（要接琴）</div><div class="last" id="last-dynamics"></div></a>
-      <a href="#pedal"><wa-icon name="footprints"></wa-icon><div class="t">踏板</div><div class="d">換和弦時換踏板：先彈、再放開踩下，聲音才連而不混（要接琴）</div><div class="last" id="last-pedal"></div></a>
+      <a href="#five" title="C、G、F 位置的五指手型：上下行、三度、和弦音、模進，右手、左手、雙手"><wa-icon name="hand"></wa-icon><div class="t">五指位置</div><div class="last" id="last-five"></div></a>
+      <a href="#scales" title="12 個大調的音階、琶音、I–IV–V7、左手伴奏型，附指法"><wa-icon name="keyboard-music"></wa-icon><div class="t">音階和弦</div><div class="last" id="last-scale"></div></a>
+      <a href="#hands" title="左右手不同的節奏：長音對四分、伴奏型配旋律、錯開的節奏"><wa-icon name="hand"></wa-icon><div class="t">雙手獨立</div><div class="last" id="last-hands"></div></a>
+      <a href="#dynamics" title="彈出 p、mf、f 的差別，漸強漸弱要均勻，旋律比伴奏大聲（要接琴）"><wa-icon name="gauge"></wa-icon><div class="t">力度控制</div><div class="last" id="last-dynamics"></div></a>
+      <a href="#pedal" title="換和弦時換踏板：先彈、再放開踩下，聲音才連而不混（要接琴）"><wa-icon name="footprints"></wa-icon><div class="t">踏板</div><div class="last" id="last-pedal"></div></a>
     </div>
     <div class="label">節奏與聽力</div>
     <div class="hub">
-      <a href="#rhythm"><wa-icon name="timer"></wa-icon><div class="t">節奏</div><div class="d">跟著節拍器把節奏敲出來，任何一個鍵都可以</div><div class="last" id="last-rhythm"></div></a>
-      <a href="#echo"><wa-icon name="audio-lines"></wa-icon><div class="t">聽音模仿</div><div class="d">聽一小段旋律，用琴彈回來</div><div class="last" id="last-echo"></div></a>
-      <a href="#rhythmear"><wa-icon name="ear"></wa-icon><div class="t">節奏聽寫</div><div class="d">聽一段節奏，從幾個譜裡選出聽到的那個</div><div class="last" id="last-rhythmear"></div></a>
-      <a href="#progear"><wa-icon name="list-music"></wa-icon><div class="t">和弦進行聽辨</div><div class="d">聽四個和弦，分辨是 1-4-5-1、1-5-6-4 還是 6-4-1-5</div><div class="last" id="last-progear"></div></a>
-      <a href="#sing"><wa-icon name="mic"></wa-icon><div class="t">視唱</div><div class="d">看譜唱出來，麥克風聽你唱得準不準</div><div class="last" id="last-sing"></div></a>
+      <a href="#rhythm" title="跟著節拍器把節奏敲出來，任何一個鍵都可以"><wa-icon name="timer"></wa-icon><div class="t">節奏</div><div class="last" id="last-rhythm"></div></a>
+      <a href="#echo" title="聽一小段旋律，用琴彈回來"><wa-icon name="audio-lines"></wa-icon><div class="t">聽音模仿</div><div class="last" id="last-echo"></div></a>
+      <a href="#rhythmear" title="聽一段節奏，從幾個譜裡選出聽到的那個"><wa-icon name="ear"></wa-icon><div class="t">節奏聽寫</div><div class="last" id="last-rhythmear"></div></a>
+      <a href="#progear" title="聽四個和弦，分辨是 1-4-5-1、1-5-6-4 還是 6-4-1-5"><wa-icon name="list-music"></wa-icon><div class="t">和弦進行聽辨</div><div class="last" id="last-progear"></div></a>
+      <a href="#sing" title="看譜唱出來，麥克風聽你唱得準不準"><wa-icon name="mic"></wa-icon><div class="t">視唱</div><div class="last" id="last-sing"></div></a>
     </div>
     <div class="label">即興與流行</div>
     <div class="hub">
-      <a href="#improv"><wa-icon name="sparkles"></wa-icon><div class="t">即興</div><div class="d">配著伴奏自己編：只用黑鍵、問答、流行 1-5-6-4、12 小節藍調</div><div class="last" id="last-improv"></div></a>
-      <a href="#chart"><wa-icon name="layout-grid"></wa-icon><div class="t">看和弦譜伴奏</div><div class="d">和弦記號照拍子出現，每小節第一拍彈下去，跟流行歌譜一樣</div><div class="last" id="last-chart"></div></a>
+      <a href="#improv" title="配著伴奏自己編：只用黑鍵、問答、流行 1-5-6-4、12 小節藍調"><wa-icon name="sparkles"></wa-icon><div class="t">即興</div><div class="last" id="last-improv"></div></a>
+      <a href="#chart" title="和弦記號照拍子出現，每小節第一拍彈下去，跟流行歌譜一樣"><wa-icon name="layout-grid"></wa-icon><div class="t">看和弦譜伴奏</div><div class="last" id="last-chart"></div></a>
     </div>
     <div class="label row"><span class="grow">最近練了</span><a href="drill-log.html" class="small" id="to-history">全部紀錄 ›</a></div>
     <div class="card sec recent" id="recent"></div>
