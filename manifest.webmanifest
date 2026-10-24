@@ -35,17 +35,6 @@
   ],
   "shortcuts": [
     {
-      "name": "練習模式",
-      "short_name": "練習",
-      "url": "practice.html",
-      "icons": [
-        {
-          "src": "icons/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
       "name": "彈奏模式",
       "short_name": "彈奏",
       "url": "play.html",
@@ -57,9 +46,20 @@
       ]
     },
     {
-      "name": "MIDI 測試",
-      "short_name": "MIDI",
-      "url": "midi-test.html",
+      "name": "基本功",
+      "short_name": "基本功",
+      "url": "drill.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "樂理",
+      "short_name": "樂理",
+      "url": "theory.html",
       "icons": [
         {
           "src": "icons/icon-192.png",
