@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e7e7e6"/><stop offset="1" stop-color="#f2f2f0"/></linearGradient></defs>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F2ED"/><stop offset="1" stop-color="#EFEDE8"/></linearGradient></defs>
   <rect width="100" height="100" rx="22" fill="url(#g)"/>
   <!-- two beamed eighth notes, one outline (stems meet the noteheads and the beam without seams) -->
-  <path fill="#474c55" transform="translate(50 50) scale(.78) translate(-50 -43.5)" d="M41.83 68.03A10.6 7.6 -22 1 1 22.17 75.97A10.6 7.6 -22 1 1 41.83 68.03ZM77.83 58.03A10.6 7.6 -22 1 1 58.17 65.97A10.6 7.6 -22 1 1 77.83 58.03ZM38.83 71.15L38.83 22L78.23 11.06L78.23 61.15L74.83 61.15L74.83 21L42.23 30.06L42.23 71.15Z"/>
+  <path fill="#161616" transform="translate(50 50) scale(.78) translate(-50 -43.5)" d="M41.83 68.03A10.6 7.6 -22 1 1 22.17 75.97A10.6 7.6 -22 1 1 41.83 68.03ZM77.83 58.03A10.6 7.6 -22 1 1 58.17 65.97A10.6 7.6 -22 1 1 77.83 58.03ZM38.83 71.15L38.83 22L78.23 11.06L78.23 61.15L74.83 61.15L74.83 21L42.23 30.06L42.23 71.15Z"/>
 </svg>
