@@ -46,6 +46,17 @@
       ]
     },
     {
+      "name": "練習",
+      "short_name": "練習",
+      "url": "timer.html",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
       "name": "基本功",
       "short_name": "基本功",
       "url": "drill.html",

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EFEDE8">
+<title>練習 · Étude</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
+<script>(function(d){var t='ivory',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='ivory';m='dark'}var L={ivory:'#EFEDE8',stage:'#F2F3F7',teal:'#F1F4F3',coral:'#F6F3EF'},D={ivory:'#0E0E0E',stage:'#0B1020',teal:'#0B1615',coral:'#141010'};if(!L[t])t='ivory';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
+<style>html{background:#efede8}html[data-mode=dark]{background:#0e0e0e}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:72px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
+<style>.page-head{align-items:center}.page-head h1{font-size:28px}.page-head .icon-btn{flex:none;font-size:20px}.search{margin:4px 0 14px}.mini-metro{justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;padding:14px 18px;display:flex}.mini-metro .bpm{font-variant-numeric:tabular-nums;min-width:2.4em;color:var(--ink);text-align:left;cursor:text;background:0 0;border:0;padding:0;font-family:inherit;font-size:34px;font-weight:600}.mini-metro .bpm small{color:var(--muted);margin-left:4px;font-size:12px;font-weight:400}.ctl{border-radius:var(--r-sm);border:1px solid var(--line);background:var(--surface-solid);width:48px;height:48px;color:var(--ink);cursor:pointer;-webkit-user-select:none;user-select:none;flex:none;place-items:center;font-size:20px;display:grid}.ctl:active{background:var(--accent-soft)}.ctl.play{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);border-radius:50%}.running{border-radius:var(--r-md);background:var(--accent);color:var(--accent-ink);font-variant-numeric:tabular-nums;align-items:center;gap:10px;margin-bottom:12px;padding:12px 16px;display:flex}.running .grow{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.items{overflow:hidden}.swipe{position:relative;overflow:hidden}.swipe .acts{display:flex;position:absolute;top:0;bottom:0;right:0}.swipe .acts button{color:#fff;width:64px;font:inherit;cursor:pointer;border:0;flex-direction:column;justify-content:center;align-items:center;gap:4px;font-size:12px;display:flex}.swipe .acts wa-icon{font-size:20px}.swipe .acts .arch{background:#6b6a66}.swipe .acts .del{background:var(--c-bad)}.swipe .item-row{background:var(--surface);touch-action:pan-y;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;transition:transform .2s;position:relative}.swipe.dragging .item-row{transition:none}.item-row .t{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.item-row .chev{margin-left:0}.item-row .side{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px}.arch-toggle{color:var(--muted);font:inherit;border-radius:var(--r-sm);cursor:pointer;background:0 0;border:0;align-items:center;gap:4px;margin:14px 0 8px;padding:6px 8px;font-size:14px;display:inline-flex}.hint{margin:10px 4px 0}.empty{color:var(--muted);text-align:center;padding:24px 20px;line-height:1.7}.item-head{align-items:center;gap:4px;padding:6px 0 2px;display:flex}.item-head h1{text-align:center;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;margin:0;font-size:20px;font-weight:600;overflow:hidden}.item-head .icon-btn{color:var(--muted);align-items:center;gap:2px;display:inline-flex}.metro{flex-direction:column;align-items:center;gap:18px;padding:22px 0 8px;display:flex}.bpm-row{justify-content:center;align-items:center;gap:14px;width:100%;display:flex}.bpm-row .ctl{width:56px;height:56px;font-size:24px}#bpm{text-align:center;width:2.3em;min-width:0;color:var(--ink);font-variant-numeric:tabular-nums;appearance:textfield;background:0 0;border:0;padding:0;font-family:inherit;font-size:min(84px,19vw);font-weight:600;line-height:1}#bpm::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}#bpm::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}#bpm:focus{border-bottom:2px solid var(--line);outline:none}.bpm-unit{color:var(--muted);letter-spacing:.1em;margin-top:-10px;font-size:13px}.dots{justify-content:center;gap:12px;min-height:16px;display:flex}.dots i{border:2px solid var(--line);border-radius:50%;width:14px;height:14px}.dots i.on{background:var(--beat);border-color:var(--beat)}.dots i.on.first{background:var(--accent);border-color:var(--accent)}.ctl.big{width:104px;height:104px;font-size:40px}.clock{border-top:1px solid var(--line);flex-direction:column;align-items:center;gap:14px;margin-top:18px;padding:18px 0;display:flex}.clock-time{font-variant-numeric:tabular-nums;letter-spacing:.02em;color:var(--faint);font-size:44px;font-weight:500}.clock.on .clock-time{color:var(--ink)}.clock-label{color:var(--muted);min-height:1.4em;margin-top:-10px;font-size:13px}.clock-btns{justify-content:center;gap:14px;display:flex}.clock-btns .ctl{flex-direction:column;justify-content:center;align-items:center;gap:4px;width:76px;height:64px;font-size:22px;display:flex}.clock-btns .ctl span{color:var(--muted);font-size:12px}.clock-btns .ctl.stop{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}.clock-btns .ctl.stop span{color:inherit}.item-foot{border-top:1px solid var(--line);justify-content:space-around;gap:6px;margin-top:8px;padding-top:12px;display:flex}.item-foot button{color:var(--ink);font:inherit;border-radius:var(--r-sm);cursor:pointer;font-variant-numeric:tabular-nums;background:0 0;border:0;align-items:center;gap:6px;padding:10px 12px;font-size:15px;display:inline-flex}.item-foot button:active{background:var(--accent-soft)}.item-foot small{color:var(--muted)}.quick{flex-wrap:wrap;gap:8px;display:flex}.chip-btn.on{border-color:var(--accent);background:var(--accent-soft)}.field{color:var(--muted);flex-direction:column;gap:6px;margin-top:14px;font-size:14px;display:flex}.field input,textarea.note-in{font:inherit;color:var(--ink);background:var(--surface-solid);border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 12px;font-size:16px}textarea.note-in{resize:vertical;box-sizing:border-box;width:100%;min-height:76px}.note-add{justify-content:flex-end;margin:8px 0 14px;display:flex}.notes{flex-direction:column;display:flex}.note{border-top:1px solid var(--line);padding:12px 0}.note .when{color:var(--muted);align-items:center;gap:4px;font-size:12px;display:flex}.note .when .grow{flex:1}.note .txt{white-space:pre-wrap;margin-top:4px;line-height:1.6}.note .when button{color:var(--muted);border-radius:var(--r-sm);cursor:pointer;font:inherit;background:0 0;border:0;align-items:center;padding:4px 6px;font-size:12px;display:inline-flex}.note .when button.armed{color:var(--c-bad)}.hist-sum{flex-wrap:wrap;gap:22px;margin-bottom:12px;display:flex}.hist-sum b{font-size:20px;font-weight:500;display:block}.hist-sum div{color:var(--muted);font-size:13px}.hist-row{border-top:1px solid var(--line);font-variant-numeric:tabular-nums;justify-content:space-between;padding:8px 0;display:flex}.opt{flex-direction:column;gap:8px;margin-bottom:16px;display:flex}.opt>.k{color:var(--muted);font-size:14px}.opt wa-radio-group{flex-wrap:wrap}</style>
+  <script type="module" crossorigin src="./assets/timer-CzrSSMlf.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-BAFfL9do.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-Dzllvh6Q.js">
+  <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
+  <link rel="modulepreload" crossorigin href="./assets/tone-DezBH39a.js">
+  <link rel="modulepreload" crossorigin href="./assets/metro-DlDVz_mO.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-BabTNtJR.css">
+</head>
+<body>
+<!-- ============ 練習: the list ============ -->
+<main class="page" id="list-view">
+  <nav class="site-nav" data-page="timer"></nav>
+  <div class="page-head"><h1>練習</h1>
+    <wa-dropdown id="sort-menu" placement="bottom-end">
+      <button slot="trigger" class="icon-btn" aria-label="排序" title="排序"><wa-icon name="arrow-up-down"></wa-icon></button>
+      <wa-dropdown-item type="checkbox" value="recent">最近練習</wa-dropdown-item>
+      <wa-dropdown-item type="checkbox" value="name">名稱</wa-dropdown-item>
+      <wa-dropdown-item type="checkbox" value="most">練最多</wa-dropdown-item>
+    </wa-dropdown>
+    <button class="icon-btn" id="add-btn" aria-label="新增練習" title="新增"><wa-icon name="plus"></wa-icon></button>
+  </div>
+  <a class="running" id="running" hidden></a>
+  <wa-input class="search" id="search" placeholder="搜尋" with-clear hidden><wa-icon slot="start" name="search"></wa-icon></wa-input>
+  <section class="card mini-metro">
+    <button class="bpm" id="m-bpm" aria-label="速度">60</button>
+    <button class="ctl" id="m-slower" aria-label="慢一點"><wa-icon name="minus"></wa-icon></button>
+    <button class="ctl play" id="m-play" aria-label="節拍器"><wa-icon name="play"></wa-icon></button>
+    <button class="ctl" id="m-faster" aria-label="快一點"><wa-icon name="plus"></wa-icon></button>
+    <button class="ctl" id="m-tap" aria-label="點拍子測速度" title="點拍子測速度"><wa-icon name="pointer"></wa-icon></button>
+  </section>
+  <div class="label">項目</div>
+  <div class="card list items" id="items"><div class="skel"><i></i><i></i><i></i></div></div>
+  <button class="arch-toggle" id="arch-toggle" hidden></button>
+  <div class="card list items" id="archived" hidden></div>
+  <p class="muted small hint" id="list-hint" hidden>長按可以補記時間，往左滑可以封存或刪除。</p>
+</main>
+
+<!-- ============ 練習: one item ============ -->
+<main class="page" id="item-view" hidden>
+  <div class="item-head">
+    <button class="icon-btn" id="back"><wa-icon name="chevron-left"></wa-icon>返回</button>
+    <h1 id="item-name"></h1>
+    <button class="icon-btn" id="rename-btn" aria-label="改名稱" title="改名稱"><wa-icon name="pencil"></wa-icon></button>
+  </div>
+  <section class="metro">
+    <div class="bpm-row">
+      <button class="ctl" id="slower" aria-label="慢一點"><wa-icon name="minus"></wa-icon></button>
+      <input id="bpm" type="number" inputmode="numeric" min="30" max="240" aria-label="速度">
+      <button class="ctl" id="faster" aria-label="快一點"><wa-icon name="plus"></wa-icon></button>
+    </div>
+    <div class="bpm-unit" id="bpm-unit">♩ = BPM</div>
+    <div class="dots" id="dots"></div>
+    <button class="ctl play big" id="play" aria-label="節拍器"><wa-icon name="play"></wa-icon></button>
+  </section>
+  <section class="clock" id="clock">
+    <div class="clock-time" id="clock-time">00:00</div>
+    <div class="clock-label" id="clock-label"></div>
+    <div class="clock-btns">
+      <button class="ctl" id="countdown"><wa-icon name="hourglass"></wa-icon><span>倒數</span></button>
+      <button class="ctl" id="pause" hidden><wa-icon name="pause"></wa-icon><span>暫停</span></button>
+      <button class="ctl" id="stopwatch"><wa-icon name="timer"></wa-icon><span>計時</span></button>
+    </div>
+  </section>
+  <div class="item-foot">
+    <button id="notes-btn"><wa-icon name="notebook-pen"></wa-icon>筆記<small id="notes-count"></small></button>
+    <button id="today-btn"><wa-icon name="chart-column"></wa-icon><span id="today">今天 0 分</span></button>
+    <button id="settings-btn"><wa-icon name="settings"></wa-icon>設定</button>
+  </div>
+</main>
+
+<wa-dialog id="add-dialog" label="新增練習">
+  <wa-input id="add-name" label="名稱" placeholder="例如：給愛麗絲、C 大調音階"></wa-input>
+  <wa-button slot="footer" appearance="plain" id="add-cancel">取消</wa-button>
+  <wa-button slot="footer" variant="brand" id="add-save">新增</wa-button>
+</wa-dialog>
+<wa-dialog id="rename-dialog" label="改名稱">
+  <wa-input id="rename-input" label="名稱"></wa-input>
+  <wa-button slot="footer" appearance="plain" id="rename-cancel">取消</wa-button>
+  <wa-button slot="footer" variant="brand" id="rename-save">儲存</wa-button>
+</wa-dialog>
+<wa-dialog id="log-dialog" label="補記時間">
+  <div class="muted small" id="log-for"></div>
+  <label class="field">日期<input type="date" id="log-date"></label>
+  <div class="field">練了幾分鐘<div class="quick" id="log-quick"></div><input type="number" id="log-min" inputmode="numeric" min="1" max="600" placeholder="自訂分鐘"></div>
+  <wa-button slot="footer" appearance="plain" id="log-cancel">取消</wa-button>
+  <wa-button slot="footer" variant="brand" id="log-save">記下來</wa-button>
+</wa-dialog>
+<wa-dialog id="del-dialog" label="刪除">
+  <p id="del-text"></p>
+  <wa-button slot="footer" appearance="plain" id="del-cancel">取消</wa-button>
+  <wa-button slot="footer" variant="danger" id="del-ok">刪除</wa-button>
+</wa-dialog>
+<wa-dialog id="cd-dialog" label="要練多久？">
+  <div class="quick" id="cd-quick"></div>
+  <div class="field">自訂分鐘<input type="number" id="cd-min" inputmode="numeric" min="1" max="300"></div>
+  <wa-button slot="footer" appearance="plain" id="cd-cancel">取消</wa-button>
+  <wa-button slot="footer" variant="brand" id="cd-start">開始倒數</wa-button>
+</wa-dialog>
+<wa-dialog id="notes-dialog" label="筆記">
+  <textarea class="note-in" id="note-new" placeholder="例如：第 12 小節左手跨指一直卡"></textarea>
+  <div class="note-add"><wa-button variant="brand" size="small" id="note-add">加入</wa-button></div>
+  <div class="notes" id="notes"></div>
+</wa-dialog>
+<wa-dialog id="hist-dialog" label="練習紀錄">
+  <div class="hist-sum" id="hist-sum"></div>
+  <div id="hist-list"></div>
+</wa-dialog>
+<wa-dialog id="set-dialog" label="節拍器設定">
+  <div class="opt"><span class="k">拍號</span><wa-radio-group id="set-meter" orientation="horizontal" size="small">
+    <wa-radio appearance="button" value="2">2 拍</wa-radio><wa-radio appearance="button" value="3">3 拍</wa-radio><wa-radio appearance="button" value="4">4 拍</wa-radio><wa-radio appearance="button" value="6">6/8</wa-radio><wa-radio appearance="button" value="1">不分</wa-radio></wa-radio-group></div>
+  <div class="opt"><span class="k">細分</span><wa-radio-group id="set-subdiv" orientation="horizontal" size="small">
+    <wa-radio appearance="button" value="1">不用</wa-radio><wa-radio appearance="button" value="2">八分</wa-radio><wa-radio appearance="button" value="3">三連音</wa-radio></wa-radio-group></div>
+  <div class="opt"><span class="k">音色</span><wa-radio-group id="set-sound" orientation="horizontal" size="small"></wa-radio-group></div>
+  <div class="opt"><span class="k">音量</span><wa-slider id="set-volume" min="0" max="1" step="0.05"></wa-slider></div>
+</wa-dialog>
+</body>
+</html>
