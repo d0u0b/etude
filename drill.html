@@ -13,17 +13,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
 <script>(function(d){var t='graphite',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='cotton';m='dark'}var L={cotton:'#efe4dd',sage:'#e3eae1',mist:'#e3e9f0',terra:'#f2e2d9',lilac:'#e8e3ee',graphite:'#e7e7e6'},D={cotton:'#2b2421',sage:'#232a25',mist:'#232a33',terra:'#2d221e',lilac:'#28232f',graphite:'#232427'};if(!L[t])t='graphite';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
 <style>html{background:#f6f6f4}html[data-mode=dark]{background:#1b1c1e}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:72px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
-  <script type="module" crossorigin src="./assets/drill-DZ6U0A_2.js"></script>
+  <script type="module" crossorigin src="./assets/drill-CCRFuJ7p.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
-  <link rel="modulepreload" crossorigin href="./assets/tone-Db9ZoYqm.js">
-  <link rel="modulepreload" crossorigin href="./assets/common-CgjBFRVl.js">
+  <link rel="modulepreload" crossorigin href="./assets/tone-BRNxumN0.js">
+  <link rel="modulepreload" crossorigin href="./assets/common-DIHS50Jv.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
   <link rel="modulepreload" crossorigin href="./assets/charts-Dzllvh6Q.js">
-  <link rel="modulepreload" crossorigin href="./assets/activity-D517qccQ.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-CuyfeXRi.js">
+  <link rel="modulepreload" crossorigin href="./assets/activity-Bog8fLE3.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-tozTsYVV.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-DPENKkrJ.js">
-  <link rel="modulepreload" crossorigin href="./assets/touch-DxZmkAA5.js">
-  <link rel="modulepreload" crossorigin href="./assets/lesson-CNeDt0X8.js">
+  <link rel="modulepreload" crossorigin href="./assets/touch-CtA516pq.js">
+  <link rel="modulepreload" crossorigin href="./assets/lesson-CDsTqadT.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Bk17ObXM.js">
   <link rel="stylesheet" crossorigin href="./assets/common-Cy6v-uNw.css">
   <link rel="stylesheet" crossorigin href="./assets/touch-B3C_SgXV.css">
@@ -235,7 +235,7 @@
         <p class="muted small" style="margin:0">認和弦：看譜彈出來、說出名字，或用耳朵分辨大三和弦（明亮）和小三和弦（暗）。</p>
         <div class="opt"><span class="k">方式</span><wa-radio-group id="c-mode" orientation="horizontal" size="small" value="play"><wa-radio appearance="button" value="play">看譜彈和弦</wa-radio><wa-radio appearance="button" value="name">認和弦名稱</wa-radio><wa-radio appearance="button" value="number">看級數彈</wa-radio><wa-radio appearance="button" value="symbol">看和弦記號彈</wa-radio><wa-radio appearance="button" value="ear">聽大小和弦</wa-radio></wa-radio-group></div>
         <p class="mode-help" id="c-mode-help"></p>
-        <div class="opt" id="c-set-row"><span class="k">和弦</span><wa-radio-group id="c-set" orientation="horizontal" size="small" value="textbook"><wa-radio appearance="button" value="textbook">I・IV・V7（課本）</wa-radio><wa-radio appearance="button" value="diatonic">調裡的七個三和弦</wa-radio><wa-radio appearance="button" value="all">12 個大小三和弦</wa-radio></wa-radio-group></div>
+        <div class="opt" id="c-set-row"><span class="k">和弦</span><wa-radio-group id="c-set" orientation="horizontal" size="small" value="textbook"><wa-radio appearance="button" value="textbook">I・IV・V7（基礎）</wa-radio><wa-radio appearance="button" value="diatonic">調裡的七個三和弦</wa-radio><wa-radio appearance="button" value="all">12 個大小三和弦</wa-radio></wa-radio-group></div>
         <div class="opt" id="c-inv-row"><span class="k">轉位</span><wa-radio-group id="c-inv" orientation="horizontal" size="small" value="0"><wa-radio appearance="button" value="0">原位</wa-radio><wa-radio appearance="button" value="1">加上轉位</wa-radio></wa-radio-group></div>
         <div class="opt" id="c-key-row"><span class="k">調</span><wa-radio-group id="c-key" orientation="horizontal" size="small" value="mine"></wa-radio-group></div>
         <div class="opt" id="c-qual-row"><span class="k">聽</span><wa-radio-group id="c-qual" orientation="horizontal" size="small" value="mm"><wa-radio appearance="button" value="mm">大三・小三</wa-radio><wa-radio appearance="button" value="all">大・小・減・增</wa-radio></wa-radio-group></div>
@@ -410,7 +410,7 @@
       <section class="card sec">
         <p class="muted small" style="margin:0">先聽一次主和弦，接著播四個和弦，選出是哪一種進行。流行歌常常整首就是這幾種一直循環，聽得出來就扒得出和弦。</p>
         <a class="learn-link" href="theory.html#numbers"><wa-icon name="book-open"></wa-icon>不熟？先看「級數與 on 和弦」</a>
-        <div class="opt"><span class="k">進行</span><wa-radio-group id="pe-set" orientation="horizontal" size="small" value="basic"><wa-radio appearance="button" value="basic">1・4・5（課本）</wa-radio><wa-radio appearance="button" value="pop">流行常見</wa-radio><wa-radio appearance="button" value="all">全部</wa-radio></wa-radio-group></div>
+        <div class="opt"><span class="k">進行</span><wa-radio-group id="pe-set" orientation="horizontal" size="small" value="basic"><wa-radio appearance="button" value="basic">1・4・5（基礎）</wa-radio><wa-radio appearance="button" value="pop">流行常見</wa-radio><wa-radio appearance="button" value="all">全部</wa-radio></wa-radio-group></div>
         <div class="opt"><span class="k">調</span><wa-radio-group id="pe-key" orientation="horizontal" size="small" value="mine"></wa-radio-group></div>
         <div class="opt"><span class="k">速度</span><wa-radio-group id="pe-speed" orientation="horizontal" size="small" value="72"><wa-radio appearance="button" value="72">慢</wa-radio><wa-radio appearance="button" value="100">一般</wa-radio></wa-radio-group></div>
         <div class="opt"><span class="k">題數</span><wa-radio-group id="pe-total" orientation="horizontal" size="small" value="10"><wa-radio appearance="button" value="10">10 題</wa-radio><wa-radio appearance="button" value="20">20 題</wa-radio></wa-radio-group></div>
@@ -461,7 +461,7 @@
     <section class="card sec">
       <a class="learn-link" href="theory.html#numbers"><wa-icon name="book-open"></wa-icon>不熟？先看「級數與 on 和弦」</a>
       <p class="muted small" style="margin:0">像流行歌的和弦譜：每小節一個和弦，在<b>每小節的第一拍</b>彈下去（任何轉位、任何八度都可以），跟著節拍器不要停。右手彈和弦、左手加根音更好聽。用麥克風時只聽根音。</p>
-      <div class="opt"><span class="k">進行</span><wa-radio-group id="ch-set" orientation="horizontal" size="small" value="basic"><wa-radio appearance="button" value="basic">1・4・5（課本）</wa-radio><wa-radio appearance="button" value="pop">流行常見</wa-radio></wa-radio-group></div>
+      <div class="opt"><span class="k">進行</span><wa-radio-group id="ch-set" orientation="horizontal" size="small" value="basic"><wa-radio appearance="button" value="basic">1・4・5（基礎）</wa-radio><wa-radio appearance="button" value="pop">流行常見</wa-radio></wa-radio-group></div>
       <div class="opt"><span class="k">調</span><wa-radio-group id="ch-key" orientation="horizontal" size="small" value="C"></wa-radio-group></div>
       <div class="opt"><span class="k">長度</span><wa-radio-group id="ch-loops" orientation="horizontal" size="small" value="2"><wa-radio appearance="button" value="1">4 小節</wa-radio><wa-radio appearance="button" value="2">8 小節</wa-radio><wa-radio appearance="button" value="4">16 小節</wa-radio></wa-radio-group></div>
       <div class="opt"><span class="k">速度</span><wa-number-input id="ch-bpm" size="small" min="40" max="140" step="4" value="72"></wa-number-input></div>

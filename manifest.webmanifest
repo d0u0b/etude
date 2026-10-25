@@ -1,7 +1,7 @@
 {
   "name": "Étude",
   "short_name": "Étude",
-  "description": "鋼琴練習：彈課本練習題判斷對錯和節奏、看 PDF 樂譜用踏板翻頁、記錄每天練琴",
+  "description": "鋼琴練習：看 PDF 樂譜踏板翻頁、基本功、樂理",
   "lang": "zh-Hant",
   "start_url": "./",
   "scope": "./",

@@ -1,4 +1,4 @@
-import{t as e}from"./tone-Db9ZoYqm.js";import{c as t,v as n}from"./common-CgjBFRVl.js";import{n as r,t as i}from"./activity-D517qccQ.js";import{r as a}from"./sound-B5FxSpfP.js";import{a as o,c as s,i as c,l,n as u,o as d,r as f,s as p,t as m}from"./lesson-CNeDt0X8.js";var h=[{id:`degree`,title:`度數怎麼看`,lesson:`intervals`,text:`從下面的音數 <b>1</b>，數到上面的音。<b>線到線、間到間 = 奇數度</b>（3、5、7）；<b>線到間 = 偶數度</b>（2、4、6）。`,abc:`X:1
+import{t as e}from"./tone-BRNxumN0.js";import{c as t,y as n}from"./common-DIHS50Jv.js";import{n as r,t as i}from"./activity-Bog8fLE3.js";import{r as a}from"./sound-B5FxSpfP.js";import{a as o,c as s,i as c,l,n as u,o as d,r as f,s as p,t as m}from"./lesson-CDsTqadT.js";var h=[{id:`degree`,title:`度數怎麼看`,lesson:`intervals`,text:`從下面的音數 <b>1</b>，數到上面的音。<b>線到線、間到間 = 奇數度</b>（3、5、7）；<b>線到間 = 偶數度</b>（2、4、6）。`,abc:`X:1
 L:1/4
 K:C
 "_2 度"[EF]2 "_3 度"[EG]2 "_4 度"[EA]2 "_5 度"[EB]2 |]`},{id:`songs`,title:`用歌記度數`,lesson:`intervals`,perLine:2,text:`<b>2 度</b> 快樂頌 Mi Mi Fa Sol・<b>3 度</b> 小蜜蜂 Sol Mi・<b>4 度</b> 生日快樂 Sol → Do・<b>5 度</b> 小星星 Do Do Sol Sol`,abc:`X:1
