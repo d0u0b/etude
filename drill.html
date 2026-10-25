@@ -13,22 +13,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
 <script>(function(d){var t='ivory',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='ivory';m='dark'}var L={ivory:'#EFEDE8',stage:'#F2F3F7',teal:'#F1F4F3',coral:'#F6F3EF'},D={ivory:'#0E0E0E',stage:'#0B1020',teal:'#0B1615',coral:'#141010'};if(!L[t])t='ivory';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');try{if(sessionStorage.getItem('ppt.nav')){sessionStorage.removeItem('ppt.nav');d.classList.add('nav')}}catch(e){}setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
 <style>html{background:#efede8}html[data-mode=dark]{background:#0e0e0e}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:72px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}html.nav.booting:before,html.nav.booting:after{animation-delay:0s}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
-  <script type="module" crossorigin src="./assets/drill-CwaqWJdE.js"></script>
+  <script type="module" crossorigin src="./assets/drill-BkOKJcAC.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
   <link rel="modulepreload" crossorigin href="./assets/calibrate-C_mq2Oy1.js">
-  <link rel="modulepreload" crossorigin href="./assets/common-KRvLjNaR.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
-  <link rel="modulepreload" crossorigin href="./assets/charts-Dzllvh6Q.js">
-  <link rel="modulepreload" crossorigin href="./assets/activity-Bmx-FUzH.js">
+  <link rel="modulepreload" crossorigin href="./assets/common-Dl5ogqKn.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-BFbQygor.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-B20yvwaY.js">
+  <link rel="modulepreload" crossorigin href="./assets/activity-CjBIRELV.js">
   <link rel="modulepreload" crossorigin href="./assets/tone-DezBH39a.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-Z2pw7b8-.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-a9H3bPt3.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-DPENKkrJ.js">
-  <link rel="modulepreload" crossorigin href="./assets/touch-Dkv3d5L6.js">
-  <link rel="modulepreload" crossorigin href="./assets/lesson-CQNrnkSt.js">
+  <link rel="modulepreload" crossorigin href="./assets/touch-DBB8kNfe.js">
+  <link rel="modulepreload" crossorigin href="./assets/lesson-BGOoMDoU.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Bk17ObXM.js">
-  <link rel="stylesheet" crossorigin href="./assets/common-BzvutYBU.css">
+  <link rel="stylesheet" crossorigin href="./assets/common-DCUILtte.css">
   <link rel="stylesheet" crossorigin href="./assets/touch-CIepJdT0.css">
-  <link rel="stylesheet" crossorigin href="./assets/lesson-BWYXsSRq.css">
+  <link rel="stylesheet" crossorigin href="./assets/lesson-c3p6mhH1.css">
 </head>
 <body>
 <main class="page">
@@ -109,9 +109,10 @@
         <div class="sub-stack" id="s-note-opts" hidden>
         <p class="muted small" style="margin:0" id="s-line-text" hidden>一次一行譜，照順序彈，自己的速度就好；彈對變綠色、彈錯變紅色。熟了可以打開「跟著節拍器」。譜號、音域、調號跟單音暖身一樣。</p>
         <div class="opt"><span class="k">譜號</span><wa-radio-group id="s-clef" orientation="horizontal" size="small" value="treble"><wa-radio appearance="button" value="treble">高音譜</wa-radio><wa-radio appearance="button" value="bass">低音譜</wa-radio><wa-radio appearance="button" value="both">兩個都練</wa-radio></wa-radio-group></div>
-        <div class="opt" id="s-range-treble"><span class="k">高音譜</span><wa-select id="s-t-lo" size="small"></wa-select><span class="muted">到</span><wa-select id="s-t-hi" size="small"></wa-select></div>
-        <div class="opt" id="s-range-bass"><span class="k">低音譜</span><wa-select id="s-b-lo" size="small"></wa-select><span class="muted">到</span><wa-select id="s-b-hi" size="small"></wa-select></div>
-        <div class="opt"><span class="k">快速選</span><div class="chips" id="s-presets"></div></div>
+        <div class="opt"><span class="k">音域</span><wa-radio-group id="s-preset" orientation="horizontal" size="small"></wa-radio-group></div>
+        <div class="range-note" id="s-range-note"></div>
+        <div class="opt sub" id="s-range-treble"><span class="k">高音譜</span><wa-select id="s-t-lo" size="small"></wa-select><span class="muted">到</span><wa-select id="s-t-hi" size="small"></wa-select></div>
+        <div class="opt sub" id="s-range-bass"><span class="k">低音譜</span><wa-select id="s-b-lo" size="small"></wa-select><span class="muted">到</span><wa-select id="s-b-hi" size="small"></wa-select></div>
         <div class="opt"><span class="k">調號</span><wa-select id="s-key" size="small"></wa-select></div>
         <div class="sub-stack" id="s-line-opts" hidden>
           <div class="opt"><span class="k">每行</span><wa-radio-group id="s-line-n" orientation="horizontal" size="small" value="8"><wa-radio appearance="button" value="8">8 個音</wa-radio><wa-radio appearance="button" value="12">12 個音</wa-radio><wa-radio appearance="button" value="16">16 個音</wa-radio></wa-radio-group></div>

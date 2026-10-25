@@ -13,14 +13,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
 <script>(function(d){var t='ivory',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='ivory';m='dark'}var L={ivory:'#EFEDE8',stage:'#F2F3F7',teal:'#F1F4F3',coral:'#F6F3EF'},D={ivory:'#0E0E0E',stage:'#0B1020',teal:'#0B1615',coral:'#141010'};if(!L[t])t='ivory';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');try{if(sessionStorage.getItem('ppt.nav')){sessionStorage.removeItem('ppt.nav');d.classList.add('nav')}}catch(e){}setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
 <style>html{background:#efede8}html[data-mode=dark]{background:#0e0e0e}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:72px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}html.nav.booting:before,html.nav.booting:after{animation-delay:0s}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
-<style>.page-head h1{font-size:28px}.sec{padding:var(--sp-md) var(--sp-lg);gap:var(--sp-ms);flex-direction:column;display:flex}.small{font-size:14px}.themes{gap:var(--sp-ms);grid-template-columns:repeat(4,1fr);display:grid}@media (width<=520px){.themes{grid-template-columns:repeat(2,1fr)}}.theme{border:1px solid var(--line);border-radius:var(--r-sm);padding:var(--sp-sm);cursor:pointer;background:var(--surface);gap:var(--sp-sm);color:var(--ink);font:inherit;flex-direction:column;align-items:center;display:flex}.theme:focus:not(:focus-visible){outline:none}.theme.on{border-color:var(--accent);box-shadow:0 0 0 1.5px var(--accent) inset}.theme .sw{border-radius:var(--r-sm);border:1px solid #00000014;width:100%;height:44px;display:flex;overflow:hidden}.theme .sw span{flex:1;place-items:center;display:grid}.theme .sw i{border-radius:50%;width:14px;height:14px}.theme .n{font-size:14px}#theme-mode{margin-top:var(--sp-md)}.inst{margin-bottom:var(--sp-md)}.inst b{font-weight:500}.inst ol{margin:var(--sp-sm) 0;padding-left:1.4em;line-height:1.8}.inst wa-icon{vertical-align:-2px}.inst b{align-items:center;gap:var(--sp-sm);display:inline-flex}.inst svg.os{flex:none;width:18px;height:18px}.backup{gap:var(--sp-ms);flex-direction:column;display:flex}.facts-list{gap:var(--sp-xs);flex-direction:column;margin:0;padding:0;font-size:14px;list-style:none;display:flex}.facts-list li:before{content:"";background:var(--faint);width:6px;height:6px;margin-right:var(--sp-sm);vertical-align:2px;border-radius:50%;display:inline-block}.facts-list li.ok:before{background:var(--c-ok)}.facts-list li.warn:before{background:var(--c-off)}.confirm{gap:var(--sp-ms);background:var(--accent-soft);border-radius:var(--r-md);padding:var(--sp-ms) var(--sp-md);flex-wrap:wrap;align-items:center;font-size:14px;display:flex}#goal{flex-wrap:wrap}.backup .msg:empty{display:none}</style>
-  <script type="module" crossorigin src="./assets/settings-UQ8s3Hjc.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/common-KRvLjNaR.js">
-  <link rel="modulepreload" crossorigin href="./assets/stats-Db0Dhrk0.js">
-  <link rel="modulepreload" crossorigin href="./assets/backup-DUzVehqN.js">
-  <link rel="modulepreload" crossorigin href="./assets/charts-Dzllvh6Q.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-Z2pw7b8-.js">
-  <link rel="stylesheet" crossorigin href="./assets/common-BzvutYBU.css">
+<style>.page-head h1{font-size:28px}.sec{padding:var(--sp-md) var(--sp-lg);gap:var(--sp-ms);flex-direction:column;display:flex}.small{font-size:14px}.themes{gap:var(--sp-ms);grid-template-columns:repeat(4,1fr);display:grid}@media (width<=520px){.themes{grid-template-columns:repeat(2,1fr)}}.theme{border:1px solid var(--line);border-radius:var(--r-sm);padding:var(--sp-sm);cursor:pointer;background:var(--surface);gap:var(--sp-sm);color:var(--ink);font:inherit;flex-direction:column;align-items:center;display:flex}.theme:focus:not(:focus-visible){outline:none}.theme.on{border-color:var(--accent);box-shadow:0 0 0 1.5px var(--accent) inset}.theme .sw{border-radius:var(--r-sm);border:1px solid #00000014;width:100%;height:44px;display:flex;overflow:hidden}.theme .sw span{flex:1;place-items:center;display:grid}.theme .sw i{border-radius:50%;width:14px;height:14px}.theme .n{font-size:14px}#theme-mode{margin-top:var(--sp-md)}.os-btns{align-items:center;gap:var(--sp-sm);margin-top:var(--sp-ms);flex-wrap:wrap;display:flex}.os-btns svg.os{width:18px;height:18px}.os-btns[hidden]{display:none}.about p{margin:0 0 var(--sp-ms);font-size:14px;line-height:1.75}.about p:last-child{margin-bottom:0}.about b{color:var(--ink);font-weight:600;display:block}.inst{margin-bottom:var(--sp-md)}.inst b{font-weight:500}.inst ol{margin:var(--sp-sm) 0;padding-left:1.4em;line-height:1.8}.inst wa-icon{vertical-align:-2px}.inst b{align-items:center;gap:var(--sp-sm);display:inline-flex}.inst svg.os{flex:none;width:18px;height:18px}.backup{gap:var(--sp-ms);flex-direction:column;display:flex}.facts-list{gap:var(--sp-xs);flex-direction:column;margin:0;padding:0;font-size:14px;list-style:none;display:flex}.facts-list li:before{content:"";background:var(--faint);width:6px;height:6px;margin-right:var(--sp-sm);vertical-align:2px;border-radius:50%;display:inline-block}.facts-list li.ok:before{background:var(--c-ok)}.facts-list li.warn:before{background:var(--c-off)}.confirm{gap:var(--sp-ms);background:var(--accent-soft);border-radius:var(--r-md);padding:var(--sp-ms) var(--sp-md);flex-wrap:wrap;align-items:center;font-size:14px;display:flex}#goal{flex-wrap:wrap}.backup .msg:empty{display:none}</style>
+  <script type="module" crossorigin src="./assets/settings-Cg5scHDu.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-Dl5ogqKn.js">
+  <link rel="modulepreload" crossorigin href="./assets/stats-BFbQygor.js">
+  <link rel="modulepreload" crossorigin href="./assets/backup-CFuVUi35.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-B20yvwaY.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-a9H3bPt3.js">
+  <link rel="stylesheet" crossorigin href="./assets/common-DCUILtte.css">
 </head>
 <body>
 <main class="page">
@@ -49,15 +49,19 @@
 
   <div class="label">安裝成 App</div>
   <section class="card sec">
-    <div class="row">
-      <div class="grow small" id="install-text"></div>
-      <wa-button variant="brand" id="install-btn" hidden>安裝</wa-button>
+    <div class="small" id="install-text"></div>
+    <div class="os-btns" id="install-os">
+      <wa-button appearance="outlined" id="os-android"></wa-button>
+      <wa-button appearance="outlined" id="os-ios"></wa-button>
+      <span class="grow"></span>
+      <wa-button variant="brand" id="install-btn" hidden><wa-icon slot="start" name="download"></wa-icon>安裝</wa-button>
     </div>
   </section>
 
   <div class="label" id="backup-label">資料與備份</div>
   <section class="card pad backup" id="backup">
     <p class="muted small" style="margin:0">樂譜和練習紀錄只存在這台裝置的瀏覽器裡，不會上傳到任何地方。換手機 / 平板、清除瀏覽器資料或重裝之前，先備份一份。</p>
+    <p class="muted small" style="margin:0">Android：從 Chrome 安裝的 App 和 Chrome 是同一份資料。iPhone / iPad：主畫面的 App 和 Safari 是分開的兩份，要搬過去請在一邊備份、到另一邊還原。</p>
     <ul class="facts-list">
       <li id="bk-last"></li>
       <li id="bk-persist"></li>
@@ -82,6 +86,16 @@
     <a class="list-row" href="metronome.html"><div class="grow"><div class="t">節拍器</div><div class="d">設定速度、拍號、細分，也可以點拍子測速度</div></div><span class="chev">›</span></a>
     <a class="list-row" href="midi-test.html"><div class="grow"><div class="t">輸入測試</div><div class="d">確認琴和踏板有連上、看每個音的力度；也可以測麥克風聽不聽得準</div></div><span class="chev">›</span></a>
   </div>
+
+  <div class="label">關於 Étude</div>
+  <section class="card pad about">
+    <p>Étude 是練琴用的小工具，打開網頁就能用，不用註冊、也不用登入。</p>
+    <p><b>資料都在你自己的裝置上</b>練習紀錄、樂譜 PDF 和設定只存在這台裝置的瀏覽器裡，不會上傳到任何伺服器，開發者也看不到。</p>
+    <p><b>不蒐集個人資料</b>沒有帳號、沒有廣告，也沒有追蹤或分析工具，不會記錄你怎麼使用。</p>
+    <p><b>MIDI 和麥克風</b>只在練習時用來判斷你彈了哪個音，聲音不會錄下來，也不會傳出去。要不要允許由你決定，之後也可以在瀏覽器的網站設定裡關掉。</p>
+    <p><b>什麼時候會連網路</b>只有下載程式、字型（Google Fonts）和播放範例用的鋼琴音色；下載過之後沒有網路也能用，不會送出你的資料。</p>
+    <p class="muted">因為資料只在這台裝置上，換手機或清除瀏覽器資料之前，記得先在上面的「資料與備份」備份一份。</p>
+  </section>
 </main>
 </body>
 </html>
