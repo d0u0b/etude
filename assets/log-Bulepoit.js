@@ -1,0 +1,1 @@
+import"./common-CJ0IxBQF.js";import{t as e}from"./yearview-Djz_xm-V.js";var t=new URLSearchParams(location.hash.slice(1));e(document.getElementById(`year-view`),document.getElementById(`year-box`),{group:`play`,start:{day:t.get(`day`),month:t.get(`month`)}});
