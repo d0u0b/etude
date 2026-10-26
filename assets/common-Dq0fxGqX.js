@@ -1,6 +1,4 @@
-(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-archive-restore"
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -10,16 +8,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-archive"
 >
-  <rect width="20" height="5" x="2" y="3" rx="1" />
-  <path d="M4 8v11a2 2 0 0 0 2 2h2" />
-  <path d="M20 8v11a2 2 0 0 1-2 2h-2" />
-  <path d="m9 15 3-3 3 3" />
-  <path d="M12 12v9" />
-</svg>
-`,t=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-archive"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 6a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <path d="M10 12l4 0" />
+</svg>`,t=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -29,14 +24,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-back-up"
 >
-  <rect width="20" height="5" x="2" y="3" rx="1" />
-  <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" />
-  <path d="M10 12h4" />
-</svg>
-`,n=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-arrow-down-up"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M9 14l-4 -4l4 -4" />
+  <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+</svg>`,n=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -46,15 +39,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"
 >
-  <path d="m3 16 4 4 4-4" />
-  <path d="M7 20V4" />
-  <path d="m21 8-4-4-4 4" />
-  <path d="M17 4v16" />
-</svg>
-`,r=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-arrow-left"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 12l14 0" />
+  <path d="M5 12l6 6" />
+  <path d="M5 12l6 -6" />
+</svg>`,r=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -64,13 +55,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up"
 >
-  <path d="m12 19-7-7 7-7" />
-  <path d="M19 12H5" />
-</svg>
-`,i=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-arrow-up-down"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M12 5l0 14" />
+  <path d="M18 11l-6 -6" />
+  <path d="M6 11l6 -6" />
+</svg>`,i=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -80,15 +71,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-arrows-sort"
 >
-  <path d="m21 16-4 4-4-4" />
-  <path d="M17 20V4" />
-  <path d="m3 8 4-4 4 4" />
-  <path d="M7 4v16" />
-</svg>
-`,a=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-arrow-up"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 9l4 -4l4 4m-4 -4v14" />
+  <path d="M21 15l-4 4l-4 -4m4 4v-14" />
+</svg>`,a=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -98,13 +86,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-arrows-up-down"
 >
-  <path d="m5 12 7-7 7 7" />
-  <path d="M12 19V5" />
-</svg>
-`,o=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-audio-lines"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M7 3l0 18" />
+  <path d="M10 6l-3 -3l-3 3" />
+  <path d="M20 18l-3 3l-3 -3" />
+  <path d="M17 21l0 -18" />
+</svg>`,o=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -114,17 +103,15 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-book"
 >
-  <path d="M2 10v3" />
-  <path d="M6 6v11" />
-  <path d="M10 3v18" />
-  <path d="M14 8v7" />
-  <path d="M18 5v13" />
-  <path d="M22 10v3" />
-</svg>
-`,s=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-book-open"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+  <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+  <path d="M3 6l0 13" />
+  <path d="M12 6l0 13" />
+  <path d="M21 6l0 13" />
+</svg>`,s=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -134,13 +121,16 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-time"
 >
-  <path d="M12 5v16" />
-  <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
-</svg>
-`,c=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-calendar-clock"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>`,c=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -150,17 +140,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chart-bar"
 >
-  <path d="M16 14v2.2l1.6 1" />
-  <path d="M16 2v3" />
-  <path d="M21 7.338V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2.338" />
-  <path d="M3 9h5.859" />
-  <path d="M8 2v3" />
-  <circle cx="16" cy="16" r="6" />
-</svg>
-`,l=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-chart-column"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -6" />
+  <path d="M15 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -10" />
+  <path d="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -14" />
+  <path d="M4 20h14" />
+</svg>`,l=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -170,15 +157,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chart-line"
 >
-  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
-  <path d="M18 17V9" />
-  <path d="M13 17V5" />
-  <path d="M8 17v-3" />
-</svg>
-`,u=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-chart-line"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 19l16 0" />
+  <path d="M4 15l4 -6l4 2l4 -5l4 4" />
+</svg>`,u=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -188,13 +172,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-check"
 >
-  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
-  <path d="m19 9-5 5-4-4-3 3" />
-</svg>
-`,d=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-check"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 12l5 5l10 -10" />
+</svg>`,d=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -204,12 +186,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
 >
-  <path d="M20 6 9 17l-5-5" />
-</svg>
-`,f=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-chevron-down"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6 9l6 6l6 -6" />
+</svg>`,f=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -219,12 +200,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"
 >
-  <path d="m6 9 6 6 6-6" />
-</svg>
-`,p=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-chevron-left"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M15 6l-6 6l6 6" />
+</svg>`,p=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -234,12 +214,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
 >
-  <path d="m15 18-6-6 6-6" />
-</svg>
-`,m=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-chevron-right"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M9 6l6 6l-6 6" />
+</svg>`,m=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -249,12 +228,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up"
 >
-  <path d="m9 18 6-6-6-6" />
-</svg>
-`,h=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-chevron-up"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6 15l6 -6l6 6" />
+</svg>`,h=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -264,12 +242,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check"
 >
-  <path d="m18 15-6-6-6 6" />
-</svg>
-`,g=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-circle-check"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+  <path d="M9 12l2 2l4 -4" />
+</svg>`,g=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -279,13 +257,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-x"
 >
-  <circle cx="12" cy="12" r="10" />
-  <path d="m16 9-5.5 5.5L8 12" />
-</svg>
-`,_=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-circle-stop"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+  <path d="M10 10l4 4m0 -4l-4 4" />
+</svg>`,_=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -295,13 +272,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard-text"
 >
-  <circle cx="12" cy="12" r="10" />
-  <rect x="9" y="9" width="6" height="6" rx="1" />
-</svg>
-`,v=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-circle-x"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+  <path d="M9 5a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2" />
+  <path d="M9 12h6" />
+  <path d="M9 16h6" />
+</svg>`,v=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -311,14 +289,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-clock"
 >
-  <circle cx="12" cy="12" r="10" />
-  <path d="m15 9-6 6" />
-  <path d="m9 9 6 6" />
-</svg>
-`,y=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-clipboard-paste"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 7v5l3 3" />
+</svg>`,y=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -328,16 +304,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"
 >
-  <path d="M11 14h10" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v1.344" />
-  <path d="m17 18 4-4-4-4" />
-  <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 1.793-1.113" />
-  <rect x="8" y="2" width="8" height="4" rx="1" />
-</svg>
-`,b=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-clock"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M7 9.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667l0 -8.666" />
+  <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+</svg>`,b=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -347,13 +319,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-database"
 >
-  <circle cx="12" cy="12" r="10" />
-  <path d="M12 6v6l4 2" />
-</svg>
-`,x=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-copy"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 6a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+  <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+  <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+</svg>`,x=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -363,13 +335,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
 >
-  <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-</svg>
-`,ee=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-database"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14" />
+  <path d="M11 4h2" />
+  <path d="M12 17v.01" />
+</svg>`,ee=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -379,14 +351,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-dots"
 >
-  <ellipse cx="12" cy="5" rx="9" ry="3" />
-  <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-  <path d="M3 12A9 3 0 0 0 21 12" />
-</svg>
-`,S=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-download"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M18 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>`,S=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -396,14 +367,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-download"
 >
-  <path d="M12 15V3" />
-  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-  <path d="m7 10 5 5 5-5" />
-</svg>
-`,te=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-ear"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+  <path d="M7 11l5 5l5 -5" />
+  <path d="M12 4l0 12" />
+</svg>`,te=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -413,13 +383,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-ear"
 >
-  <path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" />
-  <path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" />
-</svg>
-`,ne=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-ellipsis"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6 10a7 7 0 1 1 13 3.6a10 10 0 0 1 -2 2a8 8 0 0 0 -2 3a4.5 4.5 0 0 1 -6.8 1.4" />
+  <path d="M10 10a3 3 0 1 1 5 2.2" />
+</svg>`,ne=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -429,14 +398,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-eye-off"
 >
-  <circle cx="12" cy="12" r="1" />
-  <circle cx="19" cy="12" r="1" />
-  <circle cx="5" cy="12" r="1" />
-</svg>
-`,re=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-eye-off"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
+  <path d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
+  <path d="M3 3l18 18" />
+</svg>`,re=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -446,15 +414,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"
 >
-  <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
-  <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
-  <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
-  <path d="m2 2 20 20" />
-</svg>
-`,ie=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-eye"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+  <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+</svg>`,ie=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -464,13 +429,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-file-music"
 >
-  <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
-  <circle cx="12" cy="12" r="3" />
-</svg>
-`,ae=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-file-music"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+  <path d="M10 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M12 16l0 -5l2 1" />
+</svg>`,ae=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -480,15 +446,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-file-upload"
 >
-  <path d="M11.65 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v10.35" />
-  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-  <path d="M8 20v-7l3 1.474" />
-  <circle cx="6" cy="20" r="2" />
-</svg>
-`,oe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-file-up"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+  <path d="M12 11v6" />
+  <path d="M9.5 13.5l2.5 -2.5l2.5 2.5" />
+</svg>`,oe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -498,15 +463,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-folder-open"
 >
-  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
-  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-  <path d="M12 12v6" />
-  <path d="m15 15-3-3-3 3" />
-</svg>
-`,se=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-folder-open"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 19l2.757 -7.351a1 1 0 0 1 .936 -.649h12.307a1 1 0 0 1 .986 1.164l-.996 5.211a2 2 0 0 1 -1.964 1.625h-14.026a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v2" />
+</svg>`,se=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -516,12 +477,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-gauge"
 >
-  <path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" />
-</svg>
-`,ce=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-footprints"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+  <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M13.41 10.59l2.59 -2.59" />
+  <path d="M7 12a5 5 0 0 1 5 -5" />
+</svg>`,ce=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -531,15 +494,16 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-grip-vertical"
 >
-  <path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" />
-  <path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" />
-  <path d="M16 17h4" />
-  <path d="M4 13h4" />
-</svg>
-`,le=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-gauge"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M8 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M8 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M14 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M14 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M14 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>`,le=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -549,13 +513,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-hand-stop"
 >
-  <path d="m12 14 4-4" />
-  <path d="M3.34 19a10 10 0 1 1 17.32 0" />
-</svg>
-`,ue=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-graduation-cap"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M8 13v-7.5a1.5 1.5 0 0 1 3 0v6.5" />
+  <path d="M11 5.5v-2a1.5 1.5 0 1 1 3 0v8.5" />
+  <path d="M14 5.5a1.5 1.5 0 0 1 3 0v6.5" />
+  <path d="M17 7.5a1.5 1.5 0 0 1 3 0v8.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7a69.74 69.74 0 0 1 -.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+</svg>`,ue=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -565,14 +530,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-history"
 >
-  <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
-  <path d="M22 10v6" />
-  <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
-</svg>
-`,de=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-grip-vertical"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M12 8l0 4l2 2" />
+  <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+</svg>`,de=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -582,17 +545,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-home"
 >
-  <circle cx="9" cy="12" r="1" />
-  <circle cx="9" cy="5" r="1" />
-  <circle cx="9" cy="19" r="1" />
-  <circle cx="15" cy="12" r="1" />
-  <circle cx="15" cy="5" r="1" />
-  <circle cx="15" cy="19" r="1" />
-</svg>
-`,fe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-hand"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>`,fe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -602,15 +561,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-hourglass"
 >
-  <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
-  <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
-  <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" />
-  <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
-</svg>
-`,pe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-history"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6.5 7h11" />
+  <path d="M6.5 17h11" />
+  <path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1" />
+  <path d="M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1" />
+</svg>`,pe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -620,14 +578,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"
 >
-  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-  <path d="M3 3v5h5" />
-  <path d="M12 7v5l4 2" />
-</svg>
-`,me=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-hourglass"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>`,me=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -637,15 +594,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-grid"
 >
-  <path d="M5 22h14" />
-  <path d="M5 2h14" />
-  <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
-  <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
-</svg>
-`,he=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-house"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+</svg>`,he=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -655,13 +611,16 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-list-check"
 >
-  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-  <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-</svg>
-`,ge=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-info"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+  <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+  <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+  <path d="M11 6l9 0" />
+  <path d="M11 12l9 0" />
+  <path d="M11 18l9 0" />
+</svg>`,ge=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -671,14 +630,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-maximize"
 >
-  <circle cx="12" cy="12" r="10" />
-  <path d="M12 16v-4" />
-  <path d="M12 8h.01" />
-</svg>
-`,_e=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-keyboard-music"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+  <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+  <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+</svg>`,_e=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -688,20 +647,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-metronome"
 >
-  <rect width="20" height="16" x="2" y="4" rx="2" />
-  <path d="M6 8h4" />
-  <path d="M14 8h.01" />
-  <path d="M18 8h.01" />
-  <path d="M2 12h20" />
-  <path d="M6 12v4" />
-  <path d="M10 12v4" />
-  <path d="M14 12v4" />
-  <path d="M18 12v4" />
-</svg>
-`,ve=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-layout-grid"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M14.153 8.188l-.72 -3.236a2.493 2.493 0 0 0 -4.867 0l-3.025 13.614a2 2 0 0 0 1.952 2.434h7.014a2 2 0 0 0 1.952 -2.434l-.524 -2.357m-4.935 1.791l9 -13" />
+  <path d="M19 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>`,ve=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -711,15 +662,15 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-microphone-off"
 >
-  <rect width="7" height="7" x="3" y="3" rx="1" />
-  <rect width="7" height="7" x="14" y="3" rx="1" />
-  <rect width="7" height="7" x="14" y="14" rx="1" />
-  <rect width="7" height="7" x="3" y="14" rx="1" />
-</svg>
-`,ye=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-list-checks"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 3l18 18" />
+  <path d="M9 5a3 3 0 0 1 6 0v5a3 3 0 0 1 -.13 .874m-2 2a3 3 0 0 1 -3.87 -2.872v-1" />
+  <path d="M5 10a7 7 0 0 0 10.846 5.85m2 -2a6.967 6.967 0 0 0 1.152 -3.85" />
+  <path d="M8 21l8 0" />
+  <path d="M12 17l0 4" />
+</svg>`,ye=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -729,16 +680,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-microphone"
 >
-  <path d="M13 5h8" />
-  <path d="M13 12h8" />
-  <path d="M13 19h8" />
-  <path d="m3 17 2 2 4-4" />
-  <path d="m3 7 2 2 4-4" />
-</svg>
-`,be=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-list-music"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M9 5a3 3 0 0 1 3 -3a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3a3 3 0 0 1 -3 -3l0 -5" />
+  <path d="M5 10a7 7 0 0 0 14 0" />
+  <path d="M8 21l8 0" />
+  <path d="M12 17l0 4" />
+</svg>`,be=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -748,16 +697,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-minimize"
 >
-  <path d="M16 5H3" />
-  <path d="M11 12H3" />
-  <path d="M11 19H3" />
-  <path d="M21 16V5" />
-  <circle cx="18" cy="16" r="3" />
-</svg>
-`,xe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-maximize"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M15 19v-2a2 2 0 0 1 2 -2h2" />
+  <path d="M15 5v2a2 2 0 0 0 2 2h2" />
+  <path d="M5 15h2a2 2 0 0 1 2 2v2" />
+  <path d="M5 9h2a2 2 0 0 0 2 -2v-2" />
+</svg>`,xe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -767,15 +714,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-minus"
 >
-  <path d="M8 3H5a2 2 0 0 0-2 2v3" />
-  <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
-  <path d="M3 16v3a2 2 0 0 0 2 2h3" />
-  <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-</svg>
-`,Se=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-mic-off"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 12l14 0" />
+</svg>`,Se=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -785,17 +728,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-music"
 >
-  <path d="M12 19v3" />
-  <path d="M15 9.34V5a3 3 0 0 0-5.68-1.33" />
-  <path d="M16.95 16.95A7 7 0 0 1 5 12v-2" />
-  <path d="M18.89 13.23A7 7 0 0 0 19 12v-2" />
-  <path d="m2 2 20 20" />
-  <path d="M9 9v3a3 3 0 0 0 5.12 2.12" />
-</svg>
-`,Ce=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-mic"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+  <path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+  <path d="M9 17v-13h10v13" />
+  <path d="M9 8h10" />
+</svg>`,Ce=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -805,14 +745,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"
 >
-  <path d="M12 19v3" />
-  <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-  <rect x="9" y="2" width="6" height="13" rx="3" />
-</svg>
-`,we=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-minimize"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+  <path d="M13 8l2 0" />
+  <path d="M13 12l2 0" />
+</svg>`,we=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -822,15 +761,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"
 >
-  <path d="M8 3v3a2 2 0 0 1-2 2H3" />
-  <path d="M21 8h-3a2 2 0 0 1-2-2V3" />
-  <path d="M3 16h3a2 2 0 0 1 2 2v3" />
-  <path d="M16 21v-3a2 2 0 0 1 2-2h3" />
-</svg>
-`,Te=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-minus"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+  <path d="M13.5 6.5l4 4" />
+</svg>`,Te=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -840,12 +776,15 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-piano"
 >
-  <path d="M5 12h14" />
-</svg>
-`,Ee=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-music"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+  <path d="M9 19v-6" />
+  <path d="M8 5v8h2v-8" />
+  <path d="M15 19v-6" />
+  <path d="M14 5v8h2v-8" />
+</svg>`,Ee=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -855,14 +794,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-player-pause"
 >
-  <path d="M9 18V5l12-2v13" />
-  <circle cx="6" cy="18" r="3" />
-  <circle cx="18" cy="16" r="3" />
-</svg>
-`,De=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-notebook-pen"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6 6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -12" />
+  <path d="M14 6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -12" />
+</svg>`,De=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -872,17 +809,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-player-play"
 >
-  <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
-  <path d="M2 6h4" />
-  <path d="M2 10h4" />
-  <path d="M2 14h4" />
-  <path d="M2 18h4" />
-  <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
-</svg>
-`,Oe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-pause"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M7 4v16l13 -8l-13 -8" />
+</svg>`,Oe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -892,13 +823,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-player-skip-forward"
 >
-  <rect x="14" y="3" width="5" height="18" rx="1" />
-  <rect x="5" y="3" width="5" height="18" rx="1" />
-</svg>
-`,ke=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-pencil"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 5v14l12 -7l-12 -7" />
+  <path d="M20 5l0 14" />
+</svg>`,ke=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -908,13 +838,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-player-stop"
 >
-  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
-  <path d="m15 5 4 4" />
-</svg>
-`,Ae=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-piano"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 7a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -10" />
+</svg>`,Ae=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -924,17 +852,15 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-playlist"
 >
-  <path d="M10 13v4" />
-  <path d="M14 13v4" />
-  <path d="M18 13v4" />
-  <path d="M2 13h20" />
-  <path d="M22 11.5A3.5 3.5 0 0018.5 8a3.52 3.52 0 01-3.173-2A7 7 0 002 9v10a2 2 0 002 2h16a2 2 0 002-2z" />
-  <path d="M6 13v4" />
-</svg>
-`,je=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-play"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M11 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+  <path d="M17 17v-13h4" />
+  <path d="M13 5h-10" />
+  <path d="M3 9l10 0" />
+  <path d="M9 13h-6" />
+</svg>`,je=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -944,12 +870,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-plus"
 >
-  <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
-</svg>
-`,Me=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-plus"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M12 5l0 14" />
+  <path d="M5 12l14 0" />
+</svg>`,Me=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -959,13 +885,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-pointer"
 >
-  <path d="M5 12h14" />
-  <path d="M12 5v14" />
-</svg>
-`,Ne=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-pointer"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M7.904 17.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093l4.907 4.907a1.067 1.067 0 0 0 1.509 0l1.047 -1.047a1.067 1.067 0 0 0 0 -1.509l-4.907 -4.907l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563" />
+</svg>`,Ne=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -975,16 +899,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-repeat"
 >
-  <path d="M22 14a8 8 0 0 1-8 8" />
-  <path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
-  <path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1" />
-  <path d="M10 9.5V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v10" />
-  <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
-</svg>
-`,Pe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-repeat"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+  <path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3" />
+</svg>`,Pe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -994,15 +914,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-restore"
 >
-  <path d="m17 2 4 4-4 4" />
-  <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
-  <path d="m7 22-4-4 4-4" />
-  <path d="M21 13v1a4 4 0 0 1-4 4H3" />
-</svg>
-`,Fe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-rotate-ccw"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3.06 13a9 9 0 1 0 .49 -4.087" />
+  <path d="M3 4.001v5h5" />
+  <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>`,Fe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1012,13 +930,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-rotate"
 >
-  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-  <path d="M3 3v5h5" />
-</svg>
-`,Ie=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-search"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M19.95 11a8 8 0 1 0 -.5 4m.5 5v-5h-5" />
+</svg>`,Ie=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1028,13 +944,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-school"
 >
-  <path d="m21 21-4.34-4.34" />
-  <circle cx="11" cy="11" r="8" />
-</svg>
-`,Le=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-send"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+  <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+</svg>`,Le=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1044,13 +959,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-search"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg>
-`,Re=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-settings"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 21l-6 -6" />
+</svg>`,Re=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1060,13 +974,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-send"
 >
-  <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
-  <circle cx="12" cy="12" r="3" />
-</svg>
-`,ze=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-share"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M10 14l11 -11" />
+  <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+</svg>`,ze=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1076,14 +989,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-settings"
 >
-  <path d="M12 2v13" />
-  <path d="m16 6-4-4-4 4" />
-  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
-</svg>
-`,Be=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-shield-check"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065" />
+  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+</svg>`,Be=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1093,13 +1004,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-share-3"
 >
-  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-  <path d="m9 12 2 2 4-4" />
-</svg>
-`,Ve=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-skip-forward"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M13 4v4c-6.575 1.028 -9.02 6.788 -10 12c-.037 .206 5.384 -5.962 10 -6v4l8 -7l-8 -7" />
+</svg>`,Ve=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1109,13 +1018,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-shield-check"
 >
-  <path d="M21 4v16" />
-  <path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z" />
-</svg>
-`,He=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-smartphone"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
+  <path d="M15 19l2 2l4 -4" />
+</svg>`,He=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1125,13 +1033,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-shoe"
 >
-  <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
-  <path d="M12 18h.01" />
-</svg>
-`,Ue=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-sparkles"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 6h5.426a1 1 0 0 1 .863 .496l1.064 1.823a3 3 0 0 0 1.896 1.407l4.677 1.114a4 4 0 0 1 3.074 3.89v2.27a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1" />
+  <path d="M14 13l1 -2" />
+  <path d="M8 18v-1a4 4 0 0 0 -4 -4h-1" />
+  <path d="M10 12l1.5 -3" />
+</svg>`,Ue=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1141,15 +1050,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-sparkles"
 >
-  <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
-  <path d="M20 2v4" />
-  <path d="M22 4h-4" />
-  <circle cx="4" cy="20" r="2" />
-</svg>
-`,We=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-square"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2m0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2m-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6" />
+</svg>`,We=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1159,12 +1064,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square"
 >
-  <rect width="18" height="18" x="3" y="3" rx="2" />
-</svg>
-`,Ge=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-star"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+</svg>`,Ge=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1174,12 +1078,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-star"
 >
-  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-</svg>
-`,Ke=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-tag"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" />
+</svg>`,Ke=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1189,13 +1092,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-stopwatch"
 >
-  <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
-  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-</svg>
-`,qe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-target"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 13a7 7 0 1 0 14 0a7 7 0 0 0 -14 0" />
+  <path d="M14.5 10.5l-2.5 2.5" />
+  <path d="M17 8l1 -1" />
+  <path d="M14 3h-4" />
+</svg>`,qe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1205,14 +1109,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-tag"
 >
-  <circle cx="12" cy="12" r="10" />
-  <circle cx="12" cy="12" r="6" />
-  <circle cx="12" cy="12" r="2" />
-</svg>
-`,Je=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-timer"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M6.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3" />
+</svg>`,Je=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1222,14 +1124,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-target"
 >
-  <line x1="10" x2="14" y1="2" y2="2" />
-  <line x1="12" x2="15" y1="14" y2="11" />
-  <circle cx="12" cy="14" r="8" />
-</svg>
-`,Ye=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-trash-2"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M7 12a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+</svg>`,Ye=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1239,16 +1140,15 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"
 >
-  <path d="M10 11v6" />
-  <path d="M14 11v6" />
-  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
-  <path d="M3 6h18" />
-  <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
-</svg>
-`,Xe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-undo-2"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 7l16 0" />
+  <path d="M10 11l0 6" />
+  <path d="M14 11l0 6" />
+  <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+  <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+</svg>`,Xe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1258,13 +1158,13 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-upload"
 >
-  <path d="M9 14 4 9l5-5" />
-  <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
-</svg>
-`,Ze=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-upload"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+  <path d="M7 9l5 -5l5 5" />
+  <path d="M12 4l0 12" />
+</svg>`,Ze=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1274,14 +1174,17 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-usb"
 >
-  <path d="M12 3v12" />
-  <path d="m17 8-5-5-5 5" />
-  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-</svg>
-`,Qe=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-usb"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M10 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M12 17v-11.5" />
+  <path d="M7 10v3l5 3" />
+  <path d="M12 14.5l5 -2v-2.5" />
+  <path d="M16 10h2v-2h-2l0 2" />
+  <path d="M6 9a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+  <path d="M10 5.5h4l-2 -2.5l-2 2.5" />
+</svg>`,Qe=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1291,18 +1194,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-user"
 >
-  <circle cx="10" cy="7" r="1" />
-  <circle cx="4" cy="20" r="1" />
-  <path d="M4.7 19.3 19 5" />
-  <path d="m21 3-3 1 2 2Z" />
-  <path d="M9.26 7.68 5 12l2 5" />
-  <path d="m10 14 5 2 3.5-3.5" />
-  <path d="m18 12 1-1 1 1-1 1Z" />
-</svg>
-`,$e=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-user"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>`,$e=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1312,13 +1209,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-wave-sine"
 >
-  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-  <circle cx="12" cy="7" r="4" />
-</svg>
-`,et=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-wifi"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M21 12h-2c-.894 0 -1.662 -.857 -1.761 -2c-.296 -3.45 -.749 -6 -2.749 -6s-2.5 3.582 -2.5 8s-.5 8 -2.5 8s-2.452 -2.547 -2.749 -6c-.1 -1.147 -.867 -2 -1.763 -2h-2" />
+</svg>`,et=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1328,15 +1223,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-wifi"
 >
-  <path d="M12 20h.01" />
-  <path d="M2 8.82a15 15 0 0 1 20 0" />
-  <path d="M5 12.859a10 10 0 0 1 14 0" />
-  <path d="M8.5 16.429a5 5 0 0 1 7 0" />
-</svg>
-`,tt=`<!-- @license lucide-static v1.50.0 - ISC -->
-<svg
-  class="lucide lucide-x"
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M12 18l.01 0" />
+  <path d="M9.172 15.172a4 4 0 0 1 5.656 0" />
+  <path d="M6.343 12.343a8 8 0 0 1 11.314 0" />
+  <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0" />
+</svg>`,tt=`<svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
   height="24"
@@ -1346,11 +1240,12 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-x"
 >
-  <path d="M18 6 6 18" />
-  <path d="m6 6 12 12" />
-</svg>
-`,nt=``,rt=``,it=``;function at(e){nt=e}function ot(e=``){if(!nt){let e=document.querySelector(`[data-webawesome]`);if(e?.hasAttribute(`data-webawesome`)){let t=new URL(e.getAttribute(`data-webawesome`)??``,window.location.href).pathname;at(t)}else{let e=[...document.getElementsByTagName(`script`)].find(e=>e.src.endsWith(`webawesome.js`)||e.src.endsWith(`webawesome.loader.js`)||e.src.endsWith(`webawesome.ssr-loader.js`));e&&at(String(e.getAttribute(`src`)).split(`/`).slice(0,-1).join(`/`))}}return nt.replace(/\/$/,``)+(e?`/${e.replace(/^\//,``)}`:``)}function st(){return rt.replace(/\/$/,``)}function ct(e){it=e}function lt(){if(!it){let e=document.querySelector(`[data-fa-kit-code]`);e&&ct(e.getAttribute(`data-fa-kit-code`)||``)}return it}var ut=`modulepreload`,dt=function(e,t){return new URL(e,t).href},ft={},pt=function(e){return e.pathname.endsWith(`.css`)},mt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=dt(t,n);let r=s(t);if(r.href in ft)return;ft[r.href]=!0;let i=pt(r);if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let o=document.createElement(`link`);if(o.rel=i?`stylesheet`:ut,i||(o.as=`script`),o.crossOrigin=``,o.href=r.href,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),i)return new Promise((e,t)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>t(Error(`Unable to preload CSS for ${r}`)))})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};new MutationObserver(e=>{for(let{addedNodes:t}of e)for(let e of t)e.nodeType===Node.ELEMENT_NODE&&ht(e)});async function ht(e){let t=e instanceof Element?e.tagName.toLowerCase():``,n=t?.startsWith(`wa-`),r=[...e.querySelectorAll(`:not(:defined)`)].map(e=>e.tagName.toLowerCase()).filter(e=>e.startsWith(`wa-`));n&&!customElements.get(t)&&r.push(t);let i=e.querySelectorAll(`[data-wa-preload]`),a=e instanceof Element&&e.hasAttribute(`data-wa-preload`)?[e,...i]:i;for(let e of a)r.push(...e.getAttribute(`data-wa-preload`).split(/\s+/).filter(e=>e.startsWith(`wa-`)));let o=[...new Set(r)],s=await Promise.allSettled(o.map(e=>gt(e)));for(let e of s)e.status===`rejected`&&console.warn(e.reason);await new Promise(requestAnimationFrame),e.dispatchEvent(new CustomEvent(`wa-discovery-complete`,{bubbles:!1,cancelable:!1,composed:!0}))}function gt(e){if(customElements.get(e))return Promise.resolve();let t=e.replace(/^wa-/i,``),n=ot(`components/${t}/${t}.js`);return new Promise((t,r)=>{mt(()=>import(n).then(()=>t()),[],import.meta.url).catch(()=>r(Error(`Unable to autoload <${e}> from ${n}`)))})}var _t=new Set,vt=new Map,yt,bt=`ltr`,xt=`en`,St=typeof MutationObserver<`u`&&typeof document<`u`&&document.documentElement!==void 0;if(St){let e=new MutationObserver(wt);bt=document.documentElement.dir||`ltr`,xt=document.documentElement.lang||navigator.language,e.observe(document.documentElement,{attributes:!0,attributeFilter:[`dir`,`lang`]})}function Ct(...e){e.map(e=>{let t=e.$code.toLowerCase();vt.has(t)?vt.set(t,Object.assign(Object.assign({},vt.get(t)),e)):vt.set(t,e),yt||=e}),wt()}function wt(){St&&(bt=document.documentElement.dir||`ltr`,xt=document.documentElement.lang||navigator.language),[..._t.keys()].map(e=>{typeof e.requestUpdate==`function`&&e.requestUpdate()})}var Tt=class{constructor(e){this.host=e,this.host.addController(this)}hostConnected(){_t.add(this.host)}hostDisconnected(){_t.delete(this.host)}dir(){return`${this.host.dir||bt}`.toLowerCase()}lang(){let e=`${this.host.lang||xt}`.toLowerCase().replace(/_/g,`-`);try{return new Intl.Locale(e),e}catch{return yt?yt.$code.toLowerCase():`en`}}getTranslationData(e){let t;try{t=new Intl.Locale(e.replace(/_/g,`-`))}catch{return{locale:void 0,language:``,region:``,primary:void 0,secondary:void 0}}let n=t.language.toLowerCase(),r=t.region?.toLowerCase()??``,i=vt.get(`${n}-${r}`),a=vt.get(n);return{locale:t,language:n,region:r,primary:i,secondary:a}}exists(e,t){let{primary:n,secondary:r}=this.getTranslationData(t.lang??this.lang());return t=Object.assign({includeFallback:!1},t),!!(n&&n[e]||r&&r[e]||t.includeFallback&&yt&&yt[e])}term(e,...t){let{primary:n,secondary:r}=this.getTranslationData(this.lang()),i;if(n&&n[e])i=n[e];else if(r&&r[e])i=r[e];else if(yt&&yt[e])i=yt[e];else return console.error(`No translation found for: ${String(e)}`),String(e);return typeof i==`function`?i(...t):i}date(e,t){return e=new Date(e),new Intl.DateTimeFormat(this.lang(),t).format(e)}number(e,t){return e=Number(e),isNaN(e)?``:new Intl.NumberFormat(this.lang(),t).format(e)}relativeTime(e,t,n){return new Intl.RelativeTimeFormat(this.lang(),n).format(e,t)}},Et={$code:`en`,$name:`English`,$dir:`ltr`,allTagsRemoved:`All tags removed`,am:`AM`,autosizeColumn:`Autosize column`,captions:`Captions`,carousel:`Carousel`,chooseDate:`Choose date`,chooseDecade:`Choose decade`,chooseMonth:`Choose month`,chooseTime:`Choose time`,chooseYear:`Choose year`,clearEntry:`Clear entry`,clearFilter:`Clear filter`,clearSort:`Clear sort`,close:`Close`,closeCalendar:`Close calendar`,closeTimeInput:`Close time picker`,collapseRow:`Collapse row`,columnMenu:`Column options`,columnMovedToPosition:(e,t,n)=>`${e} moved to position ${t} of ${n}`,columns:`Columns`,compactPageXOfY:(e,t)=>`${e} of ${t}`,completed:`Completed`,copied:`Copied`,copy:`Copy`,createOption:e=>`Create "${e}"`,currentlyPlaying:`currently playing`,currentValue:`Current value`,date:`Date`,datePickerKeyboardHelp:`Use arrow keys to change values; press Alt+Down Arrow to open the calendar.`,day:`Day`,dayPeriod:`AM/PM`,decrement:`Decrement`,deselectAllRows:`Deselect all rows`,disabled:`Disabled`,dropFileHere:`Drop file here or click to browse`,dropFilesHere:`Drop files here or click to browse`,empty:`Empty`,endDate:`End date`,enterFullscreen:`Enter fullscreen`,error:`Error`,exitFullscreen:`Exit fullscreen`,expandRow:`Expand row`,filterByColumn:e=>`Filter by ${e}`,filterFrom:`From`,filterMax:`Max`,filterMin:`Min`,filterTo:`To`,firstPage:`First page`,goToSlide:(e,t)=>`Go to slide ${e} of ${t}`,hideColumn:`Hide column`,hidePassword:`Hide password`,hour:`Hour`,incompleteDate:`Enter a valid date.`,increment:`Increment`,jumpBackwardX:e=>`Jump back ${e} pages`,jumpForwardX:e=>`Jump forward ${e} pages`,lastPage:`Last page`,loading:`Loading`,locked:`Locked`,minute:`Minute`,month:`Month`,moreOptions:`More Options`,mute:`Mute`,nextDecade:`Next decade`,nextMonth:`Next month`,nextPage:`Next page`,nextSlide:`Next slide`,nextVideo:`Next Video`,nextYear:`Next year`,noData:`No data`,noOptions:`No options`,noResults:`No matching results`,notCompleted:`Not completed`,now:`Now`,numCharacters:e=>e===1?`1 character`:`${e} characters`,numCharactersRemaining:e=>e===1?`1 character remaining`:`${e} characters remaining`,numOptionsAvailable:e=>e===0?`No options available`:e===1?`1 option available`:`${e} options available`,numOptionsSelected:e=>e===0?`No options selected`:e===1?`1 option selected`:`${e} options selected`,numRowsCopied:e=>e===1?`1 row copied`:`${e} rows copied`,numRowsSelected:e=>e===1?`1 row selected`:`${e} rows selected`,optionPosition:(e,t,n)=>`${e}, ${t} of ${n}`,optionsLoadError:`Options could not be loaded`,pageXOfY:(e,t)=>`Page ${e} of ${t}`,pagination:`Pagination`,pause:`Pause`,pauseAnimation:`Pause animation`,pictureInPicture:`Picture in picture`,pinLeft:`Pin left`,pinRight:`Pin right`,play:`Play`,playAnimation:`Play animation`,playbackSpeed:`Playback speed`,playlist:`Playlist`,pm:`PM`,previousDecade:`Previous decade`,previousMonth:`Previous month`,previousPage:`Previous page`,previousSlide:`Previous slide`,previousVideo:`Previous video`,previousYear:`Previous year`,progress:`Progress`,rangeTooLong:e=>e===1?`Select a range no longer than 1 day`:`Select a range no longer than ${e} days`,rangeTooShort:e=>e===1?`Select a range at least 1 day long`:`Select a range at least ${e} days long`,readonly:`Read-only`,remove:`Remove`,resetColumns:`Reset columns`,resize:`Resize`,resizeColumn:`Resize column`,rowsPerPage:`Rows per page`,scrollableRegion:`Scrollable region`,scrollToEnd:`Scroll to end`,scrollToStart:`Scroll to start`,search:`Search`,second:`Second`,seek:`Seek`,seekProgress:(e,t)=>`${e} of ${t}`,selectAColorFromTheScreen:`Select a color from the screen`,selectAllRows:`Select all rows`,selected:`Selected`,selectedDateLabel:e=>`Selected: ${e}`,selectedRangeLabel:e=>`Selected range: ${e}`,selectGroup:`Select group`,selectionCleared:`Selection cleared`,selectRow:`Select row`,showingNofMRows:(e,t)=>`Showing ${e} of ${t} rows`,showingXtoYofZ:(e,t,n)=>`${e}\u2013${t} of ${n}`,showPassword:`Show password`,slideNum:e=>`Slide ${e}`,sortAscending:`Sort ascending`,sortColumn:`Sort column`,sortDescending:`Sort descending`,startDate:`Start date`,steps:`Steps`,stepXOfY:(e,t)=>`Step ${e} of ${t}`,tagAdded:e=>`${e} added`,tagAlreadyAdded:e=>`${e} is already added`,tagInputKeyboardHelp:`Press Backspace or Delete to remove this tag.`,tagRemoved:e=>`${e} removed`,time:`Time`,timeInputKeyboardHelp:`Use arrow keys to change values; press Alt+Down Arrow to open the time picker.`,today:`Today`,toggleColorFormat:`Toggle color format`,tooFewTags:e=>e===1?`Add at least 1 tag`:`Add at least ${e} tags`,tooManyTags:e=>e===1?`Add no more than 1 tag`:`Add no more than ${e} tags`,unmute:`Unmute`,unpin:`Unpin`,unpinColumn:`Unpin column`,videoPlayer:`Video player`,volume:`Volume`,year:`Year`,zoomIn:`Zoom in`,zoomOut:`Zoom out`};Ct(Et);var Dt=Et,C=class extends Tt{lang(){return this.host.didSSR&&!this.host.hasUpdated?this.host.lang||`en`:super.lang()}};Ct(Dt);var Ot=`7.3.0`;function kt(e,t,n){let r=`solid`;return t===`chisel`&&(r=`chisel-regular`),t===`etch`&&(r=`etch-solid`),t===`graphite`&&(r=`graphite-thin`),t===`jelly`&&(r=`jelly-regular`,n===`duo-regular`&&(r=`jelly-duo-regular`),n===`fill-regular`&&(r=`jelly-fill-regular`)),t===`jelly-duo`&&(r=`jelly-duo-regular`),t===`jelly-fill`&&(r=`jelly-fill-regular`),t===`notdog`&&(n===`solid`&&(r=`notdog-solid`),n===`duo-solid`&&(r=`notdog-duo-solid`)),t===`notdog-duo`&&(r=`notdog-duo-solid`),t===`slab`&&((n===`solid`||n===`regular`)&&(r=`slab-regular`),n===`press-regular`&&(r=`slab-press-regular`)),t===`slab-press`&&(r=`slab-press-regular`),t===`slab-duo`&&(r=`slab-duo-regular`),t===`slab-press-duo`&&(r=`slab-press-duo-regular`),t===`thumbprint`&&(r=`thumbprint-light`),t===`utility`&&(r=`utility-semibold`),t===`utility-duo`&&(r=`utility-duo-semibold`),t===`utility-fill`&&(r=`utility-fill-semibold`),t===`whiteboard`&&(r=`whiteboard-semibold`),t===`mosaic`&&(r=`mosaic-solid`),t===`pixel`&&(r=`pixel-regular`),t===`vellum`&&(r=`vellum-solid`),t===`classic`&&(n===`thin`&&(r=`thin`),n===`light`&&(r=`light`),n===`regular`&&(r=`regular`),n===`solid`&&(r=`solid`)),t===`duotone`&&(n===`thin`&&(r=`duotone-thin`),n===`light`&&(r=`duotone-light`),n===`regular`&&(r=`duotone-regular`),n===`solid`&&(r=`duotone`)),t===`sharp`&&(n===`thin`&&(r=`sharp-thin`),n===`light`&&(r=`sharp-light`),n===`regular`&&(r=`sharp-regular`),n===`solid`&&(r=`sharp-solid`)),t===`sharp-duotone`&&(n===`thin`&&(r=`sharp-duotone-thin`),n===`light`&&(r=`sharp-duotone-light`),n===`regular`&&(r=`sharp-duotone-regular`),n===`solid`&&(r=`sharp-duotone-solid`)),t===`brands`&&(r=`brands`),r}function At(e,t,n){let r=kt(e,t,n),i=st();if(i)return`${i}/${r}/${e}.svg`;let a=lt();return a.length>0?`https://ka-p.fontawesome.com/releases/v${Ot}/svgs/${r}/${e}.svg?token=${encodeURIComponent(a)}`:`https://ka-f.fontawesome.com/releases/v${Ot}/svgs/${r}/${e}.svg`}var jt={name:`default`,resolver:(e,t=`classic`,n=`solid`)=>At(e,t,n),mutator:(e,t)=>{if(e.hasAttribute(`fill`)||e.setAttribute(`fill`,`currentColor`),t?.family&&!e.hasAttribute(`data-duotone-initialized`)){let{family:n,variant:r}=t;if(n===`duotone`||n===`sharp-duotone`||n===`notdog-duo`||n===`notdog`&&r===`duo-solid`||n===`jelly-duo`||n===`jelly`&&r===`duo-regular`||n===`utility-duo`||n===`slab-duo`||n===`slab-press-duo`||n===`thumbprint`){let n=[...e.querySelectorAll(`path`)],r=n.find(e=>!e.hasAttribute(`opacity`)),i=n.find(e=>e.hasAttribute(`opacity`));if(!r||!i)return;if(r.setAttribute(`data-duotone-primary`,``),i.setAttribute(`data-duotone-secondary`,``),t.swapOpacity&&r&&i){let e=i.getAttribute(`opacity`)||`0.4`;r.style.setProperty(`--path-opacity`,e),i.style.setProperty(`--path-opacity`,`1`)}e.setAttribute(`data-duotone-initialized`,``)}}}};function Mt(e){return`data:image/svg+xml,${encodeURIComponent(e)}`}var Nt={solid:{"arrow-down":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7-105.4-105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`,"arrow-up":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M214.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-370.7 105.4 105.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>`,backward:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M236.3 107.1C247.9 96 265 92.9 279.7 99.2C294.4 105.5 304 120 304 136L304 272.3L476.3 107.2C487.9 96 505 92.9 519.7 99.2C534.4 105.5 544 120 544 136L544 504C544 520 534.4 534.5 519.7 540.8C505 547.1 487.9 544 476.3 532.9L304 367.7L304 504C304 520 294.4 534.5 279.7 540.8C265 547.1 247.9 544 236.3 532.9L44.3 348.9C36.5 341.3 32 330.9 32 320C32 309.1 36.5 298.7 44.3 291.1L236.3 107.1z"/></svg>`,"backward-step":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M491 100.8C478.1 93.8 462.3 94.5 450 102.6L192 272.1L192 128C192 110.3 177.7 96 160 96C142.3 96 128 110.3 128 128L128 512C128 529.7 142.3 544 160 544C177.7 544 192 529.7 192 512L192 367.9L450 537.5C462.3 545.6 478 546.3 491 539.3C504 532.3 512 518.8 512 504.1L512 136.1C512 121.4 503.9 107.9 491 100.9z"/></svg>`,bars:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>`,"angles-left":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M77.3 256 214.7 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256zm192 0L406.7 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L269.3 256z"/></svg>`,"angles-right":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M434.7 256 297.3 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L434.7 256zm-192 0L105.3 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256z"/></svg>`,check:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg>`,"chevron-down":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>`,"chevron-left":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>`,"chevron-right":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>`,circle:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"/></svg>`,"closed-captioning":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M64 192C64 156.7 92.7 128 128 128L512 128C547.3 128 576 156.7 576 192L576 448C576 483.3 547.3 512 512 512L128 512C92.7 512 64 483.3 64 448L64 192zM216 272L248 272C252.4 272 256 275.6 256 280C256 293.3 266.7 304 280 304C293.3 304 304 293.3 304 280C304 249.1 278.9 224 248 224L216 224C185.1 224 160 249.1 160 280L160 360C160 390.9 185.1 416 216 416L248 416C278.9 416 304 390.9 304 360C304 346.7 293.3 336 280 336C266.7 336 256 346.7 256 360C256 364.4 252.4 368 248 368L216 368C211.6 368 208 364.4 208 360L208 280C208 275.6 211.6 272 216 272zM384 280C384 275.6 387.6 272 392 272L424 272C428.4 272 432 275.6 432 280C432 293.3 442.7 304 456 304C469.3 304 480 293.3 480 280C480 249.1 454.9 224 424 224L392 224C361.1 224 336 249.1 336 280L336 360C336 390.9 361.1 416 392 416L424 416C454.9 416 480 390.9 480 360C480 346.7 469.3 336 456 336C442.7 336 432 346.7 432 360C432 364.4 428.4 368 424 368L392 368C387.6 368 384 364.4 384 360L384 280z"/></svg>`,"closed-captioning-slash":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M39 39.1C48.4 29.7 63.6 29.7 72.9 39.1L161.8 128L512 128C547.3 128 576 156.7 576 192L576 448C576 473.5 561.1 495.4 539.6 505.8L601 567.1C610.4 576.5 610.4 591.7 601 601C591.6 610.3 576.4 610.4 567.1 601L39 73.1C29.7 63.7 29.7 48.5 39 39.1zM384 350.1L384 279.9C384 275.5 387.6 271.9 392 271.9L424 271.9C428.4 271.9 432 275.5 432 279.9C432 293.2 442.7 303.9 456 303.9C469.3 303.9 480 293.2 480 279.9C480 249 454.9 223.9 424 223.9L392 223.9C361.1 223.9 336 249 336 279.9L336 302.1L384 350.1zM445.5 411.6C465.7 403.2 480 383.2 480 359.9C480 346.6 469.3 335.9 456 335.9C442.7 335.9 432 346.6 432 359.9C432 364.3 428.4 367.9 424 367.9L401.8 367.9L445.5 411.6zM162.3 264.1C160.8 269.1 160 274.5 160 280L160 360C160 390.9 185.1 416 216 416L248 416C266.1 416 282.1 407.5 292.4 394.2L410.2 512L128 512C92.7 512 64 483.3 64 448L64 192C64 184.2 65.4 176.7 68 169.8L162.3 264.1zM256.1 357.9C256 358.6 256 359.3 256 360C256 364.4 252.4 368 248 368L216 368C211.6 368 208 364.4 208 360L208 309.8L256.1 357.9z"/></svg>`,compress:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M160 64c0-17.7-14.3-32-32-32S96 46.3 96 64l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 320c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0z"/></svg>`,ellipsis:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M96 320C96 289.1 121.1 264 152 264C182.9 264 208 289.1 208 320C208 350.9 182.9 376 152 376C121.1 376 96 350.9 96 320zM264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320zM488 264C518.9 264 544 289.1 544 320C544 350.9 518.9 376 488 376C457.1 376 432 350.9 432 320C432 289.1 457.1 264 488 264z"/></svg>`,"ellipsis-vertical":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 208C289.1 208 264 182.9 264 152C264 121.1 289.1 96 320 96C350.9 96 376 121.1 376 152C376 182.9 350.9 208 320 208zM320 432C350.9 432 376 457.1 376 488C376 518.9 350.9 544 320 544C289.1 544 264 518.9 264 488C264 457.1 289.1 432 320 432zM376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320z"/></svg>`,expand:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 96C110.3 96 96 110.3 96 128L96 224C96 241.7 110.3 256 128 256C145.7 256 160 241.7 160 224L160 160L224 160C241.7 160 256 145.7 256 128C256 110.3 241.7 96 224 96L128 96zM160 416C160 398.3 145.7 384 128 384C110.3 384 96 398.3 96 416L96 512C96 529.7 110.3 544 128 544L224 544C241.7 544 256 529.7 256 512C256 494.3 241.7 480 224 480L160 480L160 416zM416 96C398.3 96 384 110.3 384 128C384 145.7 398.3 160 416 160L480 160L480 224C480 241.7 494.3 256 512 256C529.7 256 544 241.7 544 224L544 128C544 110.3 529.7 96 512 96L416 96zM544 416C544 398.3 529.7 384 512 384C494.3 384 480 398.3 480 416L480 480L416 480C398.3 480 384 494.3 384 512C384 529.7 398.3 544 416 544L512 544C529.7 544 544 529.7 544 512L544 416z"/></svg>`,eyedropper:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M341.6 29.2l-101.6 101.6-9.4-9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-9.4-9.4 101.6-101.6c39-39 39-102.2 0-141.1s-102.2-39-141.1 0zM55.4 323.3c-15 15-23.4 35.4-23.4 56.6l0 42.4-26.6 39.9c-8.5 12.7-6.8 29.6 4 40.4s27.7 12.5 40.4 4l39.9-26.6 42.4 0c21.2 0 41.6-8.4 56.6-23.4l109.4-109.4-45.3-45.3-109.4 109.4c-3 3-7.1 4.7-11.3 4.7l-36.1 0 0-36.1c0-4.2 1.7-8.3 4.7-11.3l109.4-109.4-45.3-45.3-109.4 109.4z"/></svg>`,filter:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M32 64C19.1 64 7.4 71.8 2.4 83.8S.2 109.5 9.4 118.6L192 301.3 192 416c0 8.5 3.4 16.6 9.4 22.6l64 64c9.2 9.2 22.9 11.9 34.9 6.9S320 492.9 320 480l0-178.7 182.6-182.6c9.2-9.2 11.9-22.9 6.9-34.9S492.9 64 480 64L32 64z"/></svg>`,forward:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M403.7 107.1C392.1 96 375 92.9 360.3 99.2C345.6 105.5 336 120 336 136L336 272.3L163.7 107.2C152.1 96 135 92.9 120.3 99.2C105.6 105.5 96 120 96 136L96 504C96 520 105.6 534.5 120.3 540.8C135 547.1 152.1 544 163.7 532.9L336 367.7L336 504C336 520 345.6 534.5 360.3 540.8C375 547.1 392.1 544 403.7 532.9L595.7 348.9C603.6 341.4 608 330.9 608 320C608 309.1 603.5 298.7 595.7 291.1L403.7 107.1z"/></svg>`,file:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z"/></svg>`,"file-audio":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM389.8 307.7C380.7 301.4 368.3 303.6 362 312.7C355.7 321.8 357.9 334.2 367 340.5C390.9 357.2 406.4 384.8 406.4 416C406.4 447.2 390.8 474.9 367 491.5C357.9 497.8 355.7 510.3 362 519.3C368.3 528.3 380.8 530.6 389.8 524.3C423.9 500.5 446.4 460.8 446.4 416C446.4 371.2 424 331.5 389.8 307.7zM208 376C199.2 376 192 383.2 192 392L192 440C192 448.8 199.2 456 208 456L232 456L259.2 490C262.2 493.8 266.8 496 271.7 496L272 496C280.8 496 288 488.8 288 480L288 352C288 343.2 280.8 336 272 336L271.7 336C266.8 336 262.2 338.2 259.2 342L232 376L208 376zM336 448.2C336 458.9 346.5 466.4 354.9 459.8C367.8 449.5 376 433.7 376 416C376 398.3 367.8 382.5 354.9 372.2C346.5 365.5 336 373.1 336 383.8L336 448.3z"/></svg>`,"file-code":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM282.2 359.6C290.8 349.5 289.7 334.4 279.6 325.8C269.5 317.2 254.4 318.3 245.8 328.4L197.8 384.4C190.1 393.4 190.1 406.6 197.8 415.6L245.8 471.6C254.4 481.7 269.6 482.8 279.6 474.2C289.6 465.6 290.8 450.4 282.2 440.4L247.6 400L282.2 359.6zM394.2 328.4C385.6 318.3 370.4 317.2 360.4 325.8C350.4 334.4 349.2 349.6 357.8 359.6L392.4 400L357.8 440.4C349.2 450.5 350.3 465.6 360.4 474.2C370.5 482.8 385.6 481.7 394.2 471.6L442.2 415.6C449.9 406.6 449.9 393.4 442.2 384.4L394.2 328.4z"/></svg>`,"file-excel":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM292 330.7C284.6 319.7 269.7 316.7 258.7 324C247.7 331.3 244.7 346.3 252 357.3L291.2 416L252 474.7C244.6 485.7 247.6 500.6 258.7 508C269.8 515.4 284.6 512.4 292 501.3L320 459.3L348 501.3C355.4 512.3 370.3 515.3 381.3 508C392.3 500.7 395.3 485.7 388 474.7L348.8 416L388 357.3C395.4 346.3 392.4 331.4 381.3 324C370.2 316.6 355.4 319.6 348 330.7L320 372.7L292 330.7z"/></svg>`,"file-image":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM256 320C256 302.3 241.7 288 224 288C206.3 288 192 302.3 192 320C192 337.7 206.3 352 224 352C241.7 352 256 337.7 256 320zM220.6 512L419.4 512C435.2 512 448 499.2 448 483.4C448 476.1 445.2 469 440.1 463.7L343.3 361.9C337.3 355.6 328.9 352 320.1 352L319.8 352C311 352 302.7 355.6 296.6 361.9L199.9 463.7C194.8 469 192 476.1 192 483.4C192 499.2 204.8 512 220.6 512z"/></svg>`,"file-pdf":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"/></svg>`,"file-powerpoint":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM280 320C266.7 320 256 330.7 256 344L256 488C256 501.3 266.7 512 280 512C293.3 512 304 501.3 304 488L304 464L328 464C367.8 464 400 431.8 400 392C400 352.2 367.8 320 328 320L280 320zM328 416L304 416L304 368L328 368C341.3 368 352 378.7 352 392C352 405.3 341.3 416 328 416z"/></svg>`,"file-video":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM208 368L208 464C208 481.7 222.3 496 240 496L336 496C353.7 496 368 481.7 368 464L368 440L403 475C406.2 478.2 410.5 480 415 480C424.4 480 432 472.4 432 463L432 368.9C432 359.5 424.4 351.9 415 351.9C410.5 351.9 406.2 353.7 403 356.9L368 391.9L368 367.9C368 350.2 353.7 335.9 336 335.9L240 335.9C222.3 335.9 208 350.2 208 367.9z"/></svg>`,"file-word":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM263.4 338.8C260.5 325.9 247.7 317.7 234.8 320.6C221.9 323.5 213.7 336.3 216.6 349.2L248.6 493.2C250.9 503.7 260 511.4 270.8 512C281.6 512.6 291.4 505.9 294.8 495.6L320 419.9L345.2 495.6C348.6 505.8 358.4 512.5 369.2 512C380 511.5 389.1 503.8 391.4 493.2L423.4 349.2C426.3 336.3 418.1 323.4 405.2 320.6C392.3 317.8 379.4 325.9 376.6 338.8L363.4 398.2L342.8 336.4C339.5 326.6 330.4 320 320 320C309.6 320 300.5 326.6 297.2 336.4L276.6 398.2L263.4 338.8z"/></svg>`,"file-zipper":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM192 136C192 149.3 202.7 160 216 160L264 160C277.3 160 288 149.3 288 136C288 122.7 277.3 112 264 112L216 112C202.7 112 192 122.7 192 136zM192 232C192 245.3 202.7 256 216 256L264 256C277.3 256 288 245.3 288 232C288 218.7 277.3 208 264 208L216 208C202.7 208 192 218.7 192 232zM256 304L224 304C206.3 304 192 318.3 192 336L192 384C192 410.5 213.5 432 240 432C266.5 432 288 410.5 288 384L288 336C288 318.3 273.7 304 256 304zM240 368C248.8 368 256 375.2 256 384C256 392.8 248.8 400 240 400C231.2 400 224 392.8 224 384C224 375.2 231.2 368 240 368z"/></svg>`,"forward-step":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M21 36.8c12.9-7 28.7-6.3 41 1.8L320 208.1 320 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 384c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-144.1-258 169.6c-12.3 8.1-28 8.8-41 1.8S0 454.7 0 440L0 72C0 57.3 8.1 43.8 21 36.8z"/></svg>`,gauge:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm320 96c0-26.9-16.5-49.9-40-59.3L280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 172.7c-23.5 9.5-40 32.5-40 59.3 0 35.3 28.7 64 64 64s64-28.7 64-64zM144 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm-16 80a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM400 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>`,gear:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M259.1 73.5C262.1 58.7 275.2 48 290.4 48L350.2 48C365.4 48 378.5 58.7 381.5 73.5L396 143.5C410.1 149.5 423.3 157.2 435.3 166.3L503.1 143.8C517.5 139 533.3 145 540.9 158.2L570.8 210C578.4 223.2 575.7 239.8 564.3 249.9L511 297.3C511.9 304.7 512.3 312.3 512.3 320C512.3 327.7 511.8 335.3 511 342.7L564.4 390.2C575.8 400.3 578.4 417 570.9 430.1L541 481.9C533.4 495 517.6 501.1 503.2 496.3L435.4 473.8C423.3 482.9 410.1 490.5 396.1 496.6L381.7 566.5C378.6 581.4 365.5 592 350.4 592L290.6 592C275.4 592 262.3 581.3 259.3 566.5L244.9 496.6C230.8 490.6 217.7 482.9 205.6 473.8L137.5 496.3C123.1 501.1 107.3 495.1 99.7 481.9L69.8 430.1C62.2 416.9 64.9 400.3 76.3 390.2L129.7 342.7C128.8 335.3 128.4 327.7 128.4 320C128.4 312.3 128.9 304.7 129.7 297.3L76.3 249.8C64.9 239.7 62.3 223 69.8 209.9L99.7 158.1C107.3 144.9 123.1 138.9 137.5 143.7L205.3 166.2C217.4 157.1 230.6 149.5 244.6 143.4L259.1 73.5zM320.3 400C364.5 399.8 400.2 363.9 400 319.7C399.8 275.5 363.9 239.8 319.7 240C275.5 240.2 239.8 276.1 240 320.3C240.2 364.5 276.1 400.2 320.3 400z"/></svg>`,"grip-vertical":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M128 40c0-22.1-17.9-40-40-40L40 0C17.9 0 0 17.9 0 40L0 88c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zM0 424l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM320 40c0-22.1-17.9-40-40-40L232 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zM192 232l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM320 424c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48z"/></svg>`,indeterminate:`<svg part="indeterminate-icon" class="icon" viewBox="0 0 16 16"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"><g stroke="currentColor" stroke-width="2"><g transform="translate(2.285714 6.857143)"><path d="M10.2857143,1.14285714 L1.14285714,1.14285714"/></g></g></g></svg>`,"magnifying-glass":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>`,minus:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32z"/></svg>`,pause:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M48 32C21.5 32 0 53.5 0 80L0 432c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48L48 32zm224 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0z"/></svg>`,"picture-in-picture":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M448 32c35.3 0 64 28.7 64 64l0 112-64 0 0-112-384 0 0 320 144 0 0 64-144 0-6.5-.3c-30.1-3.1-54.1-27-57.1-57.1L0 416 0 96C0 62.9 25.2 35.6 57.5 32.3L64 32 448 32zm16 224c26.5 0 48 21.5 48 48l0 128c0 26.5-21.5 48-48 48l-160 0c-26.5 0-48-21.5-48-48l0-128c0-26.5 21.5-48 48-48l160 0z"/></svg>`,play:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M91.2 36.9c-12.4-6.8-27.4-6.5-39.6 .7S32 57.9 32 72l0 368c0 14.1 7.5 27.2 19.6 34.4s27.2 7.5 39.6 .7l336-184c12.8-7 20.8-20.5 20.8-35.1s-8-28.1-20.8-35.1l-336-184z"/></svg>`,"play-circle":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>`,plus:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"/></svg>`,star:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"/></svg>`,"table-columns":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm64 64l0 256 128 0 0-256-128 0zm320 0l-128 0 0 256 128 0 0-256z"/></svg>`,thumbtack:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M32 32C32 14.3 46.3 0 64 0L320 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-29.5 0 10.3 134.1c37.1 21.2 65.8 56.4 78.2 99.7l3.8 13.4c2.8 9.7 .8 20-5.2 28.1S362 352 352 352L32 352c-10 0-19.5-4.7-25.5-12.7s-8-18.4-5.2-28.1L5 297.8c12.4-43.3 41-78.5 78.2-99.7L93.5 64 64 64C46.3 64 32 49.7 32 32zM160 400l64 0 0 112c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-112z"/></svg>`,"up-down":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M406.6 502.6l96-96c9.2-9.2 11.9-22.9 6.9-34.9S492.9 352 480 352l-64 0 0-320c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 320-64 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l96 96c12.5 12.5 32.8 12.5 45.3 0zM150.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-9.2 9.2-11.9 22.9-6.9 34.9S19.1 160 32 160l64 0 0 320c0 17.7 14.3 32 32 32s32-14.3 32-32l0-320 64 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-96-96z"/></svg>`,upload:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M352 173.3L352 384C352 401.7 337.7 416 320 416C302.3 416 288 401.7 288 384L288 173.3L246.6 214.7C234.1 227.2 213.8 227.2 201.3 214.7C188.8 202.2 188.8 181.9 201.3 169.4L297.3 73.4C309.8 60.9 330.1 60.9 342.6 73.4L438.6 169.4C451.1 181.9 451.1 202.2 438.6 214.7C426.1 227.2 405.8 227.2 393.3 214.7L352 173.3zM320 464C364.2 464 400 428.2 400 384L480 384C515.3 384 544 412.7 544 448L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 448C96 412.7 124.7 384 160 384L240 384C240 428.2 275.8 464 320 464zM464 488C477.3 488 488 477.3 488 464C488 450.7 477.3 440 464 440C450.7 440 440 450.7 440 464C440 477.3 450.7 488 464 488z"/></svg>`,user:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></svg>`,volume:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 352l48 0 134.1 119.2c6.4 5.7 14.6 8.8 23.1 8.8 19.2 0 34.8-15.6 34.8-34.8l0-378.4c0-19.2-15.6-34.8-34.8-34.8-8.5 0-16.7 3.1-23.1 8.8L96 160 48 160c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48zM441.1 107c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C443.3 170.7 464 210.9 464 256s-20.7 85.3-53.2 111.8c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5c43.2-35.2 70.9-88.9 70.9-149s-27.7-113.8-70.9-149zm-60.5 74.5c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C361.1 227.6 368 241 368 256s-6.9 28.4-17.7 37.3c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5C402.1 312.9 416 286.1 416 256s-13.9-56.9-35.5-74.5z"/></svg>`,"volume-low":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 352l48 0 134.1 119.2c6.4 5.7 14.6 8.8 23.1 8.8 19.2 0 34.8-15.6 34.8-34.8l0-378.4c0-19.2-15.6-34.8-34.8-34.8-8.5 0-16.7 3.1-23.1 8.8L96 160 48 160c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48zM380.6 181.5c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C361.1 227.6 368 241 368 256s-6.9 28.4-17.7 37.3c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5C402.1 312.9 416 286.1 416 256s-13.9-56.9-35.5-74.5z"/></svg>`,"volume-xmark":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 352l48 0 134.1 119.2c6.4 5.7 14.6 8.8 23.1 8.8 19.2 0 34.8-15.6 34.8-34.8l0-378.4c0-19.2-15.6-34.8-34.8-34.8-8.5 0-16.7 3.1-23.1 8.8L96 160 48 160c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48zM367 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>`,xmark:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>`},regular:{calendar:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M216 64C229.3 64 240 74.7 240 88L240 128L400 128L400 88C400 74.7 410.7 64 424 64C437.3 64 448 74.7 448 88L448 128L480 128C515.3 128 544 156.7 544 192L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 192C96 156.7 124.7 128 160 128L192 128L192 88C192 74.7 202.7 64 216 64zM216 176L160 176C151.2 176 144 183.2 144 192L144 240L496 240L496 192C496 183.2 488.8 176 480 176L216 176zM144 288L144 480C144 488.8 151.2 496 160 496L480 496C488.8 496 496 488.8 496 480L496 288L144 288z"/></svg>`,"circle-question":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M464 256a208 208 0 1 0 -416 0 208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256-80c-17.7 0-32 14.3-32 32 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-44.2 35.8-80 80-80s80 35.8 80 80c0 47.2-36 67.2-56 74.5l0 3.8c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-8.1c0-20.5 14.8-35.2 30.1-40.2 6.4-2.1 13.2-5.5 18.2-10.3 4.3-4.2 7.7-10 7.7-19.6 0-17.7-14.3-32-32-32zM224 368a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>`,"circle-xmark":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c-9.4 9.4-9.4 24.6 0 33.9l55 55-55 55c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l55-55 55 55c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-55-55 55-55c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-55 55-55-55c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>`,clock:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/></svg>`,copy:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l133.5 0c4.2 0 8.3 1.7 11.3 4.7l58.5 58.5c3 3 4.7 7.1 4.7 11.3L400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-197.5c0-17-6.7-33.3-18.7-45.3L370.7 18.7C358.7 6.7 342.5 0 325.5 0L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-48 0 0 16c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l16 0 0-48-16 0z"/></svg>`,eye:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z"/></svg>`,"eye-slash":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M41-24.9c-9.4-9.4-24.6-9.4-33.9 0S-2.3-.3 7 9.1l528 528c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-96.4-96.4c2.7-2.4 5.4-4.8 8-7.2 46.8-43.5 78.1-95.4 93-131.1 3.3-7.9 3.3-16.7 0-24.6-14.9-35.7-46.2-87.7-93-131.1-47.1-43.7-111.8-80.6-192.6-80.6-56.8 0-105.6 18.2-146 44.2L41-24.9zM176.9 111.1c32.1-18.9 69.2-31.1 111.1-31.1 65.2 0 118.8 29.6 159.9 67.7 38.5 35.7 65.1 78.3 78.6 108.3-13.6 30-40.2 72.5-78.6 108.3-3.1 2.8-6.2 5.6-9.4 8.4L393.8 328c14-20.5 22.2-45.3 22.2-72 0-70.7-57.3-128-128-128-26.7 0-51.5 8.2-72 22.2l-39.1-39.1zm182 182l-108-108c11.1-5.8 23.7-9.1 37.1-9.1 44.2 0 80 35.8 80 80 0 13.4-3.3 26-9.1 37.1zM103.4 173.2l-34-34c-32.6 36.8-55 75.8-66.9 104.5-3.3 7.9-3.3 16.7 0 24.6 14.9 35.7 46.2 87.7 93 131.1 47.1 43.7 111.8 80.6 192.6 80.6 37.3 0 71.2-7.9 101.5-20.6L352.2 422c-20 6.4-41.4 10-64.2 10-65.2 0-118.8-29.6-159.9-67.7-38.5-35.7-65.1-78.3-78.6-108.3 10.4-23.1 28.6-53.6 54-82.8z"/></svg>`,star:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3 542.9 150.7c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2L288.1 417.6 143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2L134.4 305.9 20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8L288.1 44.8z"/></svg>`}},Pt={name:`system`,resolver:(e,t=`classic`,n=`solid`)=>{let r=Nt[n][e]??Nt.regular[e]??Nt.regular[`circle-question`];return r?Mt(r):``},mutator:e=>{e.hasAttribute(`fill`)||e.setAttribute(`fill`,`currentColor`)}},Ft=`classic`,It=[jt,Pt],Lt=new Set;function Rt(e){Lt.add(e)}function zt(e){Lt.delete(e)}function Bt(e){return It.find(t=>t.name===e)}function Vt(e,t){Ht(e),It.push({name:e,resolver:t.resolver,mutator:t.mutator,spriteSheet:t.spriteSheet}),Lt.forEach(t=>{t.library===e&&t.setIcon()})}function Ht(e){It=It.filter(t=>t.name!==e)}function Ut(){return Ft}var Wt=Object.defineProperty,Gt=Object.getOwnPropertyDescriptor,Kt=e=>{throw TypeError(e)},w=(e,t,n,r)=>{for(var i=r>1?void 0:r?Gt(t,n):t,a=e.length-1,o;a>=0;a--)(o=e[a])&&(i=(r?o(t,n,i):o(i))||i);return r&&i&&Wt(t,n,i),i},qt=(e,t,n)=>t.has(e)||Kt(`Cannot `+n),Jt=(e,t,n)=>(qt(e,t,`read from private field`),n?n.call(e):t.get(e)),Yt=(e,t,n)=>t.has(e)?Kt(`Cannot add the same private member more than once`):t instanceof WeakSet?t.add(e):t.set(e,n),Xt=(e,t,n,r)=>(qt(e,t,`write to private field`),r?r.call(e,n):t.set(e,n),n),Zt=()=>({checkValidity(e){let t=e.input,n={message:``,isValid:!0,invalidKeys:[]};if(!t)return n;let r=!0;if(`checkValidity`in t&&(r=t.checkValidity()),r)return n;if(n.isValid=!1,`validationMessage`in t&&(n.message=t.validationMessage),!(`validity`in t))return n.invalidKeys.push(`customError`),n;for(let e in t.validity){if(e===`valid`)continue;let r=e;t.validity[r]&&n.invalidKeys.push(r)}return n}}),Qt=class extends Event{constructor(){super(`wa-invalid`,{bubbles:!0,cancelable:!1,composed:!0})}},$t=globalThis,en=$t.ShadowRoot&&($t.ShadyCSS===void 0||$t.ShadyCSS.nativeShadow)&&`adoptedStyleSheets`in Document.prototype&&`replace`in CSSStyleSheet.prototype,tn=Symbol(),nn=new WeakMap,rn=class{constructor(e,t,n){if(this._$cssResult$=!0,n!==tn)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=e,this.t=t}get styleSheet(){let e=this.o,t=this.t;if(en&&e===void 0){let n=t!==void 0&&t.length===1;n&&(e=nn.get(t)),e===void 0&&((this.o=e=new CSSStyleSheet).replaceSync(this.cssText),n&&nn.set(t,e))}return e}toString(){return this.cssText}},an=e=>new rn(typeof e==`string`?e:e+``,void 0,tn),T=(e,...t)=>new rn(e.length===1?e[0]:t.reduce((t,n,r)=>t+(e=>{if(!0===e._$cssResult$)return e.cssText;if(typeof e==`number`)return e;throw Error(`Value passed to 'css' function must be a 'css' function result: `+e+`. Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.`)})(n)+e[r+1],e[0]),e,tn),on=(e,t)=>{if(en)e.adoptedStyleSheets=t.map(e=>e instanceof CSSStyleSheet?e:e.styleSheet);else for(let n of t){let t=document.createElement(`style`),r=$t.litNonce;r!==void 0&&t.setAttribute(`nonce`,r),t.textContent=n.cssText,e.appendChild(t)}},sn=en?e=>e:e=>e instanceof CSSStyleSheet?(e=>{let t=``;for(let n of e.cssRules)t+=n.cssText;return an(t)})(e):e,{is:cn,defineProperty:ln,getOwnPropertyDescriptor:un,getOwnPropertyNames:dn,getOwnPropertySymbols:fn,getPrototypeOf:pn}=Object,mn=globalThis,hn=mn.trustedTypes,gn=hn?hn.emptyScript:``,_n=mn.reactiveElementPolyfillSupport,vn=(e,t)=>e,yn={toAttribute(e,t){switch(t){case Boolean:e=e?gn:null;break;case Object:case Array:e=e==null?e:JSON.stringify(e)}return e},fromAttribute(e,t){let n=e;switch(t){case Boolean:n=e!==null;break;case Number:n=e===null?null:Number(e);break;case Object:case Array:try{n=JSON.parse(e)}catch{n=null}}return n}},bn=(e,t)=>!cn(e,t),xn={attribute:!0,type:String,converter:yn,reflect:!1,useDefault:!1,hasChanged:bn};Symbol.metadata??=Symbol(`metadata`),mn.litPropertyMetadata??=new WeakMap;var Sn=class extends HTMLElement{static addInitializer(e){this._$Ei(),(this.l??=[]).push(e)}static get observedAttributes(){return this.finalize(),this._$Eh&&[...this._$Eh.keys()]}static createProperty(e,t=xn){if(t.state&&(t.attribute=!1),this._$Ei(),this.prototype.hasOwnProperty(e)&&((t=Object.create(t)).wrapped=!0),this.elementProperties.set(e,t),!t.noAccessor){let n=Symbol(),r=this.getPropertyDescriptor(e,n,t);r!==void 0&&ln(this.prototype,e,r)}}static getPropertyDescriptor(e,t,n){let{get:r,set:i}=un(this.prototype,e)??{get(){return this[t]},set(e){this[t]=e}};return{get:r,set(t){let a=r?.call(this);i?.call(this,t),this.requestUpdate(e,a,n)},configurable:!0,enumerable:!0}}static getPropertyOptions(e){return this.elementProperties.get(e)??xn}static _$Ei(){if(this.hasOwnProperty(vn(`elementProperties`)))return;let e=pn(this);e.finalize(),e.l!==void 0&&(this.l=[...e.l]),this.elementProperties=new Map(e.elementProperties)}static finalize(){if(this.hasOwnProperty(vn(`finalized`)))return;if(this.finalized=!0,this._$Ei(),this.hasOwnProperty(vn(`properties`))){let e=this.properties,t=[...dn(e),...fn(e)];for(let n of t)this.createProperty(n,e[n])}let e=this[Symbol.metadata];if(e!==null){let t=litPropertyMetadata.get(e);if(t!==void 0)for(let[e,n]of t)this.elementProperties.set(e,n)}this._$Eh=new Map;for(let[e,t]of this.elementProperties){let n=this._$Eu(e,t);n!==void 0&&this._$Eh.set(n,e)}this.elementStyles=this.finalizeStyles(this.styles)}static finalizeStyles(e){let t=[];if(Array.isArray(e)){let n=new Set(e.flat(1/0).reverse());for(let e of n)t.unshift(sn(e))}else e!==void 0&&t.push(sn(e));return t}static _$Eu(e,t){let n=t.attribute;return!1===n?void 0:typeof n==`string`?n:typeof e==`string`?e.toLowerCase():void 0}constructor(){super(),this._$Ep=void 0,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Em=null,this._$Ev()}_$Ev(){this._$ES=new Promise(e=>this.enableUpdating=e),this._$AL=new Map,this._$E_(),this.requestUpdate(),this.constructor.l?.forEach(e=>e(this))}addController(e){(this._$EO??=new Set).add(e),this.renderRoot!==void 0&&this.isConnected&&e.hostConnected?.()}removeController(e){this._$EO?.delete(e)}_$E_(){let e=new Map,t=this.constructor.elementProperties;for(let n of t.keys())this.hasOwnProperty(n)&&(e.set(n,this[n]),delete this[n]);e.size>0&&(this._$Ep=e)}createRenderRoot(){let e=this.shadowRoot??this.attachShadow(this.constructor.shadowRootOptions);return on(e,this.constructor.elementStyles),e}connectedCallback(){this.renderRoot??=this.createRenderRoot(),this.enableUpdating(!0),this._$EO?.forEach(e=>e.hostConnected?.())}enableUpdating(e){}disconnectedCallback(){this._$EO?.forEach(e=>e.hostDisconnected?.())}attributeChangedCallback(e,t,n){this._$AK(e,n)}_$ET(e,t){let n=this.constructor.elementProperties.get(e),r=this.constructor._$Eu(e,n);if(r!==void 0&&!0===n.reflect){let i=(n.converter?.toAttribute===void 0?yn:n.converter).toAttribute(t,n.type);this._$Em=e,i==null?this.removeAttribute(r):this.setAttribute(r,i),this._$Em=null}}_$AK(e,t){let n=this.constructor,r=n._$Eh.get(e);if(r!==void 0&&this._$Em!==r){let e=n.getPropertyOptions(r),i=typeof e.converter==`function`?{fromAttribute:e.converter}:e.converter?.fromAttribute===void 0?yn:e.converter;this._$Em=r;let a=i.fromAttribute(t,e.type);this[r]=a??this._$Ej?.get(r)??a,this._$Em=null}}requestUpdate(e,t,n,r=!1,i){if(e!==void 0){let a=this.constructor;if(!1===r&&(i=this[e]),n??=a.getPropertyOptions(e),!((n.hasChanged??bn)(i,t)||n.useDefault&&n.reflect&&i===this._$Ej?.get(e)&&!this.hasAttribute(a._$Eu(e,n))))return;this.C(e,t,n)}!1===this.isUpdatePending&&(this._$ES=this._$EP())}C(e,t,{useDefault:n,reflect:r,wrapped:i},a){n&&!(this._$Ej??=new Map).has(e)&&(this._$Ej.set(e,a??t??this[e]),!0!==i||a!==void 0)||(this._$AL.has(e)||(this.hasUpdated||n||(t=void 0),this._$AL.set(e,t)),!0===r&&this._$Em!==e&&(this._$Eq??=new Set).add(e))}async _$EP(){this.isUpdatePending=!0;try{await this._$ES}catch(e){Promise.reject(e)}let e=this.scheduleUpdate();return e!=null&&await e,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){if(!this.isUpdatePending)return;if(!this.hasUpdated){if(this.renderRoot??=this.createRenderRoot(),this._$Ep){for(let[e,t]of this._$Ep)this[e]=t;this._$Ep=void 0}let e=this.constructor.elementProperties;if(e.size>0)for(let[t,n]of e){let{wrapped:e}=n,r=this[t];!0!==e||this._$AL.has(t)||r===void 0||this.C(t,void 0,n,r)}}let e=!1,t=this._$AL;try{e=this.shouldUpdate(t),e?(this.willUpdate(t),this._$EO?.forEach(e=>e.hostUpdate?.()),this.update(t)):this._$EM()}catch(t){throw e=!1,this._$EM(),t}e&&this._$AE(t)}willUpdate(e){}_$AE(e){this._$EO?.forEach(e=>e.hostUpdated?.()),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(e)),this.updated(e)}_$EM(){this._$AL=new Map,this.isUpdatePending=!1}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$ES}shouldUpdate(e){return!0}update(e){this._$Eq&&=this._$Eq.forEach(e=>this._$ET(e,this[e])),this._$EM()}updated(e){}firstUpdated(e){}};Sn.elementStyles=[],Sn.shadowRootOptions={mode:`open`},Sn[vn(`elementProperties`)]=new Map,Sn[vn(`finalized`)]=new Map,_n?.({ReactiveElement:Sn}),(mn.reactiveElementVersions??=[]).push(`2.1.2`);var Cn=globalThis,wn=e=>e,Tn=Cn.trustedTypes,En=Tn?Tn.createPolicy(`lit-html`,{createHTML:e=>e}):void 0,Dn=`$lit$`,On=`lit$${Math.random().toFixed(9).slice(2)}$`,kn=`?`+On,An=`<${kn}>`,jn=document,Mn=()=>jn.createComment(``),Nn=e=>e===null||typeof e!=`object`&&typeof e!=`function`,Pn=Array.isArray,Fn=e=>Pn(e)||typeof e?.[Symbol.iterator]==`function`,In=`[ 	
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M18 6l-12 12" />
+  <path d="M6 6l12 12" />
+</svg>`,nt=``,rt=``,it=``;function at(e){nt=e}function ot(e=``){if(!nt){let e=document.querySelector(`[data-webawesome]`);if(e?.hasAttribute(`data-webawesome`)){let t=new URL(e.getAttribute(`data-webawesome`)??``,window.location.href).pathname;at(t)}else{let e=[...document.getElementsByTagName(`script`)].find(e=>e.src.endsWith(`webawesome.js`)||e.src.endsWith(`webawesome.loader.js`)||e.src.endsWith(`webawesome.ssr-loader.js`));e&&at(String(e.getAttribute(`src`)).split(`/`).slice(0,-1).join(`/`))}}return nt.replace(/\/$/,``)+(e?`/${e.replace(/^\//,``)}`:``)}function st(){return rt.replace(/\/$/,``)}function ct(e){it=e}function lt(){if(!it){let e=document.querySelector(`[data-fa-kit-code]`);e&&ct(e.getAttribute(`data-fa-kit-code`)||``)}return it}var ut=`modulepreload`,dt=function(e,t){return new URL(e,t).href},ft={},pt=function(e){return e.pathname.endsWith(`.css`)},mt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e,i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}function s(e){return import.meta.resolve?new URL(import.meta.resolve(e)):new URL(e,import.meta.url)}r=o(t.map(t=>{t=dt(t,n);let r=s(t);if(r.href in ft)return;ft[r.href]=!0;let i=pt(r);if(e===void 0){e={all:new Set,styles:new Set};let t=document.getElementsByTagName(`link`);for(let n=t.length-1;n>=0;n--){let r=t[n];e.all.add(r.href),r.rel===`stylesheet`&&e.styles.add(r.href)}}if((i?e.styles:e.all).has(r.href))return;let o=document.createElement(`link`);if(o.rel=i?`stylesheet`:ut,i||(o.as=`script`),o.crossOrigin=``,o.href=r.href,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),i)return new Promise((e,t)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>t(Error(`Unable to preload CSS for ${r}`)))})}).filter(e=>e!==void 0))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};new MutationObserver(e=>{for(let{addedNodes:t}of e)for(let e of t)e.nodeType===Node.ELEMENT_NODE&&ht(e)});async function ht(e){let t=e instanceof Element?e.tagName.toLowerCase():``,n=t?.startsWith(`wa-`),r=[...e.querySelectorAll(`:not(:defined)`)].map(e=>e.tagName.toLowerCase()).filter(e=>e.startsWith(`wa-`));n&&!customElements.get(t)&&r.push(t);let i=e.querySelectorAll(`[data-wa-preload]`),a=e instanceof Element&&e.hasAttribute(`data-wa-preload`)?[e,...i]:i;for(let e of a)r.push(...e.getAttribute(`data-wa-preload`).split(/\s+/).filter(e=>e.startsWith(`wa-`)));let o=[...new Set(r)],s=await Promise.allSettled(o.map(e=>gt(e)));for(let e of s)e.status===`rejected`&&console.warn(e.reason);await new Promise(requestAnimationFrame),e.dispatchEvent(new CustomEvent(`wa-discovery-complete`,{bubbles:!1,cancelable:!1,composed:!0}))}function gt(e){if(customElements.get(e))return Promise.resolve();let t=e.replace(/^wa-/i,``),n=ot(`components/${t}/${t}.js`);return new Promise((t,r)=>{mt(()=>import(n).then(()=>t()),[],import.meta.url).catch(()=>r(Error(`Unable to autoload <${e}> from ${n}`)))})}var _t=new Set,vt=new Map,yt,bt=`ltr`,xt=`en`,St=typeof MutationObserver<`u`&&typeof document<`u`&&document.documentElement!==void 0;if(St){let e=new MutationObserver(wt);bt=document.documentElement.dir||`ltr`,xt=document.documentElement.lang||navigator.language,e.observe(document.documentElement,{attributes:!0,attributeFilter:[`dir`,`lang`]})}function Ct(...e){e.map(e=>{let t=e.$code.toLowerCase();vt.has(t)?vt.set(t,Object.assign(Object.assign({},vt.get(t)),e)):vt.set(t,e),yt||=e}),wt()}function wt(){St&&(bt=document.documentElement.dir||`ltr`,xt=document.documentElement.lang||navigator.language),[..._t.keys()].map(e=>{typeof e.requestUpdate==`function`&&e.requestUpdate()})}var Tt=class{constructor(e){this.host=e,this.host.addController(this)}hostConnected(){_t.add(this.host)}hostDisconnected(){_t.delete(this.host)}dir(){return`${this.host.dir||bt}`.toLowerCase()}lang(){let e=`${this.host.lang||xt}`.toLowerCase().replace(/_/g,`-`);try{return new Intl.Locale(e),e}catch{return yt?yt.$code.toLowerCase():`en`}}getTranslationData(e){let t;try{t=new Intl.Locale(e.replace(/_/g,`-`))}catch{return{locale:void 0,language:``,region:``,primary:void 0,secondary:void 0}}let n=t.language.toLowerCase(),r=t.region?.toLowerCase()??``,i=vt.get(`${n}-${r}`),a=vt.get(n);return{locale:t,language:n,region:r,primary:i,secondary:a}}exists(e,t){let{primary:n,secondary:r}=this.getTranslationData(t.lang??this.lang());return t=Object.assign({includeFallback:!1},t),!!(n&&n[e]||r&&r[e]||t.includeFallback&&yt&&yt[e])}term(e,...t){let{primary:n,secondary:r}=this.getTranslationData(this.lang()),i;if(n&&n[e])i=n[e];else if(r&&r[e])i=r[e];else if(yt&&yt[e])i=yt[e];else return console.error(`No translation found for: ${String(e)}`),String(e);return typeof i==`function`?i(...t):i}date(e,t){return e=new Date(e),new Intl.DateTimeFormat(this.lang(),t).format(e)}number(e,t){return e=Number(e),isNaN(e)?``:new Intl.NumberFormat(this.lang(),t).format(e)}relativeTime(e,t,n){return new Intl.RelativeTimeFormat(this.lang(),n).format(e,t)}},Et={$code:`en`,$name:`English`,$dir:`ltr`,allTagsRemoved:`All tags removed`,am:`AM`,autosizeColumn:`Autosize column`,captions:`Captions`,carousel:`Carousel`,chooseDate:`Choose date`,chooseDecade:`Choose decade`,chooseMonth:`Choose month`,chooseTime:`Choose time`,chooseYear:`Choose year`,clearEntry:`Clear entry`,clearFilter:`Clear filter`,clearSort:`Clear sort`,close:`Close`,closeCalendar:`Close calendar`,closeTimeInput:`Close time picker`,collapseRow:`Collapse row`,columnMenu:`Column options`,columnMovedToPosition:(e,t,n)=>`${e} moved to position ${t} of ${n}`,columns:`Columns`,compactPageXOfY:(e,t)=>`${e} of ${t}`,completed:`Completed`,copied:`Copied`,copy:`Copy`,createOption:e=>`Create "${e}"`,currentlyPlaying:`currently playing`,currentValue:`Current value`,date:`Date`,datePickerKeyboardHelp:`Use arrow keys to change values; press Alt+Down Arrow to open the calendar.`,day:`Day`,dayPeriod:`AM/PM`,decrement:`Decrement`,deselectAllRows:`Deselect all rows`,disabled:`Disabled`,dropFileHere:`Drop file here or click to browse`,dropFilesHere:`Drop files here or click to browse`,empty:`Empty`,endDate:`End date`,enterFullscreen:`Enter fullscreen`,error:`Error`,exitFullscreen:`Exit fullscreen`,expandRow:`Expand row`,filterByColumn:e=>`Filter by ${e}`,filterFrom:`From`,filterMax:`Max`,filterMin:`Min`,filterTo:`To`,firstPage:`First page`,goToSlide:(e,t)=>`Go to slide ${e} of ${t}`,hideColumn:`Hide column`,hidePassword:`Hide password`,hour:`Hour`,incompleteDate:`Enter a valid date.`,increment:`Increment`,jumpBackwardX:e=>`Jump back ${e} pages`,jumpForwardX:e=>`Jump forward ${e} pages`,lastPage:`Last page`,loading:`Loading`,locked:`Locked`,minute:`Minute`,month:`Month`,moreOptions:`More Options`,mute:`Mute`,nextDecade:`Next decade`,nextMonth:`Next month`,nextPage:`Next page`,nextSlide:`Next slide`,nextVideo:`Next Video`,nextYear:`Next year`,noData:`No data`,noOptions:`No options`,noResults:`No matching results`,notCompleted:`Not completed`,now:`Now`,numCharacters:e=>e===1?`1 character`:`${e} characters`,numCharactersRemaining:e=>e===1?`1 character remaining`:`${e} characters remaining`,numOptionsAvailable:e=>e===0?`No options available`:e===1?`1 option available`:`${e} options available`,numOptionsSelected:e=>e===0?`No options selected`:e===1?`1 option selected`:`${e} options selected`,numRowsCopied:e=>e===1?`1 row copied`:`${e} rows copied`,numRowsSelected:e=>e===1?`1 row selected`:`${e} rows selected`,optionPosition:(e,t,n)=>`${e}, ${t} of ${n}`,optionsLoadError:`Options could not be loaded`,pageXOfY:(e,t)=>`Page ${e} of ${t}`,pagination:`Pagination`,pause:`Pause`,pauseAnimation:`Pause animation`,pictureInPicture:`Picture in picture`,pinLeft:`Pin left`,pinRight:`Pin right`,play:`Play`,playAnimation:`Play animation`,playbackSpeed:`Playback speed`,playlist:`Playlist`,pm:`PM`,previousDecade:`Previous decade`,previousMonth:`Previous month`,previousPage:`Previous page`,previousSlide:`Previous slide`,previousVideo:`Previous video`,previousYear:`Previous year`,progress:`Progress`,rangeTooLong:e=>e===1?`Select a range no longer than 1 day`:`Select a range no longer than ${e} days`,rangeTooShort:e=>e===1?`Select a range at least 1 day long`:`Select a range at least ${e} days long`,readonly:`Read-only`,remove:`Remove`,resetColumns:`Reset columns`,resize:`Resize`,resizeColumn:`Resize column`,rowsPerPage:`Rows per page`,scrollableRegion:`Scrollable region`,scrollToEnd:`Scroll to end`,scrollToStart:`Scroll to start`,search:`Search`,second:`Second`,seek:`Seek`,seekProgress:(e,t)=>`${e} of ${t}`,selectAColorFromTheScreen:`Select a color from the screen`,selectAllRows:`Select all rows`,selected:`Selected`,selectedDateLabel:e=>`Selected: ${e}`,selectedRangeLabel:e=>`Selected range: ${e}`,selectGroup:`Select group`,selectionCleared:`Selection cleared`,selectRow:`Select row`,showingNofMRows:(e,t)=>`Showing ${e} of ${t} rows`,showingXtoYofZ:(e,t,n)=>`${e}\u2013${t} of ${n}`,showPassword:`Show password`,slideNum:e=>`Slide ${e}`,sortAscending:`Sort ascending`,sortColumn:`Sort column`,sortDescending:`Sort descending`,startDate:`Start date`,steps:`Steps`,stepXOfY:(e,t)=>`Step ${e} of ${t}`,tagAdded:e=>`${e} added`,tagAlreadyAdded:e=>`${e} is already added`,tagInputKeyboardHelp:`Press Backspace or Delete to remove this tag.`,tagRemoved:e=>`${e} removed`,time:`Time`,timeInputKeyboardHelp:`Use arrow keys to change values; press Alt+Down Arrow to open the time picker.`,today:`Today`,toggleColorFormat:`Toggle color format`,tooFewTags:e=>e===1?`Add at least 1 tag`:`Add at least ${e} tags`,tooManyTags:e=>e===1?`Add no more than 1 tag`:`Add no more than ${e} tags`,unmute:`Unmute`,unpin:`Unpin`,unpinColumn:`Unpin column`,videoPlayer:`Video player`,volume:`Volume`,year:`Year`,zoomIn:`Zoom in`,zoomOut:`Zoom out`};Ct(Et);var Dt=Et,C=class extends Tt{lang(){return this.host.didSSR&&!this.host.hasUpdated?this.host.lang||`en`:super.lang()}};Ct(Dt);var Ot=`7.3.0`;function kt(e,t,n){let r=`solid`;return t===`chisel`&&(r=`chisel-regular`),t===`etch`&&(r=`etch-solid`),t===`graphite`&&(r=`graphite-thin`),t===`jelly`&&(r=`jelly-regular`,n===`duo-regular`&&(r=`jelly-duo-regular`),n===`fill-regular`&&(r=`jelly-fill-regular`)),t===`jelly-duo`&&(r=`jelly-duo-regular`),t===`jelly-fill`&&(r=`jelly-fill-regular`),t===`notdog`&&(n===`solid`&&(r=`notdog-solid`),n===`duo-solid`&&(r=`notdog-duo-solid`)),t===`notdog-duo`&&(r=`notdog-duo-solid`),t===`slab`&&((n===`solid`||n===`regular`)&&(r=`slab-regular`),n===`press-regular`&&(r=`slab-press-regular`)),t===`slab-press`&&(r=`slab-press-regular`),t===`slab-duo`&&(r=`slab-duo-regular`),t===`slab-press-duo`&&(r=`slab-press-duo-regular`),t===`thumbprint`&&(r=`thumbprint-light`),t===`utility`&&(r=`utility-semibold`),t===`utility-duo`&&(r=`utility-duo-semibold`),t===`utility-fill`&&(r=`utility-fill-semibold`),t===`whiteboard`&&(r=`whiteboard-semibold`),t===`mosaic`&&(r=`mosaic-solid`),t===`pixel`&&(r=`pixel-regular`),t===`vellum`&&(r=`vellum-solid`),t===`classic`&&(n===`thin`&&(r=`thin`),n===`light`&&(r=`light`),n===`regular`&&(r=`regular`),n===`solid`&&(r=`solid`)),t===`duotone`&&(n===`thin`&&(r=`duotone-thin`),n===`light`&&(r=`duotone-light`),n===`regular`&&(r=`duotone-regular`),n===`solid`&&(r=`duotone`)),t===`sharp`&&(n===`thin`&&(r=`sharp-thin`),n===`light`&&(r=`sharp-light`),n===`regular`&&(r=`sharp-regular`),n===`solid`&&(r=`sharp-solid`)),t===`sharp-duotone`&&(n===`thin`&&(r=`sharp-duotone-thin`),n===`light`&&(r=`sharp-duotone-light`),n===`regular`&&(r=`sharp-duotone-regular`),n===`solid`&&(r=`sharp-duotone-solid`)),t===`brands`&&(r=`brands`),r}function At(e,t,n){let r=kt(e,t,n),i=st();if(i)return`${i}/${r}/${e}.svg`;let a=lt();return a.length>0?`https://ka-p.fontawesome.com/releases/v${Ot}/svgs/${r}/${e}.svg?token=${encodeURIComponent(a)}`:`https://ka-f.fontawesome.com/releases/v${Ot}/svgs/${r}/${e}.svg`}var jt={name:`default`,resolver:(e,t=`classic`,n=`solid`)=>At(e,t,n),mutator:(e,t)=>{if(e.hasAttribute(`fill`)||e.setAttribute(`fill`,`currentColor`),t?.family&&!e.hasAttribute(`data-duotone-initialized`)){let{family:n,variant:r}=t;if(n===`duotone`||n===`sharp-duotone`||n===`notdog-duo`||n===`notdog`&&r===`duo-solid`||n===`jelly-duo`||n===`jelly`&&r===`duo-regular`||n===`utility-duo`||n===`slab-duo`||n===`slab-press-duo`||n===`thumbprint`){let n=[...e.querySelectorAll(`path`)],r=n.find(e=>!e.hasAttribute(`opacity`)),i=n.find(e=>e.hasAttribute(`opacity`));if(!r||!i)return;if(r.setAttribute(`data-duotone-primary`,``),i.setAttribute(`data-duotone-secondary`,``),t.swapOpacity&&r&&i){let e=i.getAttribute(`opacity`)||`0.4`;r.style.setProperty(`--path-opacity`,e),i.style.setProperty(`--path-opacity`,`1`)}e.setAttribute(`data-duotone-initialized`,``)}}}};function Mt(e){return`data:image/svg+xml,${encodeURIComponent(e)}`}var Nt={solid:{"arrow-down":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7-105.4-105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`,"arrow-up":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M214.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-370.7 105.4 105.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>`,backward:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M236.3 107.1C247.9 96 265 92.9 279.7 99.2C294.4 105.5 304 120 304 136L304 272.3L476.3 107.2C487.9 96 505 92.9 519.7 99.2C534.4 105.5 544 120 544 136L544 504C544 520 534.4 534.5 519.7 540.8C505 547.1 487.9 544 476.3 532.9L304 367.7L304 504C304 520 294.4 534.5 279.7 540.8C265 547.1 247.9 544 236.3 532.9L44.3 348.9C36.5 341.3 32 330.9 32 320C32 309.1 36.5 298.7 44.3 291.1L236.3 107.1z"/></svg>`,"backward-step":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M491 100.8C478.1 93.8 462.3 94.5 450 102.6L192 272.1L192 128C192 110.3 177.7 96 160 96C142.3 96 128 110.3 128 128L128 512C128 529.7 142.3 544 160 544C177.7 544 192 529.7 192 512L192 367.9L450 537.5C462.3 545.6 478 546.3 491 539.3C504 532.3 512 518.8 512 504.1L512 136.1C512 121.4 503.9 107.9 491 100.9z"/></svg>`,bars:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>`,"angles-left":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M77.3 256 214.7 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256zm192 0L406.7 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L269.3 256z"/></svg>`,"angles-right":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M434.7 256 297.3 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L434.7 256zm-192 0L105.3 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256z"/></svg>`,check:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg>`,"chevron-down":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>`,"chevron-left":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>`,"chevron-right":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>`,circle:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"/></svg>`,"closed-captioning":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M64 192C64 156.7 92.7 128 128 128L512 128C547.3 128 576 156.7 576 192L576 448C576 483.3 547.3 512 512 512L128 512C92.7 512 64 483.3 64 448L64 192zM216 272L248 272C252.4 272 256 275.6 256 280C256 293.3 266.7 304 280 304C293.3 304 304 293.3 304 280C304 249.1 278.9 224 248 224L216 224C185.1 224 160 249.1 160 280L160 360C160 390.9 185.1 416 216 416L248 416C278.9 416 304 390.9 304 360C304 346.7 293.3 336 280 336C266.7 336 256 346.7 256 360C256 364.4 252.4 368 248 368L216 368C211.6 368 208 364.4 208 360L208 280C208 275.6 211.6 272 216 272zM384 280C384 275.6 387.6 272 392 272L424 272C428.4 272 432 275.6 432 280C432 293.3 442.7 304 456 304C469.3 304 480 293.3 480 280C480 249.1 454.9 224 424 224L392 224C361.1 224 336 249.1 336 280L336 360C336 390.9 361.1 416 392 416L424 416C454.9 416 480 390.9 480 360C480 346.7 469.3 336 456 336C442.7 336 432 346.7 432 360C432 364.4 428.4 368 424 368L392 368C387.6 368 384 364.4 384 360L384 280z"/></svg>`,"closed-captioning-slash":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M39 39.1C48.4 29.7 63.6 29.7 72.9 39.1L161.8 128L512 128C547.3 128 576 156.7 576 192L576 448C576 473.5 561.1 495.4 539.6 505.8L601 567.1C610.4 576.5 610.4 591.7 601 601C591.6 610.3 576.4 610.4 567.1 601L39 73.1C29.7 63.7 29.7 48.5 39 39.1zM384 350.1L384 279.9C384 275.5 387.6 271.9 392 271.9L424 271.9C428.4 271.9 432 275.5 432 279.9C432 293.2 442.7 303.9 456 303.9C469.3 303.9 480 293.2 480 279.9C480 249 454.9 223.9 424 223.9L392 223.9C361.1 223.9 336 249 336 279.9L336 302.1L384 350.1zM445.5 411.6C465.7 403.2 480 383.2 480 359.9C480 346.6 469.3 335.9 456 335.9C442.7 335.9 432 346.6 432 359.9C432 364.3 428.4 367.9 424 367.9L401.8 367.9L445.5 411.6zM162.3 264.1C160.8 269.1 160 274.5 160 280L160 360C160 390.9 185.1 416 216 416L248 416C266.1 416 282.1 407.5 292.4 394.2L410.2 512L128 512C92.7 512 64 483.3 64 448L64 192C64 184.2 65.4 176.7 68 169.8L162.3 264.1zM256.1 357.9C256 358.6 256 359.3 256 360C256 364.4 252.4 368 248 368L216 368C211.6 368 208 364.4 208 360L208 309.8L256.1 357.9z"/></svg>`,compress:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M160 64c0-17.7-14.3-32-32-32S96 46.3 96 64l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 320c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0z"/></svg>`,ellipsis:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M96 320C96 289.1 121.1 264 152 264C182.9 264 208 289.1 208 320C208 350.9 182.9 376 152 376C121.1 376 96 350.9 96 320zM264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320zM488 264C518.9 264 544 289.1 544 320C544 350.9 518.9 376 488 376C457.1 376 432 350.9 432 320C432 289.1 457.1 264 488 264z"/></svg>`,"ellipsis-vertical":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 208C289.1 208 264 182.9 264 152C264 121.1 289.1 96 320 96C350.9 96 376 121.1 376 152C376 182.9 350.9 208 320 208zM320 432C350.9 432 376 457.1 376 488C376 518.9 350.9 544 320 544C289.1 544 264 518.9 264 488C264 457.1 289.1 432 320 432zM376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320z"/></svg>`,expand:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 96C110.3 96 96 110.3 96 128L96 224C96 241.7 110.3 256 128 256C145.7 256 160 241.7 160 224L160 160L224 160C241.7 160 256 145.7 256 128C256 110.3 241.7 96 224 96L128 96zM160 416C160 398.3 145.7 384 128 384C110.3 384 96 398.3 96 416L96 512C96 529.7 110.3 544 128 544L224 544C241.7 544 256 529.7 256 512C256 494.3 241.7 480 224 480L160 480L160 416zM416 96C398.3 96 384 110.3 384 128C384 145.7 398.3 160 416 160L480 160L480 224C480 241.7 494.3 256 512 256C529.7 256 544 241.7 544 224L544 128C544 110.3 529.7 96 512 96L416 96zM544 416C544 398.3 529.7 384 512 384C494.3 384 480 398.3 480 416L480 480L416 480C398.3 480 384 494.3 384 512C384 529.7 398.3 544 416 544L512 544C529.7 544 544 529.7 544 512L544 416z"/></svg>`,eyedropper:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M341.6 29.2l-101.6 101.6-9.4-9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-9.4-9.4 101.6-101.6c39-39 39-102.2 0-141.1s-102.2-39-141.1 0zM55.4 323.3c-15 15-23.4 35.4-23.4 56.6l0 42.4-26.6 39.9c-8.5 12.7-6.8 29.6 4 40.4s27.7 12.5 40.4 4l39.9-26.6 42.4 0c21.2 0 41.6-8.4 56.6-23.4l109.4-109.4-45.3-45.3-109.4 109.4c-3 3-7.1 4.7-11.3 4.7l-36.1 0 0-36.1c0-4.2 1.7-8.3 4.7-11.3l109.4-109.4-45.3-45.3-109.4 109.4z"/></svg>`,filter:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M32 64C19.1 64 7.4 71.8 2.4 83.8S.2 109.5 9.4 118.6L192 301.3 192 416c0 8.5 3.4 16.6 9.4 22.6l64 64c9.2 9.2 22.9 11.9 34.9 6.9S320 492.9 320 480l0-178.7 182.6-182.6c9.2-9.2 11.9-22.9 6.9-34.9S492.9 64 480 64L32 64z"/></svg>`,forward:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M403.7 107.1C392.1 96 375 92.9 360.3 99.2C345.6 105.5 336 120 336 136L336 272.3L163.7 107.2C152.1 96 135 92.9 120.3 99.2C105.6 105.5 96 120 96 136L96 504C96 520 105.6 534.5 120.3 540.8C135 547.1 152.1 544 163.7 532.9L336 367.7L336 504C336 520 345.6 534.5 360.3 540.8C375 547.1 392.1 544 403.7 532.9L595.7 348.9C603.6 341.4 608 330.9 608 320C608 309.1 603.5 298.7 595.7 291.1L403.7 107.1z"/></svg>`,file:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z"/></svg>`,"file-audio":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM389.8 307.7C380.7 301.4 368.3 303.6 362 312.7C355.7 321.8 357.9 334.2 367 340.5C390.9 357.2 406.4 384.8 406.4 416C406.4 447.2 390.8 474.9 367 491.5C357.9 497.8 355.7 510.3 362 519.3C368.3 528.3 380.8 530.6 389.8 524.3C423.9 500.5 446.4 460.8 446.4 416C446.4 371.2 424 331.5 389.8 307.7zM208 376C199.2 376 192 383.2 192 392L192 440C192 448.8 199.2 456 208 456L232 456L259.2 490C262.2 493.8 266.8 496 271.7 496L272 496C280.8 496 288 488.8 288 480L288 352C288 343.2 280.8 336 272 336L271.7 336C266.8 336 262.2 338.2 259.2 342L232 376L208 376zM336 448.2C336 458.9 346.5 466.4 354.9 459.8C367.8 449.5 376 433.7 376 416C376 398.3 367.8 382.5 354.9 372.2C346.5 365.5 336 373.1 336 383.8L336 448.3z"/></svg>`,"file-code":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM282.2 359.6C290.8 349.5 289.7 334.4 279.6 325.8C269.5 317.2 254.4 318.3 245.8 328.4L197.8 384.4C190.1 393.4 190.1 406.6 197.8 415.6L245.8 471.6C254.4 481.7 269.6 482.8 279.6 474.2C289.6 465.6 290.8 450.4 282.2 440.4L247.6 400L282.2 359.6zM394.2 328.4C385.6 318.3 370.4 317.2 360.4 325.8C350.4 334.4 349.2 349.6 357.8 359.6L392.4 400L357.8 440.4C349.2 450.5 350.3 465.6 360.4 474.2C370.5 482.8 385.6 481.7 394.2 471.6L442.2 415.6C449.9 406.6 449.9 393.4 442.2 384.4L394.2 328.4z"/></svg>`,"file-excel":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM292 330.7C284.6 319.7 269.7 316.7 258.7 324C247.7 331.3 244.7 346.3 252 357.3L291.2 416L252 474.7C244.6 485.7 247.6 500.6 258.7 508C269.8 515.4 284.6 512.4 292 501.3L320 459.3L348 501.3C355.4 512.3 370.3 515.3 381.3 508C392.3 500.7 395.3 485.7 388 474.7L348.8 416L388 357.3C395.4 346.3 392.4 331.4 381.3 324C370.2 316.6 355.4 319.6 348 330.7L320 372.7L292 330.7z"/></svg>`,"file-image":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM256 320C256 302.3 241.7 288 224 288C206.3 288 192 302.3 192 320C192 337.7 206.3 352 224 352C241.7 352 256 337.7 256 320zM220.6 512L419.4 512C435.2 512 448 499.2 448 483.4C448 476.1 445.2 469 440.1 463.7L343.3 361.9C337.3 355.6 328.9 352 320.1 352L319.8 352C311 352 302.7 355.6 296.6 361.9L199.9 463.7C194.8 469 192 476.1 192 483.4C192 499.2 204.8 512 220.6 512z"/></svg>`,"file-pdf":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 64C92.7 64 64 92.7 64 128L64 512C64 547.3 92.7 576 128 576L208 576L208 464C208 428.7 236.7 400 272 400L448 400L448 234.5C448 217.5 441.3 201.2 429.3 189.2L322.7 82.7C310.7 70.7 294.5 64 277.5 64L128 64zM389.5 240L296 240C282.7 240 272 229.3 272 216L272 122.5L389.5 240zM272 444C261 444 252 453 252 464L252 592C252 603 261 612 272 612C283 612 292 603 292 592L292 564L304 564C337.1 564 364 537.1 364 504C364 470.9 337.1 444 304 444L272 444zM304 524L292 524L292 484L304 484C315 484 324 493 324 504C324 515 315 524 304 524zM400 444C389 444 380 453 380 464L380 592C380 603 389 612 400 612L432 612C460.7 612 484 588.7 484 560L484 496C484 467.3 460.7 444 432 444L400 444zM420 572L420 484L432 484C438.6 484 444 489.4 444 496L444 560C444 566.6 438.6 572 432 572L420 572zM508 464L508 592C508 603 517 612 528 612C539 612 548 603 548 592L548 548L576 548C587 548 596 539 596 528C596 517 587 508 576 508L548 508L548 484L576 484C587 484 596 475 596 464C596 453 587 444 576 444L528 444C517 444 508 453 508 464z"/></svg>`,"file-powerpoint":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM280 320C266.7 320 256 330.7 256 344L256 488C256 501.3 266.7 512 280 512C293.3 512 304 501.3 304 488L304 464L328 464C367.8 464 400 431.8 400 392C400 352.2 367.8 320 328 320L280 320zM328 416L304 416L304 368L328 368C341.3 368 352 378.7 352 392C352 405.3 341.3 416 328 416z"/></svg>`,"file-video":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM208 368L208 464C208 481.7 222.3 496 240 496L336 496C353.7 496 368 481.7 368 464L368 440L403 475C406.2 478.2 410.5 480 415 480C424.4 480 432 472.4 432 463L432 368.9C432 359.5 424.4 351.9 415 351.9C410.5 351.9 406.2 353.7 403 356.9L368 391.9L368 367.9C368 350.2 353.7 335.9 336 335.9L240 335.9C222.3 335.9 208 350.2 208 367.9z"/></svg>`,"file-word":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM263.4 338.8C260.5 325.9 247.7 317.7 234.8 320.6C221.9 323.5 213.7 336.3 216.6 349.2L248.6 493.2C250.9 503.7 260 511.4 270.8 512C281.6 512.6 291.4 505.9 294.8 495.6L320 419.9L345.2 495.6C348.6 505.8 358.4 512.5 369.2 512C380 511.5 389.1 503.8 391.4 493.2L423.4 349.2C426.3 336.3 418.1 323.4 405.2 320.6C392.3 317.8 379.4 325.9 376.6 338.8L363.4 398.2L342.8 336.4C339.5 326.6 330.4 320 320 320C309.6 320 300.5 326.6 297.2 336.4L276.6 398.2L263.4 338.8z"/></svg>`,"file-zipper":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L341.5 64C358.5 64 374.8 70.7 386.8 82.7L493.3 189.3C505.3 201.3 512 217.6 512 234.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128zM336 122.5L336 216C336 229.3 346.7 240 360 240L453.5 240L336 122.5zM192 136C192 149.3 202.7 160 216 160L264 160C277.3 160 288 149.3 288 136C288 122.7 277.3 112 264 112L216 112C202.7 112 192 122.7 192 136zM192 232C192 245.3 202.7 256 216 256L264 256C277.3 256 288 245.3 288 232C288 218.7 277.3 208 264 208L216 208C202.7 208 192 218.7 192 232zM256 304L224 304C206.3 304 192 318.3 192 336L192 384C192 410.5 213.5 432 240 432C266.5 432 288 410.5 288 384L288 336C288 318.3 273.7 304 256 304zM240 368C248.8 368 256 375.2 256 384C256 392.8 248.8 400 240 400C231.2 400 224 392.8 224 384C224 375.2 231.2 368 240 368z"/></svg>`,"forward-step":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M21 36.8c12.9-7 28.7-6.3 41 1.8L320 208.1 320 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 384c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-144.1-258 169.6c-12.3 8.1-28 8.8-41 1.8S0 454.7 0 440L0 72C0 57.3 8.1 43.8 21 36.8z"/></svg>`,gauge:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm320 96c0-26.9-16.5-49.9-40-59.3L280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 172.7c-23.5 9.5-40 32.5-40 59.3 0 35.3 28.7 64 64 64s64-28.7 64-64zM144 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm-16 80a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM400 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>`,gear:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M259.1 73.5C262.1 58.7 275.2 48 290.4 48L350.2 48C365.4 48 378.5 58.7 381.5 73.5L396 143.5C410.1 149.5 423.3 157.2 435.3 166.3L503.1 143.8C517.5 139 533.3 145 540.9 158.2L570.8 210C578.4 223.2 575.7 239.8 564.3 249.9L511 297.3C511.9 304.7 512.3 312.3 512.3 320C512.3 327.7 511.8 335.3 511 342.7L564.4 390.2C575.8 400.3 578.4 417 570.9 430.1L541 481.9C533.4 495 517.6 501.1 503.2 496.3L435.4 473.8C423.3 482.9 410.1 490.5 396.1 496.6L381.7 566.5C378.6 581.4 365.5 592 350.4 592L290.6 592C275.4 592 262.3 581.3 259.3 566.5L244.9 496.6C230.8 490.6 217.7 482.9 205.6 473.8L137.5 496.3C123.1 501.1 107.3 495.1 99.7 481.9L69.8 430.1C62.2 416.9 64.9 400.3 76.3 390.2L129.7 342.7C128.8 335.3 128.4 327.7 128.4 320C128.4 312.3 128.9 304.7 129.7 297.3L76.3 249.8C64.9 239.7 62.3 223 69.8 209.9L99.7 158.1C107.3 144.9 123.1 138.9 137.5 143.7L205.3 166.2C217.4 157.1 230.6 149.5 244.6 143.4L259.1 73.5zM320.3 400C364.5 399.8 400.2 363.9 400 319.7C399.8 275.5 363.9 239.8 319.7 240C275.5 240.2 239.8 276.1 240 320.3C240.2 364.5 276.1 400.2 320.3 400z"/></svg>`,"grip-vertical":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M128 40c0-22.1-17.9-40-40-40L40 0C17.9 0 0 17.9 0 40L0 88c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zM0 424l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM320 40c0-22.1-17.9-40-40-40L232 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zM192 232l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM320 424c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48z"/></svg>`,indeterminate:`<svg part="indeterminate-icon" class="icon" viewBox="0 0 16 16"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"><g stroke="currentColor" stroke-width="2"><g transform="translate(2.285714 6.857143)"><path d="M10.2857143,1.14285714 L1.14285714,1.14285714"/></g></g></g></svg>`,"magnifying-glass":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>`,minus:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32z"/></svg>`,pause:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M48 32C21.5 32 0 53.5 0 80L0 432c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48L48 32zm224 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0z"/></svg>`,"picture-in-picture":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M448 32c35.3 0 64 28.7 64 64l0 112-64 0 0-112-384 0 0 320 144 0 0 64-144 0-6.5-.3c-30.1-3.1-54.1-27-57.1-57.1L0 416 0 96C0 62.9 25.2 35.6 57.5 32.3L64 32 448 32zm16 224c26.5 0 48 21.5 48 48l0 128c0 26.5-21.5 48-48 48l-160 0c-26.5 0-48-21.5-48-48l0-128c0-26.5 21.5-48 48-48l160 0z"/></svg>`,play:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M91.2 36.9c-12.4-6.8-27.4-6.5-39.6 .7S32 57.9 32 72l0 368c0 14.1 7.5 27.2 19.6 34.4s27.2 7.5 39.6 .7l336-184c12.8-7 20.8-20.5 20.8-35.1s-8-28.1-20.8-35.1l-336-184z"/></svg>`,"play-circle":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>`,plus:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"/></svg>`,star:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"/></svg>`,"table-columns":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm64 64l0 256 128 0 0-256-128 0zm320 0l-128 0 0 256 128 0 0-256z"/></svg>`,thumbtack:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M32 32C32 14.3 46.3 0 64 0L320 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-29.5 0 10.3 134.1c37.1 21.2 65.8 56.4 78.2 99.7l3.8 13.4c2.8 9.7 .8 20-5.2 28.1S362 352 352 352L32 352c-10 0-19.5-4.7-25.5-12.7s-8-18.4-5.2-28.1L5 297.8c12.4-43.3 41-78.5 78.2-99.7L93.5 64 64 64C46.3 64 32 49.7 32 32zM160 400l64 0 0 112c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-112z"/></svg>`,"up-down":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M406.6 502.6l96-96c9.2-9.2 11.9-22.9 6.9-34.9S492.9 352 480 352l-64 0 0-320c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 320-64 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l96 96c12.5 12.5 32.8 12.5 45.3 0zM150.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-9.2 9.2-11.9 22.9-6.9 34.9S19.1 160 32 160l64 0 0 320c0 17.7 14.3 32 32 32s32-14.3 32-32l0-320 64 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-96-96z"/></svg>`,upload:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M352 173.3L352 384C352 401.7 337.7 416 320 416C302.3 416 288 401.7 288 384L288 173.3L246.6 214.7C234.1 227.2 213.8 227.2 201.3 214.7C188.8 202.2 188.8 181.9 201.3 169.4L297.3 73.4C309.8 60.9 330.1 60.9 342.6 73.4L438.6 169.4C451.1 181.9 451.1 202.2 438.6 214.7C426.1 227.2 405.8 227.2 393.3 214.7L352 173.3zM320 464C364.2 464 400 428.2 400 384L480 384C515.3 384 544 412.7 544 448L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 448C96 412.7 124.7 384 160 384L240 384C240 428.2 275.8 464 320 464zM464 488C477.3 488 488 477.3 488 464C488 450.7 477.3 440 464 440C450.7 440 440 450.7 440 464C440 477.3 450.7 488 464 488z"/></svg>`,user:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></svg>`,volume:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 352l48 0 134.1 119.2c6.4 5.7 14.6 8.8 23.1 8.8 19.2 0 34.8-15.6 34.8-34.8l0-378.4c0-19.2-15.6-34.8-34.8-34.8-8.5 0-16.7 3.1-23.1 8.8L96 160 48 160c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48zM441.1 107c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C443.3 170.7 464 210.9 464 256s-20.7 85.3-53.2 111.8c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5c43.2-35.2 70.9-88.9 70.9-149s-27.7-113.8-70.9-149zm-60.5 74.5c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C361.1 227.6 368 241 368 256s-6.9 28.4-17.7 37.3c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5C402.1 312.9 416 286.1 416 256s-13.9-56.9-35.5-74.5z"/></svg>`,"volume-low":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 352l48 0 134.1 119.2c6.4 5.7 14.6 8.8 23.1 8.8 19.2 0 34.8-15.6 34.8-34.8l0-378.4c0-19.2-15.6-34.8-34.8-34.8-8.5 0-16.7 3.1-23.1 8.8L96 160 48 160c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48zM380.6 181.5c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C361.1 227.6 368 241 368 256s-6.9 28.4-17.7 37.3c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5C402.1 312.9 416 286.1 416 256s-13.9-56.9-35.5-74.5z"/></svg>`,"volume-xmark":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 352l48 0 134.1 119.2c6.4 5.7 14.6 8.8 23.1 8.8 19.2 0 34.8-15.6 34.8-34.8l0-378.4c0-19.2-15.6-34.8-34.8-34.8-8.5 0-16.7 3.1-23.1 8.8L96 160 48 160c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48zM367 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>`,xmark:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>`},regular:{calendar:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M216 64C229.3 64 240 74.7 240 88L240 128L400 128L400 88C400 74.7 410.7 64 424 64C437.3 64 448 74.7 448 88L448 128L480 128C515.3 128 544 156.7 544 192L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 192C96 156.7 124.7 128 160 128L192 128L192 88C192 74.7 202.7 64 216 64zM216 176L160 176C151.2 176 144 183.2 144 192L144 240L496 240L496 192C496 183.2 488.8 176 480 176L216 176zM144 288L144 480C144 488.8 151.2 496 160 496L480 496C488.8 496 496 488.8 496 480L496 288L144 288z"/></svg>`,"circle-question":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M464 256a208 208 0 1 0 -416 0 208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256-80c-17.7 0-32 14.3-32 32 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-44.2 35.8-80 80-80s80 35.8 80 80c0 47.2-36 67.2-56 74.5l0 3.8c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-8.1c0-20.5 14.8-35.2 30.1-40.2 6.4-2.1 13.2-5.5 18.2-10.3 4.3-4.2 7.7-10 7.7-19.6 0-17.7-14.3-32-32-32zM224 368a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>`,"circle-xmark":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c-9.4 9.4-9.4 24.6 0 33.9l55 55-55 55c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l55-55 55 55c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-55-55 55-55c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-55 55-55-55c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>`,clock:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/></svg>`,copy:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l133.5 0c4.2 0 8.3 1.7 11.3 4.7l58.5 58.5c3 3 4.7 7.1 4.7 11.3L400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-197.5c0-17-6.7-33.3-18.7-45.3L370.7 18.7C358.7 6.7 342.5 0 325.5 0L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-48 0 0 16c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l16 0 0-48-16 0z"/></svg>`,eye:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z"/></svg>`,"eye-slash":`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M41-24.9c-9.4-9.4-24.6-9.4-33.9 0S-2.3-.3 7 9.1l528 528c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-96.4-96.4c2.7-2.4 5.4-4.8 8-7.2 46.8-43.5 78.1-95.4 93-131.1 3.3-7.9 3.3-16.7 0-24.6-14.9-35.7-46.2-87.7-93-131.1-47.1-43.7-111.8-80.6-192.6-80.6-56.8 0-105.6 18.2-146 44.2L41-24.9zM176.9 111.1c32.1-18.9 69.2-31.1 111.1-31.1 65.2 0 118.8 29.6 159.9 67.7 38.5 35.7 65.1 78.3 78.6 108.3-13.6 30-40.2 72.5-78.6 108.3-3.1 2.8-6.2 5.6-9.4 8.4L393.8 328c14-20.5 22.2-45.3 22.2-72 0-70.7-57.3-128-128-128-26.7 0-51.5 8.2-72 22.2l-39.1-39.1zm182 182l-108-108c11.1-5.8 23.7-9.1 37.1-9.1 44.2 0 80 35.8 80 80 0 13.4-3.3 26-9.1 37.1zM103.4 173.2l-34-34c-32.6 36.8-55 75.8-66.9 104.5-3.3 7.9-3.3 16.7 0 24.6 14.9 35.7 46.2 87.7 93 131.1 47.1 43.7 111.8 80.6 192.6 80.6 37.3 0 71.2-7.9 101.5-20.6L352.2 422c-20 6.4-41.4 10-64.2 10-65.2 0-118.8-29.6-159.9-67.7-38.5-35.7-65.1-78.3-78.6-108.3 10.4-23.1 28.6-53.6 54-82.8z"/></svg>`,star:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. --><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3 542.9 150.7c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2L288.1 417.6 143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2L134.4 305.9 20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8L288.1 44.8z"/></svg>`}},Pt={name:`system`,resolver:(e,t=`classic`,n=`solid`)=>{let r=Nt[n][e]??Nt.regular[e]??Nt.regular[`circle-question`];return r?Mt(r):``},mutator:e=>{e.hasAttribute(`fill`)||e.setAttribute(`fill`,`currentColor`)}},Ft=`classic`,It=[jt,Pt],Lt=new Set;function Rt(e){Lt.add(e)}function zt(e){Lt.delete(e)}function Bt(e){return It.find(t=>t.name===e)}function Vt(e,t){Ht(e),It.push({name:e,resolver:t.resolver,mutator:t.mutator,spriteSheet:t.spriteSheet}),Lt.forEach(t=>{t.library===e&&t.setIcon()})}function Ht(e){It=It.filter(t=>t.name!==e)}function Ut(){return Ft}var Wt=Object.defineProperty,Gt=Object.getOwnPropertyDescriptor,Kt=e=>{throw TypeError(e)},w=(e,t,n,r)=>{for(var i=r>1?void 0:r?Gt(t,n):t,a=e.length-1,o;a>=0;a--)(o=e[a])&&(i=(r?o(t,n,i):o(i))||i);return r&&i&&Wt(t,n,i),i},qt=(e,t,n)=>t.has(e)||Kt(`Cannot `+n),Jt=(e,t,n)=>(qt(e,t,`read from private field`),n?n.call(e):t.get(e)),Yt=(e,t,n)=>t.has(e)?Kt(`Cannot add the same private member more than once`):t instanceof WeakSet?t.add(e):t.set(e,n),Xt=(e,t,n,r)=>(qt(e,t,`write to private field`),r?r.call(e,n):t.set(e,n),n),Zt=()=>({checkValidity(e){let t=e.input,n={message:``,isValid:!0,invalidKeys:[]};if(!t)return n;let r=!0;if(`checkValidity`in t&&(r=t.checkValidity()),r)return n;if(n.isValid=!1,`validationMessage`in t&&(n.message=t.validationMessage),!(`validity`in t))return n.invalidKeys.push(`customError`),n;for(let e in t.validity){if(e===`valid`)continue;let r=e;t.validity[r]&&n.invalidKeys.push(r)}return n}}),Qt=class extends Event{constructor(){super(`wa-invalid`,{bubbles:!0,cancelable:!1,composed:!0})}},$t=globalThis,en=$t.ShadowRoot&&($t.ShadyCSS===void 0||$t.ShadyCSS.nativeShadow)&&`adoptedStyleSheets`in Document.prototype&&`replace`in CSSStyleSheet.prototype,tn=Symbol(),nn=new WeakMap,rn=class{constructor(e,t,n){if(this._$cssResult$=!0,n!==tn)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=e,this.t=t}get styleSheet(){let e=this.o,t=this.t;if(en&&e===void 0){let n=t!==void 0&&t.length===1;n&&(e=nn.get(t)),e===void 0&&((this.o=e=new CSSStyleSheet).replaceSync(this.cssText),n&&nn.set(t,e))}return e}toString(){return this.cssText}},an=e=>new rn(typeof e==`string`?e:e+``,void 0,tn),T=(e,...t)=>new rn(e.length===1?e[0]:t.reduce((t,n,r)=>t+(e=>{if(!0===e._$cssResult$)return e.cssText;if(typeof e==`number`)return e;throw Error(`Value passed to 'css' function must be a 'css' function result: `+e+`. Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.`)})(n)+e[r+1],e[0]),e,tn),on=(e,t)=>{if(en)e.adoptedStyleSheets=t.map(e=>e instanceof CSSStyleSheet?e:e.styleSheet);else for(let n of t){let t=document.createElement(`style`),r=$t.litNonce;r!==void 0&&t.setAttribute(`nonce`,r),t.textContent=n.cssText,e.appendChild(t)}},sn=en?e=>e:e=>e instanceof CSSStyleSheet?(e=>{let t=``;for(let n of e.cssRules)t+=n.cssText;return an(t)})(e):e,{is:cn,defineProperty:ln,getOwnPropertyDescriptor:un,getOwnPropertyNames:dn,getOwnPropertySymbols:fn,getPrototypeOf:pn}=Object,mn=globalThis,hn=mn.trustedTypes,gn=hn?hn.emptyScript:``,_n=mn.reactiveElementPolyfillSupport,vn=(e,t)=>e,yn={toAttribute(e,t){switch(t){case Boolean:e=e?gn:null;break;case Object:case Array:e=e==null?e:JSON.stringify(e)}return e},fromAttribute(e,t){let n=e;switch(t){case Boolean:n=e!==null;break;case Number:n=e===null?null:Number(e);break;case Object:case Array:try{n=JSON.parse(e)}catch{n=null}}return n}},bn=(e,t)=>!cn(e,t),xn={attribute:!0,type:String,converter:yn,reflect:!1,useDefault:!1,hasChanged:bn};Symbol.metadata??=Symbol(`metadata`),mn.litPropertyMetadata??=new WeakMap;var Sn=class extends HTMLElement{static addInitializer(e){this._$Ei(),(this.l??=[]).push(e)}static get observedAttributes(){return this.finalize(),this._$Eh&&[...this._$Eh.keys()]}static createProperty(e,t=xn){if(t.state&&(t.attribute=!1),this._$Ei(),this.prototype.hasOwnProperty(e)&&((t=Object.create(t)).wrapped=!0),this.elementProperties.set(e,t),!t.noAccessor){let n=Symbol(),r=this.getPropertyDescriptor(e,n,t);r!==void 0&&ln(this.prototype,e,r)}}static getPropertyDescriptor(e,t,n){let{get:r,set:i}=un(this.prototype,e)??{get(){return this[t]},set(e){this[t]=e}};return{get:r,set(t){let a=r?.call(this);i?.call(this,t),this.requestUpdate(e,a,n)},configurable:!0,enumerable:!0}}static getPropertyOptions(e){return this.elementProperties.get(e)??xn}static _$Ei(){if(this.hasOwnProperty(vn(`elementProperties`)))return;let e=pn(this);e.finalize(),e.l!==void 0&&(this.l=[...e.l]),this.elementProperties=new Map(e.elementProperties)}static finalize(){if(this.hasOwnProperty(vn(`finalized`)))return;if(this.finalized=!0,this._$Ei(),this.hasOwnProperty(vn(`properties`))){let e=this.properties,t=[...dn(e),...fn(e)];for(let n of t)this.createProperty(n,e[n])}let e=this[Symbol.metadata];if(e!==null){let t=litPropertyMetadata.get(e);if(t!==void 0)for(let[e,n]of t)this.elementProperties.set(e,n)}this._$Eh=new Map;for(let[e,t]of this.elementProperties){let n=this._$Eu(e,t);n!==void 0&&this._$Eh.set(n,e)}this.elementStyles=this.finalizeStyles(this.styles)}static finalizeStyles(e){let t=[];if(Array.isArray(e)){let n=new Set(e.flat(1/0).reverse());for(let e of n)t.unshift(sn(e))}else e!==void 0&&t.push(sn(e));return t}static _$Eu(e,t){let n=t.attribute;return!1===n?void 0:typeof n==`string`?n:typeof e==`string`?e.toLowerCase():void 0}constructor(){super(),this._$Ep=void 0,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Em=null,this._$Ev()}_$Ev(){this._$ES=new Promise(e=>this.enableUpdating=e),this._$AL=new Map,this._$E_(),this.requestUpdate(),this.constructor.l?.forEach(e=>e(this))}addController(e){(this._$EO??=new Set).add(e),this.renderRoot!==void 0&&this.isConnected&&e.hostConnected?.()}removeController(e){this._$EO?.delete(e)}_$E_(){let e=new Map,t=this.constructor.elementProperties;for(let n of t.keys())this.hasOwnProperty(n)&&(e.set(n,this[n]),delete this[n]);e.size>0&&(this._$Ep=e)}createRenderRoot(){let e=this.shadowRoot??this.attachShadow(this.constructor.shadowRootOptions);return on(e,this.constructor.elementStyles),e}connectedCallback(){this.renderRoot??=this.createRenderRoot(),this.enableUpdating(!0),this._$EO?.forEach(e=>e.hostConnected?.())}enableUpdating(e){}disconnectedCallback(){this._$EO?.forEach(e=>e.hostDisconnected?.())}attributeChangedCallback(e,t,n){this._$AK(e,n)}_$ET(e,t){let n=this.constructor.elementProperties.get(e),r=this.constructor._$Eu(e,n);if(r!==void 0&&!0===n.reflect){let i=(n.converter?.toAttribute===void 0?yn:n.converter).toAttribute(t,n.type);this._$Em=e,i==null?this.removeAttribute(r):this.setAttribute(r,i),this._$Em=null}}_$AK(e,t){let n=this.constructor,r=n._$Eh.get(e);if(r!==void 0&&this._$Em!==r){let e=n.getPropertyOptions(r),i=typeof e.converter==`function`?{fromAttribute:e.converter}:e.converter?.fromAttribute===void 0?yn:e.converter;this._$Em=r;let a=i.fromAttribute(t,e.type);this[r]=a??this._$Ej?.get(r)??a,this._$Em=null}}requestUpdate(e,t,n,r=!1,i){if(e!==void 0){let a=this.constructor;if(!1===r&&(i=this[e]),n??=a.getPropertyOptions(e),!((n.hasChanged??bn)(i,t)||n.useDefault&&n.reflect&&i===this._$Ej?.get(e)&&!this.hasAttribute(a._$Eu(e,n))))return;this.C(e,t,n)}!1===this.isUpdatePending&&(this._$ES=this._$EP())}C(e,t,{useDefault:n,reflect:r,wrapped:i},a){n&&!(this._$Ej??=new Map).has(e)&&(this._$Ej.set(e,a??t??this[e]),!0!==i||a!==void 0)||(this._$AL.has(e)||(this.hasUpdated||n||(t=void 0),this._$AL.set(e,t)),!0===r&&this._$Em!==e&&(this._$Eq??=new Set).add(e))}async _$EP(){this.isUpdatePending=!0;try{await this._$ES}catch(e){Promise.reject(e)}let e=this.scheduleUpdate();return e!=null&&await e,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){if(!this.isUpdatePending)return;if(!this.hasUpdated){if(this.renderRoot??=this.createRenderRoot(),this._$Ep){for(let[e,t]of this._$Ep)this[e]=t;this._$Ep=void 0}let e=this.constructor.elementProperties;if(e.size>0)for(let[t,n]of e){let{wrapped:e}=n,r=this[t];!0!==e||this._$AL.has(t)||r===void 0||this.C(t,void 0,n,r)}}let e=!1,t=this._$AL;try{e=this.shouldUpdate(t),e?(this.willUpdate(t),this._$EO?.forEach(e=>e.hostUpdate?.()),this.update(t)):this._$EM()}catch(t){throw e=!1,this._$EM(),t}e&&this._$AE(t)}willUpdate(e){}_$AE(e){this._$EO?.forEach(e=>e.hostUpdated?.()),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(e)),this.updated(e)}_$EM(){this._$AL=new Map,this.isUpdatePending=!1}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$ES}shouldUpdate(e){return!0}update(e){this._$Eq&&=this._$Eq.forEach(e=>this._$ET(e,this[e])),this._$EM()}updated(e){}firstUpdated(e){}};Sn.elementStyles=[],Sn.shadowRootOptions={mode:`open`},Sn[vn(`elementProperties`)]=new Map,Sn[vn(`finalized`)]=new Map,_n?.({ReactiveElement:Sn}),(mn.reactiveElementVersions??=[]).push(`2.1.2`);var Cn=globalThis,wn=e=>e,Tn=Cn.trustedTypes,En=Tn?Tn.createPolicy(`lit-html`,{createHTML:e=>e}):void 0,Dn=`$lit$`,On=`lit$${Math.random().toFixed(9).slice(2)}$`,kn=`?`+On,An=`<${kn}>`,jn=document,Mn=()=>jn.createComment(``),Nn=e=>e===null||typeof e!=`object`&&typeof e!=`function`,Pn=Array.isArray,Fn=e=>Pn(e)||typeof e?.[Symbol.iterator]==`function`,In=`[ 	
 \f\r]`,Ln=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,Rn=/-->/g,zn=/>/g,Bn=RegExp(`>|${In}(?:([^\\s"'>=/]+)(${In}*=${In}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`,`g`),Vn=/'/g,Hn=/"/g,Un=/^(?:script|style|textarea|title)$/i,E=(e=>(t,...n)=>({_$litType$:e,strings:t,values:n}))(1),D=Symbol.for(`lit-noChange`),O=Symbol.for(`lit-nothing`),Wn=new WeakMap,Gn=jn.createTreeWalker(jn,129);function Kn(e,t){if(!Pn(e)||!e.hasOwnProperty(`raw`))throw Error(`invalid template strings array`);return En===void 0?t:En.createHTML(t)}var qn=(e,t)=>{let n=e.length-1,r=[],i,a=t===2?`<svg>`:t===3?`<math>`:``,o=Ln;for(let t=0;t<n;t++){let n=e[t],s,c,l=-1,u=0;for(;u<n.length&&(o.lastIndex=u,c=o.exec(n),c!==null);)u=o.lastIndex,o===Ln?c[1]===`!--`?o=Rn:c[1]===void 0?c[2]===void 0?c[3]!==void 0&&(o=Bn):(Un.test(c[2])&&(i=RegExp(`</`+c[2],`g`)),o=Bn):o=zn:o===Bn?c[0]===`>`?(o=i??Ln,l=-1):c[1]===void 0?l=-2:(l=o.lastIndex-c[2].length,s=c[1],o=c[3]===void 0?Bn:c[3]===`"`?Hn:Vn):o===Hn||o===Vn?o=Bn:o===Rn||o===zn?o=Ln:(o=Bn,i=void 0);let d=o===Bn&&e[t+1].startsWith(`/>`)?` `:``;a+=o===Ln?n+An:l>=0?(r.push(s),n.slice(0,l)+Dn+n.slice(l)+On+d):n+On+(l===-2?t:d)}return[Kn(e,a+(e[n]||`<?>`)+(t===2?`</svg>`:t===3?`</math>`:``)),r]},Jn=class e{constructor({strings:t,_$litType$:n},r){let i;this.parts=[];let a=0,o=0,s=t.length-1,c=this.parts,[l,u]=qn(t,n);if(this.el=e.createElement(l,r),Gn.currentNode=this.el.content,n===2||n===3){let e=this.el.content.firstChild;e.replaceWith(...e.childNodes)}for(;(i=Gn.nextNode())!==null&&c.length<s;){if(i.nodeType===1){if(i.hasAttributes())for(let e of i.getAttributeNames())if(e.endsWith(Dn)){let t=u[o++],n=i.getAttribute(e).split(On),r=/([.?@])?(.*)/.exec(t);c.push({type:1,index:a,name:r[2],strings:n,ctor:r[1]===`.`?$n:r[1]===`?`?er:r[1]===`@`?tr:Qn}),i.removeAttribute(e)}else e.startsWith(On)&&(c.push({type:6,index:a}),i.removeAttribute(e));if(Un.test(i.tagName)){let e=i.textContent.split(On),t=e.length-1;if(t>0){i.textContent=Tn?Tn.emptyScript:``;for(let n=0;n<t;n++)i.append(e[n],Mn()),Gn.nextNode(),c.push({type:2,index:++a});i.append(e[t],Mn())}}}else if(i.nodeType===8){if(i.data===kn)c.push({type:2,index:a});else{let e=-1;for(;(e=i.data.indexOf(On,e+1))!==-1;)c.push({type:7,index:a}),e+=On.length-1}}a++}}static createElement(e,t){let n=jn.createElement(`template`);return n.innerHTML=e,n}};function Yn(e,t,n=e,r){if(t===D)return t;let i=r===void 0?n._$Cl:n._$Co?.[r],a=Nn(t)?void 0:t._$litDirective$;return i?.constructor!==a&&(i?._$AO?.(!1),a===void 0?i=void 0:(i=new a(e),i._$AT(e,n,r)),r===void 0?n._$Cl=i:(n._$Co??=[])[r]=i),i!==void 0&&(t=Yn(e,i._$AS(e,t.values),i,r)),t}var Xn=class{constructor(e,t){this._$AV=[],this._$AN=void 0,this._$AD=e,this._$AM=t}get parentNode(){return this._$AM.parentNode}get _$AU(){return this._$AM._$AU}u(e){let{el:{content:t},parts:n}=this._$AD,r=(e?.creationScope??jn).importNode(t,!0);Gn.currentNode=r;let i=Gn.nextNode(),a=0,o=0,s=n[0];for(;s!==void 0;){if(a===s.index){let t;s.type===2?t=new Zn(i,i.nextSibling,this,e):s.type===1?t=new s.ctor(i,s.name,s.strings,this,e):s.type===6&&(t=new nr(i,this,e)),this._$AV.push(t),s=n[++o]}a!==s?.index&&(i=Gn.nextNode(),a++)}return Gn.currentNode=jn,r}p(e){let t=0;for(let n of this._$AV)n!==void 0&&(n.strings===void 0?n._$AI(e[t]):(n._$AI(e,n,t),t+=n.strings.length-2)),t++}},Zn=class e{get _$AU(){return this._$AM?._$AU??this._$Cv}constructor(e,t,n,r){this.type=2,this._$AH=O,this._$AN=void 0,this._$AA=e,this._$AB=t,this._$AM=n,this.options=r,this._$Cv=r?.isConnected??!0}get parentNode(){let e=this._$AA.parentNode,t=this._$AM;return t!==void 0&&e?.nodeType===11&&(e=t.parentNode),e}get startNode(){return this._$AA}get endNode(){return this._$AB}_$AI(e,t=this){e=Yn(this,e,t),Nn(e)?e===O||e==null||e===``?(this._$AH!==O&&this._$AR(),this._$AH=O):e!==this._$AH&&e!==D&&this._(e):e._$litType$===void 0?e.nodeType===void 0?Fn(e)?this.k(e):this._(e):this.T(e):this.$(e)}O(e){return this._$AA.parentNode.insertBefore(e,this._$AB)}T(e){this._$AH!==e&&(this._$AR(),this._$AH=this.O(e))}_(e){this._$AH!==O&&Nn(this._$AH)?this._$AA.nextSibling.data=e:this.T(jn.createTextNode(e)),this._$AH=e}$(e){let{values:t,_$litType$:n}=e,r=typeof n==`number`?this._$AC(e):(n.el===void 0&&(n.el=Jn.createElement(Kn(n.h,n.h[0]),this.options)),n);if(this._$AH?._$AD===r)this._$AH.p(t);else{let e=new Xn(r,this),n=e.u(this.options);e.p(t),this.T(n),this._$AH=e}}_$AC(e){let t=Wn.get(e.strings);return t===void 0&&Wn.set(e.strings,t=new Jn(e)),t}k(t){Pn(this._$AH)||(this._$AH=[],this._$AR());let n=this._$AH,r,i=0;for(let a of t)i===n.length?n.push(r=new e(this.O(Mn()),this.O(Mn()),this,this.options)):r=n[i],r._$AI(a),i++;i<n.length&&(this._$AR(r&&r._$AB.nextSibling,i),n.length=i)}_$AR(e=this._$AA.nextSibling,t){for(this._$AP?.(!1,!0,t);e!==this._$AB;){let t=wn(e).nextSibling;wn(e).remove(),e=t}}setConnected(e){this._$AM===void 0&&(this._$Cv=e,this._$AP?.(e))}},Qn=class{get tagName(){return this.element.tagName}get _$AU(){return this._$AM._$AU}constructor(e,t,n,r,i){this.type=1,this._$AH=O,this._$AN=void 0,this.element=e,this.name=t,this._$AM=r,this.options=i,n.length>2||n[0]!==``||n[1]!==``?(this._$AH=Array(n.length-1).fill(new String),this.strings=n):this._$AH=O}_$AI(e,t=this,n,r){let i=this.strings,a=!1;if(i===void 0)e=Yn(this,e,t,0),a=!Nn(e)||e!==this._$AH&&e!==D,a&&(this._$AH=e);else{let r=e,o,s;for(e=i[0],o=0;o<i.length-1;o++)s=Yn(this,r[n+o],t,o),s===D&&(s=this._$AH[o]),a||=!Nn(s)||s!==this._$AH[o],s===O?e=O:e!==O&&(e+=(s??``)+i[o+1]),this._$AH[o]=s}a&&!r&&this.j(e)}j(e){e===O?this.element.removeAttribute(this.name):this.element.setAttribute(this.name,e??``)}},$n=class extends Qn{constructor(){super(...arguments),this.type=3}j(e){this.element[this.name]=e===O?void 0:e}},er=class extends Qn{constructor(){super(...arguments),this.type=4}j(e){this.element.toggleAttribute(this.name,!!e&&e!==O)}},tr=class extends Qn{constructor(e,t,n,r,i){super(e,t,n,r,i),this.type=5}_$AI(e,t=this){if((e=Yn(this,e,t,0)??O)===D)return;let n=this._$AH,r=e===O&&n!==O||e.capture!==n.capture||e.once!==n.once||e.passive!==n.passive,i=e!==O&&(n===O||r);r&&this.element.removeEventListener(this.name,this,n),i&&this.element.addEventListener(this.name,this,e),this._$AH=e}handleEvent(e){typeof this._$AH==`function`?this._$AH.call(this.options?.host??this.element,e):this._$AH.handleEvent(e)}},nr=class{constructor(e,t,n){this.element=e,this.type=6,this._$AN=void 0,this._$AM=t,this.options=n}get _$AU(){return this._$AM._$AU}_$AI(e){Yn(this,e)}},rr={M:Dn,P:On,A:kn,C:1,L:qn,R:Xn,D:Fn,V:Yn,I:Zn,H:Qn,N:er,U:tr,B:$n,F:nr},ir=Cn.litHtmlPolyfillSupport;ir?.(Jn,Zn),(Cn.litHtmlVersions??=[]).push(`3.3.3`);var ar=(e,t,n)=>{let r=n?.renderBefore??t,i=r._$litPart$;if(i===void 0){let e=n?.renderBefore??null;r._$litPart$=i=new Zn(t.insertBefore(Mn(),e),e,void 0,n??{})}return i._$AI(e),i},or=globalThis,sr=class extends Sn{constructor(){super(...arguments),this.renderOptions={host:this},this._$Do=void 0}createRenderRoot(){let e=super.createRenderRoot();return this.renderOptions.renderBefore??=e.firstChild,e}update(e){let t=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(e),this._$Do=ar(t,this.renderRoot,this.renderOptions)}connectedCallback(){super.connectedCallback(),this._$Do?.setConnected(!0)}disconnectedCallback(){super.disconnectedCallback(),this._$Do?.setConnected(!1)}render(){return D}};sr._$litElement$=!0,sr.finalized=!0,or.litElementHydrateSupport?.({LitElement:sr});var cr=or.litElementPolyfillSupport;cr?.({LitElement:sr}),(or.litElementVersions??=[]).push(`4.2.2`);var k=e=>(t,n)=>{n===void 0?customElements.define(e,t):n.addInitializer(()=>{customElements.define(e,t)})},lr={attribute:!0,type:String,converter:yn,reflect:!1,hasChanged:bn},ur=(e=lr,t,n)=>{let{kind:r,metadata:i}=n,a=globalThis.litPropertyMetadata.get(i);if(a===void 0&&globalThis.litPropertyMetadata.set(i,a=new Map),r===`setter`&&((e=Object.create(e)).wrapped=!0),a.set(n.name,e),r===`accessor`){let{name:r}=n;return{set(n){let i=t.get.call(this);t.set.call(this,n),this.requestUpdate(r,i,e,!0,n)},init(t){return t!==void 0&&this.C(r,void 0,e,t),t}}}if(r===`setter`){let{name:r}=n;return function(n){let i=this[r];t.call(this,n),this.requestUpdate(r,i,e,!0,n)}}throw Error(`Unsupported decorator location: `+r)};function A(e){return(t,n)=>typeof n==`object`?ur(e,t,n):((e,t,n)=>{let r=t.hasOwnProperty(n);return t.constructor.createProperty(n,e),r?Object.getOwnPropertyDescriptor(t,n):void 0})(e,t,n)}function j(e){return A({...e,state:!0,attribute:!1})}var dr=(e,t,n)=>(n.configurable=!0,n.enumerable=!0,Reflect.decorate&&typeof t!=`object`&&Object.defineProperty(e,t,n),n);function M(e,t){return(n,r,i)=>{let a=t=>t.renderRoot?.querySelector(e)??null;if(t){let{get:e,set:t}=typeof r==`object`?n:i??(()=>{let e=Symbol();return{get(){return this[e]},set(t){this[e]=t}}})();return dr(n,r,{get(){let n=e.call(this);return n===void 0&&(n=a(this),(n!==null||this.hasUpdated)&&t.call(this,n)),n}})}return dr(n,r,{get(){return a(this)}})}}var fr=T`
   :host {
     box-sizing: border-box;
@@ -6003,5 +5898,5 @@
           <slot name="footer"></slot>
         </div>
       </dialog>
-    `}};ns.css=ts,w([M(`.dialog`)],ns.prototype,`dialog`,2),w([A({type:Boolean,reflect:!0})],ns.prototype,`open`,2),w([A({reflect:!0})],ns.prototype,`label`,2),w([A({attribute:`without-header`,type:Boolean,reflect:!0})],ns.prototype,`withoutHeader`,2),w([A({attribute:`light-dismiss`,type:Boolean})],ns.prototype,`lightDismiss`,2),w([A({attribute:`with-footer`,type:Boolean})],ns.prototype,`withFooter`,2),w([A({attribute:`with-label`,type:Boolean})],ns.prototype,`withLabel`,2),w([F(`open`,{waitUntilFirstUpdate:!0})],ns.prototype,`handleOpenChange`,1),ns=w([k(`wa-dialog`)],ns),document.addEventListener(`click`,e=>{let t=e.target.closest(`[data-dialog]`);if(t instanceof Element){let[e,n]=es(t.getAttribute(`data-dialog`)||``);if(e===`open`&&n?.length){let e=t.getRootNode().getElementById(n);e?.localName===`wa-dialog`?e.open=!0:console.warn(`A dialog with an ID of "${n}" could not be found in this document.`)}}}),document.addEventListener(`pointerdown`,()=>{});var rs=Object.fromEntries(Object.entries(Object.assign({"../../node_modules/lucide-static/icons/archive-restore.svg":e,"../../node_modules/lucide-static/icons/archive.svg":t,"../../node_modules/lucide-static/icons/arrow-down-up.svg":n,"../../node_modules/lucide-static/icons/arrow-left.svg":r,"../../node_modules/lucide-static/icons/arrow-up-down.svg":i,"../../node_modules/lucide-static/icons/arrow-up.svg":a,"../../node_modules/lucide-static/icons/audio-lines.svg":o,"../../node_modules/lucide-static/icons/book-open.svg":s,"../../node_modules/lucide-static/icons/calendar-clock.svg":c,"../../node_modules/lucide-static/icons/chart-column.svg":l,"../../node_modules/lucide-static/icons/chart-line.svg":u,"../../node_modules/lucide-static/icons/check.svg":d,"../../node_modules/lucide-static/icons/chevron-down.svg":f,"../../node_modules/lucide-static/icons/chevron-left.svg":p,"../../node_modules/lucide-static/icons/chevron-right.svg":m,"../../node_modules/lucide-static/icons/chevron-up.svg":h,"../../node_modules/lucide-static/icons/circle-check.svg":g,"../../node_modules/lucide-static/icons/circle-stop.svg":_,"../../node_modules/lucide-static/icons/circle-x.svg":v,"../../node_modules/lucide-static/icons/clipboard-paste.svg":y,"../../node_modules/lucide-static/icons/clock.svg":b,"../../node_modules/lucide-static/icons/copy.svg":x,"../../node_modules/lucide-static/icons/database.svg":ee,"../../node_modules/lucide-static/icons/download.svg":S,"../../node_modules/lucide-static/icons/ear.svg":te,"../../node_modules/lucide-static/icons/ellipsis.svg":ne,"../../node_modules/lucide-static/icons/eye-off.svg":re,"../../node_modules/lucide-static/icons/eye.svg":ie,"../../node_modules/lucide-static/icons/file-music.svg":ae,"../../node_modules/lucide-static/icons/file-up.svg":oe,"../../node_modules/lucide-static/icons/folder-open.svg":se,"../../node_modules/lucide-static/icons/footprints.svg":ce,"../../node_modules/lucide-static/icons/gauge.svg":le,"../../node_modules/lucide-static/icons/graduation-cap.svg":ue,"../../node_modules/lucide-static/icons/grip-vertical.svg":de,"../../node_modules/lucide-static/icons/hand.svg":fe,"../../node_modules/lucide-static/icons/history.svg":pe,"../../node_modules/lucide-static/icons/hourglass.svg":me,"../../node_modules/lucide-static/icons/house.svg":he,"../../node_modules/lucide-static/icons/info.svg":ge,"../../node_modules/lucide-static/icons/keyboard-music.svg":_e,"../../node_modules/lucide-static/icons/layout-grid.svg":ve,"../../node_modules/lucide-static/icons/list-checks.svg":ye,"../../node_modules/lucide-static/icons/list-music.svg":be,"../../node_modules/lucide-static/icons/maximize.svg":xe,"../../node_modules/lucide-static/icons/mic-off.svg":Se,"../../node_modules/lucide-static/icons/mic.svg":Ce,"../../node_modules/lucide-static/icons/minimize.svg":we,"../../node_modules/lucide-static/icons/minus.svg":Te,"../../node_modules/lucide-static/icons/music.svg":Ee,"../../node_modules/lucide-static/icons/notebook-pen.svg":De,"../../node_modules/lucide-static/icons/pause.svg":Oe,"../../node_modules/lucide-static/icons/pencil.svg":ke,"../../node_modules/lucide-static/icons/piano.svg":Ae,"../../node_modules/lucide-static/icons/play.svg":je,"../../node_modules/lucide-static/icons/plus.svg":Me,"../../node_modules/lucide-static/icons/pointer.svg":Ne,"../../node_modules/lucide-static/icons/repeat.svg":Pe,"../../node_modules/lucide-static/icons/rotate-ccw.svg":Fe,"../../node_modules/lucide-static/icons/search.svg":Ie,"../../node_modules/lucide-static/icons/send.svg":Le,"../../node_modules/lucide-static/icons/settings.svg":Re,"../../node_modules/lucide-static/icons/share.svg":ze,"../../node_modules/lucide-static/icons/shield-check.svg":Be,"../../node_modules/lucide-static/icons/skip-forward.svg":Ve,"../../node_modules/lucide-static/icons/smartphone.svg":He,"../../node_modules/lucide-static/icons/sparkles.svg":Ue,"../../node_modules/lucide-static/icons/square.svg":We,"../../node_modules/lucide-static/icons/star.svg":Ge,"../../node_modules/lucide-static/icons/tag.svg":Ke,"../../node_modules/lucide-static/icons/target.svg":qe,"../../node_modules/lucide-static/icons/timer.svg":Je,"../../node_modules/lucide-static/icons/trash-2.svg":Ye,"../../node_modules/lucide-static/icons/undo-2.svg":Xe,"../../node_modules/lucide-static/icons/upload.svg":Ze,"../../node_modules/lucide-static/icons/usb.svg":Qe,"../../node_modules/lucide-static/icons/user.svg":$e,"../../node_modules/lucide-static/icons/wifi.svg":et,"../../node_modules/lucide-static/icons/x.svg":tt})).map(([e,t])=>[e.split(`/`).pop().slice(0,-4),t])),is=e=>`data:image/svg+xml,${encodeURIComponent(rs[e]||rs[`circle-x`])}`,as=e=>t=>{t.setAttribute(`stroke-width`,e)};Vt(`default`,{resolver:e=>is(e),mutator:as(`1.6`)});var os={xmark:`x`,"circle-xmark":`circle-x`,"eye-slash":`eye-off`};Vt(`system`,{resolver:e=>is(os[e]||e),mutator:as(`1.8`)});var ss=()=>requestAnimationFrame(()=>document.documentElement.classList.remove(`booting`));document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,ss):ss();var cs=[{id:`ivory`,name:`黑白琴鍵`,light:[`#EFEDE8`,`#161616`],dark:[`#181818`,`#F2F0EA`]},{id:`stage`,name:`舞台夜藍`,light:[`#F2F3F7`,`#1B2A55`],dark:[`#0B1020`,`#C8F25A`]},{id:`teal`,name:`湖水青`,light:[`#F1F4F3`,`#0F6E68`],dark:[`#0B1615`,`#5FD0C2`]},{id:`coral`,name:`珊瑚橘`,light:[`#F6F3EF`,`#B8411A`],dark:[`#141010`,`#FF8A5C`]}],ls=[[`light`,`淺色`],[`dark`,`深色`],[`auto`,`跟著系統`]],us=(e,t)=>{try{return localStorage.getItem(e)||t}catch{return t}},ds=(e,t)=>{try{localStorage.setItem(e,t)}catch{}};function fs(){us(`ppt.theme`,``)===`night`&&(ds(`ppt.theme`,`ivory`),ds(`ppt.mode`,`dark`))}function ps(){let e=us(`ppt.theme`,`ivory`);return cs.some(t=>t.id===e)?e:`ivory`}function ms(){return us(`ppt.mode`,`light`)}var hs=matchMedia(`(prefers-color-scheme: dark)`);function gs(){fs();let e=ps(),t=ms(),n=t===`dark`||t===`auto`&&hs.matches,r=document.documentElement;r.dataset.theme=e,r.dataset.mode=n?`dark`:`light`,r.classList.toggle(`wa-dark`,n);let i=document.querySelector(`meta[name="theme-color"]`),a=cs.find(t=>t.id===e);i&&(i.content=a[n?`dark`:`light`][0])}function _s(e){ds(`ppt.theme`,e),gs()}function vs(e){ds(`ppt.mode`,e),gs()}hs.addEventListener?.(`change`,()=>{ms()===`auto`&&gs()});var ys=[[`play`,`play.html`,`彈奏`],[`timer`,`timer.html`,`練習`],[`drill`,`drill.html`,`基本功`],[`theory`,`theory.html`,`樂理`],[`log`,`records.html`,`紀錄`],[`settings`,`settings.html`,`設定`]],bs=`<svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" transform="translate(0 6.5)" d="M41.83 68.03A10.6 7.6 -22 1 1 22.17 75.97A10.6 7.6 -22 1 1 41.83 68.03ZM77.83 58.03A10.6 7.6 -22 1 1 58.17 65.97A10.6 7.6 -22 1 1 77.83 58.03ZM38.83 71.15L38.83 22L78.23 11.06L78.23 61.15L74.83 61.15L74.83 21L42.23 30.06L42.23 71.15Z"/></svg>`;function xs(){for(let e of document.querySelectorAll(`nav.site-nav`)){e.setAttribute(`aria-label`,`頁面`);let t=t=>t===e.dataset.page?` class="on" aria-current="page"`:``;e.innerHTML=`<a href="./" class="logo${e.dataset.page===`home`?` on`:``}" aria-label="首頁" title="首頁"${e.dataset.page===`home`?` aria-current="page"`:``}>${bs}</a>`+ys.map(([e,n,r])=>`<a href="${n}"${t(e)}>${r}</a>`).join(``)}}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,xs):xs(),document.addEventListener(`click`,e=>{let t=e.target.closest?.(`nav.site-nav a`);if(!(!t||t.classList.contains(`on`)||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)){try{sessionStorage.setItem(`ppt.nav`,`1`)}catch{}document.getElementById(`nav-loading`)||document.body.insertAdjacentHTML(`beforeend`,`<div class="nav-loading" id="nav-loading" role="status" aria-label="載入中"></div>`)}}),addEventListener(`pageshow`,e=>{e.persisted&&document.getElementById(`nav-loading`)?.remove()});function Ss({title:e=`刪除`,text:t=``,ok:n=`刪除`,danger:r=!0}={}){let i=document.getElementById(`confirm-dialog`);i||=(document.body.insertAdjacentHTML(`beforeend`,`<wa-dialog id="confirm-dialog"><p class="confirm-text"></p><wa-button slot="footer" appearance="plain" class="no">取消</wa-button><wa-button slot="footer" class="yes"></wa-button></wa-dialog>`),document.getElementById(`confirm-dialog`)),i.label=e,i.querySelector(`.confirm-text`).textContent=t;let a=i.querySelector(`.yes`);return a.variant=r?`danger`:`brand`,a.innerHTML=(r?`<wa-icon slot="start" name="trash-2"></wa-icon>`:``)+n,new Promise(e=>{let t=t=>{i.open=!1,a.onclick=i.querySelector(`.no`).onclick=null,i.removeEventListener(`wa-after-hide`,n),e(t)},n=e=>{e.target===i&&t(!1)};a.onclick=()=>t(!0),i.querySelector(`.no`).onclick=()=>t(!1),i.addEventListener(`wa-after-hide`,n),i.open=!0})}function Cs(e,t){let n=document.getElementById(`info-dialog`);n||=(document.body.insertAdjacentHTML(`beforeend`,`<wa-dialog id="info-dialog" light-dismiss><div class="info-body"></div><wa-button slot="footer" variant="brand" data-dialog="close">知道了</wa-button></wa-dialog>`),document.getElementById(`info-dialog`)),n.label=e,n.querySelector(`.info-body`).innerHTML=t,n.open=!0}function ws(){let e=document.createElement(`button`);e.className=`to-top`,e.hidden=!0,e.setAttribute(`aria-label`,`回到最上方`),e.title=`回到最上方`,e.innerHTML=`<wa-icon name="arrow-up"></wa-icon>`,e.onclick=()=>window.scrollTo({top:0,behavior:`smooth`}),document.body.appendChild(e);let t=()=>{e.hidden=window.scrollY<40};window.addEventListener(`scroll`,t,{passive:!0}),t()}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,ws):ws();var Ts=null,Es=0,Ds=[[`normal`,`標準`],[`large`,`大`],[`xl`,`特大`]];function Os(){try{let e=JSON.parse(localStorage.getItem(`ppt.scoreSize`));if(Ds.some(t=>t[0]===e))return e}catch{}return innerWidth<600?`large`:`normal`}function ks(e){try{localStorage.setItem(`ppt.scoreSize`,JSON.stringify(e))}catch{}}function As(e,t=Os()){return(e<600?.9:e<1e3?1.1:1.25)*({normal:1,large:e<600?1.55:1.25,xl:e<600?1.9:1.5}[t]||1)}var js=(e,t,n=150)=>Math.max(1,Math.min(4,Math.round(e/(n*t))));function Ms(e,t=3e3){Ts||(Ts=document.createElement(`div`),Ts.className=`toast`,Ts.hidden=!0,Ts.onclick=()=>{Ts.hidden=!0},document.body.appendChild(Ts)),Ts.textContent=e,Ts.hidden=!1,clearTimeout(Es),Es=setTimeout(()=>{Ts.hidden=!0},t)}var Ns=()=>/iP(hone|ad|od)/.test(navigator.userAgent)||navigator.platform===`MacIntel`&&navigator.maxTouchPoints>1;function Ps(e){let t=e?.name||``;return t===`NotAllowedError`||t===`SecurityError`?`MIDI 權限被封鎖了。
-點 Chrome 網址列左邊的圖示 → 權限（或網站設定），把 MIDI 改成允許或按「重設權限」，再重新整理。`:t===`NotSupportedError`?Ns()?`iPhone / iPad 的瀏覽器都不支援 MIDI。基本功右上角可以改用麥克風或螢幕鍵盤。`:`這個瀏覽器不支援 MIDI，請用 Chrome 打開這個網址。`:`這台裝置的 MIDI 功能沒有啟動成功（${t||`未知錯誤`}），不是權限問題。請依序試：\n1. 從最近使用的 App 把 Chrome 滑掉，再重新打開\n2. 拔掉 USB 線再插回去\n3. 關掉其他用 MIDI 的 App（例如 MIDI BLE Connect）\n4. 重新開機`}async function Fs({onMessage:e,onDevices:t,quiet:n=!1}){if(!navigator.requestMIDIAccess)return n||Ms(Ps({name:`NotSupportedError`}),8e3),t?.(null),null;if(n)try{let e=await navigator.permissions?.query({name:`midi`});if(e&&e.state!==`granted`)return t?.(null),null}catch{}let r;t?.(void 0);try{r=await navigator.requestMIDIAccess({sysex:!1})}catch(e){return n||Ms(Ps(e),12e3),t?.(null),null}let i=()=>{let n=[...r.inputs.values()];n.forEach(t=>{t.onmidimessage=e}),t?.(n.filter(e=>e.state===`connected`).map(e=>e.name||`MIDI 裝置`))};return r.onstatechange=i,i(),r}var Is=`<wa-spinner class="spin" aria-hidden="true"></wa-spinner>`;function Ls(e,t=`開啟中…`){let n=document.getElementById(`busy`);if(!e){n?.remove();return}n||(n=document.createElement(`div`),n.id=`busy`,n.className=`busy`,n.setAttribute(`role`,`status`),document.body.append(n)),n.innerHTML=`<wa-spinner></wa-spinner><span>${t}</span>`}function Rs(e,t){e.classList.toggle(`ok`,!!t?.length),e.innerHTML=t===void 0?`${Is}連接中…`:`<span class="dot"></span>${t===null?`連接 MIDI`:t.length?t[0]:`找不到琴`}`,e.title=t?.length?`已連接：`+t.join(`、`):``}var zs={"piano-page-turner":{version:1,stores:[`meta`,`files`]},"ppt-practice":{version:4,stores:[`pieces`,`sessions`,`activity`,`drills`,`items`]}},Bs={};function Vs(e){let{version:t,stores:n}=zs[e];return Bs[e]||=new Promise((r,i)=>{let a=indexedDB.open(e,t);a.onupgradeneeded=t=>{let r=a.result;for(let e of n)r.objectStoreNames.contains(e)||r.createObjectStore(e,{keyPath:`id`});e===`ppt-practice`&&t.oldVersion===1&&Hs(a.transaction)},a.onsuccess=()=>{let t=a.result;t.onversionchange=()=>{t.close(),delete Bs[e]},r(t)},a.onerror=()=>{delete Bs[e],i(a.error)}})}function Hs(e){let t=e.objectStore(`sessions`);e.objectStore(`pieces`).getAll().onsuccess=e=>{for(let n of e.target.result)(n.history||[]).forEach((e,r)=>t.put({...e,id:`${n.id}-${e.at}-${r}`,pieceId:n.id,title:n.title,legacy:!0}))}}function Us(e,t,n,r){return Vs(e).then(e=>new Promise((i,a)=>{let o=e.transaction(t,n),s=r(o);o.oncomplete=()=>i(s&&typeof s==`object`&&`result`in s?s.result:s),o.onerror=()=>a(o.error),o.onabort=()=>a(o.error)}))}var Ws=(e,t)=>Us(e,[t],`readonly`,e=>e.objectStore(t).getAll()),Gs=(e,t,n)=>Us(e,[t],`readonly`,e=>e.objectStore(t).get(n)),Ks=(e,t,n)=>Us(e,[t],`readwrite`,e=>{e.objectStore(t).put(n)}),qs=(e,t,n)=>Us(e,[t],`readwrite`,e=>{e.objectStore(t).delete(n)}),Js=(e,t,n,r)=>Us(e,[t],`readwrite`,e=>{let i=e.objectStore(t);i.get(n).onsuccess=e=>i.put(r(e.target.result))}),Ys=null,Xs=!1;async function Zs(e=!0){if(Xs=e,!e)return Ys?.release().catch(()=>{}),Ys=null,!1;try{return Ys=await navigator.wakeLock?.request(`screen`),!!Ys}catch{return!1}}document.addEventListener(`visibilitychange`,()=>{document.visibilityState===`visible`&&Xs&&Zs(!0)}),`serviceWorker`in navigator&&navigator.serviceWorker.register(`sw.js`).catch(()=>{}),gs();export{Os as C,_s as D,ks as E,Ms as O,Vs as S,vs as T,Cs as _,gs as a,Ps as b,Ss as c,qs as d,Gs as f,ps as g,ms as h,cs as i,mt as k,Fs as l,Js as m,Ds as n,js as o,Ks as p,Is as r,Ls as s,ls as t,Ws as u,Ns as v,As as w,Rs as x,Zs as y};
+    `}};ns.css=ts,w([M(`.dialog`)],ns.prototype,`dialog`,2),w([A({type:Boolean,reflect:!0})],ns.prototype,`open`,2),w([A({reflect:!0})],ns.prototype,`label`,2),w([A({attribute:`without-header`,type:Boolean,reflect:!0})],ns.prototype,`withoutHeader`,2),w([A({attribute:`light-dismiss`,type:Boolean})],ns.prototype,`lightDismiss`,2),w([A({attribute:`with-footer`,type:Boolean})],ns.prototype,`withFooter`,2),w([A({attribute:`with-label`,type:Boolean})],ns.prototype,`withLabel`,2),w([F(`open`,{waitUntilFirstUpdate:!0})],ns.prototype,`handleOpenChange`,1),ns=w([k(`wa-dialog`)],ns),document.addEventListener(`click`,e=>{let t=e.target.closest(`[data-dialog]`);if(t instanceof Element){let[e,n]=es(t.getAttribute(`data-dialog`)||``);if(e===`open`&&n?.length){let e=t.getRootNode().getElementById(n);e?.localName===`wa-dialog`?e.open=!0:console.warn(`A dialog with an ID of "${n}" could not be found in this document.`)}}}),document.addEventListener(`pointerdown`,()=>{});var rs={hourglass:`hourglass`,send:`send`,database:`database`,"shield-check":`shield-check`,wifi:`wifi`,archive:`archive`,"archive-restore":`restore`,"notebook-pen":`notebook`,"chart-column":`chart-bar`,pause:`player-pause`,pointer:`pointer`,share:`share-3`,"graduation-cap":`school`,"chevron-up":`chevron-up`,ear:`ear`,"list-music":`playlist`,"layout-grid":`layout-grid`,footprints:`shoe`,"arrow-up-down":`arrows-up-down`,piano:`piano`,smartphone:`device-mobile`,"arrow-left":`arrow-left`,"arrow-up":`arrow-up`,"circle-stop":`player-stop`,mic:`microphone`,"mic-off":`microphone-off`,house:`home`,hand:`hand-stop`,"list-checks":`list-check`,"skip-forward":`player-skip-forward`,"circle-check":`circle-check`,"audio-lines":`wave-sine`,"calendar-clock":`calendar-time`,"chart-line":`chart-line`,gauge:`gauge`,history:`history`,info:`info-circle`,repeat:`repeat`,search:`search`,"arrow-down-up":`arrows-sort`,tag:`tag`,sparkles:`sparkles`,target:`target`,"book-open":`book`,check:`check`,"chevron-down":`chevron-down`,"chevron-left":`chevron-left`,"chevron-right":`chevron-right`,"circle-x":`circle-x`,"clipboard-paste":`clipboard-text`,clock:`clock`,copy:`copy`,download:`download`,ellipsis:`dots`,eye:`eye`,"eye-off":`eye-off`,"file-music":`file-music`,"file-up":`file-upload`,"folder-open":`folder-open`,"grip-vertical":`grip-vertical`,"keyboard-music":`piano`,maximize:`maximize`,minimize:`minimize`,minus:`minus`,music:`music`,pencil:`pencil`,play:`player-play`,plus:`plus`,"rotate-ccw":`rotate`,settings:`settings`,square:`square`,star:`star`,timer:`stopwatch`,"trash-2":`trash`,"undo-2":`arrow-back-up`,upload:`upload`,user:`user`,usb:`usb`,x:`x`,metronome:`metronome`},is=Object.fromEntries(Object.entries(Object.assign({"../../node_modules/@tabler/icons/icons/outline/archive.svg":e,"../../node_modules/@tabler/icons/icons/outline/arrow-back-up.svg":t,"../../node_modules/@tabler/icons/icons/outline/arrow-left.svg":n,"../../node_modules/@tabler/icons/icons/outline/arrow-up.svg":r,"../../node_modules/@tabler/icons/icons/outline/arrows-sort.svg":i,"../../node_modules/@tabler/icons/icons/outline/arrows-up-down.svg":a,"../../node_modules/@tabler/icons/icons/outline/book.svg":o,"../../node_modules/@tabler/icons/icons/outline/calendar-time.svg":s,"../../node_modules/@tabler/icons/icons/outline/chart-bar.svg":c,"../../node_modules/@tabler/icons/icons/outline/chart-line.svg":l,"../../node_modules/@tabler/icons/icons/outline/check.svg":u,"../../node_modules/@tabler/icons/icons/outline/chevron-down.svg":d,"../../node_modules/@tabler/icons/icons/outline/chevron-left.svg":f,"../../node_modules/@tabler/icons/icons/outline/chevron-right.svg":p,"../../node_modules/@tabler/icons/icons/outline/chevron-up.svg":m,"../../node_modules/@tabler/icons/icons/outline/circle-check.svg":h,"../../node_modules/@tabler/icons/icons/outline/circle-x.svg":g,"../../node_modules/@tabler/icons/icons/outline/clipboard-text.svg":_,"../../node_modules/@tabler/icons/icons/outline/clock.svg":v,"../../node_modules/@tabler/icons/icons/outline/copy.svg":y,"../../node_modules/@tabler/icons/icons/outline/database.svg":b,"../../node_modules/@tabler/icons/icons/outline/device-mobile.svg":x,"../../node_modules/@tabler/icons/icons/outline/dots.svg":ee,"../../node_modules/@tabler/icons/icons/outline/download.svg":S,"../../node_modules/@tabler/icons/icons/outline/ear.svg":te,"../../node_modules/@tabler/icons/icons/outline/eye-off.svg":ne,"../../node_modules/@tabler/icons/icons/outline/eye.svg":re,"../../node_modules/@tabler/icons/icons/outline/file-music.svg":ie,"../../node_modules/@tabler/icons/icons/outline/file-upload.svg":ae,"../../node_modules/@tabler/icons/icons/outline/folder-open.svg":oe,"../../node_modules/@tabler/icons/icons/outline/gauge.svg":se,"../../node_modules/@tabler/icons/icons/outline/grip-vertical.svg":ce,"../../node_modules/@tabler/icons/icons/outline/hand-stop.svg":le,"../../node_modules/@tabler/icons/icons/outline/history.svg":ue,"../../node_modules/@tabler/icons/icons/outline/home.svg":de,"../../node_modules/@tabler/icons/icons/outline/hourglass.svg":fe,"../../node_modules/@tabler/icons/icons/outline/info-circle.svg":pe,"../../node_modules/@tabler/icons/icons/outline/layout-grid.svg":me,"../../node_modules/@tabler/icons/icons/outline/list-check.svg":he,"../../node_modules/@tabler/icons/icons/outline/maximize.svg":ge,"../../node_modules/@tabler/icons/icons/outline/metronome.svg":_e,"../../node_modules/@tabler/icons/icons/outline/microphone-off.svg":ve,"../../node_modules/@tabler/icons/icons/outline/microphone.svg":ye,"../../node_modules/@tabler/icons/icons/outline/minimize.svg":be,"../../node_modules/@tabler/icons/icons/outline/minus.svg":xe,"../../node_modules/@tabler/icons/icons/outline/music.svg":Se,"../../node_modules/@tabler/icons/icons/outline/notebook.svg":Ce,"../../node_modules/@tabler/icons/icons/outline/pencil.svg":we,"../../node_modules/@tabler/icons/icons/outline/piano.svg":Te,"../../node_modules/@tabler/icons/icons/outline/player-pause.svg":Ee,"../../node_modules/@tabler/icons/icons/outline/player-play.svg":De,"../../node_modules/@tabler/icons/icons/outline/player-skip-forward.svg":Oe,"../../node_modules/@tabler/icons/icons/outline/player-stop.svg":ke,"../../node_modules/@tabler/icons/icons/outline/playlist.svg":Ae,"../../node_modules/@tabler/icons/icons/outline/plus.svg":je,"../../node_modules/@tabler/icons/icons/outline/pointer.svg":Me,"../../node_modules/@tabler/icons/icons/outline/repeat.svg":Ne,"../../node_modules/@tabler/icons/icons/outline/restore.svg":Pe,"../../node_modules/@tabler/icons/icons/outline/rotate.svg":Fe,"../../node_modules/@tabler/icons/icons/outline/school.svg":Ie,"../../node_modules/@tabler/icons/icons/outline/search.svg":Le,"../../node_modules/@tabler/icons/icons/outline/send.svg":Re,"../../node_modules/@tabler/icons/icons/outline/settings.svg":ze,"../../node_modules/@tabler/icons/icons/outline/share-3.svg":Be,"../../node_modules/@tabler/icons/icons/outline/shield-check.svg":Ve,"../../node_modules/@tabler/icons/icons/outline/shoe.svg":He,"../../node_modules/@tabler/icons/icons/outline/sparkles.svg":Ue,"../../node_modules/@tabler/icons/icons/outline/square.svg":We,"../../node_modules/@tabler/icons/icons/outline/star.svg":Ge,"../../node_modules/@tabler/icons/icons/outline/stopwatch.svg":Ke,"../../node_modules/@tabler/icons/icons/outline/tag.svg":qe,"../../node_modules/@tabler/icons/icons/outline/target.svg":Je,"../../node_modules/@tabler/icons/icons/outline/trash.svg":Ye,"../../node_modules/@tabler/icons/icons/outline/upload.svg":Xe,"../../node_modules/@tabler/icons/icons/outline/usb.svg":Ze,"../../node_modules/@tabler/icons/icons/outline/user.svg":Qe,"../../node_modules/@tabler/icons/icons/outline/wave-sine.svg":$e,"../../node_modules/@tabler/icons/icons/outline/wifi.svg":et,"../../node_modules/@tabler/icons/icons/outline/x.svg":tt})).map(([e,t])=>[e.split(`/`).pop().slice(0,-4),t])),as=Object.fromEntries(Object.entries(rs).map(([e,t])=>[e,is[t]])),os=e=>`data:image/svg+xml,${encodeURIComponent(as[e]||as[`circle-x`])}`,ss=e=>t=>{t.setAttribute(`stroke-width`,e)};Vt(`default`,{resolver:e=>os(e),mutator:ss(`1.6`)});var cs={xmark:`x`,"circle-xmark":`circle-x`,"eye-slash":`eye-off`};Vt(`system`,{resolver:e=>os(cs[e]||e),mutator:ss(`1.8`)});var ls=()=>requestAnimationFrame(()=>document.documentElement.classList.remove(`booting`));document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,ls):ls();var us=[{id:`ivory`,name:`黑白琴鍵`,light:[`#EFEDE8`,`#161616`],dark:[`#181818`,`#F2F0EA`]},{id:`stage`,name:`舞台夜藍`,light:[`#F2F3F7`,`#1B2A55`],dark:[`#0B1020`,`#C8F25A`]},{id:`teal`,name:`湖水青`,light:[`#F1F4F3`,`#0F6E68`],dark:[`#0B1615`,`#5FD0C2`]},{id:`coral`,name:`珊瑚橘`,light:[`#F6F3EF`,`#B8411A`],dark:[`#141010`,`#FF8A5C`]}],ds=[[`light`,`淺色`],[`dark`,`深色`],[`auto`,`跟著系統`]],fs=(e,t)=>{try{return localStorage.getItem(e)||t}catch{return t}},ps=(e,t)=>{try{localStorage.setItem(e,t)}catch{}};function ms(){fs(`ppt.theme`,``)===`night`&&(ps(`ppt.theme`,`ivory`),ps(`ppt.mode`,`dark`))}function hs(){let e=fs(`ppt.theme`,`ivory`);return us.some(t=>t.id===e)?e:`ivory`}function gs(){return fs(`ppt.mode`,`light`)}var _s=matchMedia(`(prefers-color-scheme: dark)`);function vs(){ms();let e=hs(),t=gs(),n=t===`dark`||t===`auto`&&_s.matches,r=document.documentElement;r.dataset.theme=e,r.dataset.mode=n?`dark`:`light`,r.classList.toggle(`wa-dark`,n);let i=document.querySelector(`meta[name="theme-color"]`),a=us.find(t=>t.id===e);i&&(i.content=a[n?`dark`:`light`][0])}function ys(e){ps(`ppt.theme`,e),vs()}function bs(e){ps(`ppt.mode`,e),vs()}_s.addEventListener?.(`change`,()=>{gs()===`auto`&&vs()});var xs=[[`play`,`play.html`,`彈奏`],[`timer`,`timer.html`,`練習`],[`drill`,`drill.html`,`基本功`],[`theory`,`theory.html`,`樂理`],[`log`,`records.html`,`紀錄`],[`settings`,`settings.html`,`設定`]],Ss=`<svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" transform="translate(0 6.5)" d="M41.83 68.03A10.6 7.6 -22 1 1 22.17 75.97A10.6 7.6 -22 1 1 41.83 68.03ZM77.83 58.03A10.6 7.6 -22 1 1 58.17 65.97A10.6 7.6 -22 1 1 77.83 58.03ZM38.83 71.15L38.83 22L78.23 11.06L78.23 61.15L74.83 61.15L74.83 21L42.23 30.06L42.23 71.15Z"/></svg>`;function Cs(){for(let e of document.querySelectorAll(`nav.site-nav`)){e.setAttribute(`aria-label`,`頁面`);let t=t=>t===e.dataset.page?` class="on" aria-current="page"`:``;e.innerHTML=`<a href="./" class="logo${e.dataset.page===`home`?` on`:``}" aria-label="首頁" title="首頁"${e.dataset.page===`home`?` aria-current="page"`:``}>${Ss}</a>`+xs.map(([e,n,r])=>`<a href="${n}"${t(e)}>${r}</a>`).join(``)}}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,Cs):Cs(),document.addEventListener(`click`,e=>{let t=e.target.closest?.(`nav.site-nav a`);if(!(!t||t.classList.contains(`on`)||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)){try{sessionStorage.setItem(`ppt.nav`,`1`)}catch{}document.getElementById(`nav-loading`)||document.body.insertAdjacentHTML(`beforeend`,`<div class="nav-loading" id="nav-loading" role="status" aria-label="載入中"></div>`)}}),addEventListener(`pageshow`,e=>{e.persisted&&document.getElementById(`nav-loading`)?.remove()});function ws({title:e=`刪除`,text:t=``,ok:n=`刪除`,danger:r=!0}={}){let i=document.getElementById(`confirm-dialog`);i||=(document.body.insertAdjacentHTML(`beforeend`,`<wa-dialog id="confirm-dialog"><p class="confirm-text"></p><wa-button slot="footer" appearance="plain" class="no">取消</wa-button><wa-button slot="footer" class="yes"></wa-button></wa-dialog>`),document.getElementById(`confirm-dialog`)),i.label=e,i.querySelector(`.confirm-text`).textContent=t;let a=i.querySelector(`.yes`);return a.variant=r?`danger`:`brand`,a.innerHTML=(r?`<wa-icon slot="start" name="trash-2"></wa-icon>`:``)+n,new Promise(e=>{let t=t=>{i.open=!1,a.onclick=i.querySelector(`.no`).onclick=null,i.removeEventListener(`wa-after-hide`,n),e(t)},n=e=>{e.target===i&&t(!1)};a.onclick=()=>t(!0),i.querySelector(`.no`).onclick=()=>t(!1),i.addEventListener(`wa-after-hide`,n),i.open=!0})}function Ts(e,t){let n=document.getElementById(`info-dialog`);n||=(document.body.insertAdjacentHTML(`beforeend`,`<wa-dialog id="info-dialog" light-dismiss><div class="info-body"></div><wa-button slot="footer" variant="brand" data-dialog="close">知道了</wa-button></wa-dialog>`),document.getElementById(`info-dialog`)),n.label=e,n.querySelector(`.info-body`).innerHTML=t,n.open=!0}function Es(){let e=document.createElement(`button`);e.className=`to-top`,e.hidden=!0,e.setAttribute(`aria-label`,`回到最上方`),e.title=`回到最上方`,e.innerHTML=`<wa-icon name="arrow-up"></wa-icon>`,e.onclick=()=>window.scrollTo({top:0,behavior:`smooth`}),document.body.appendChild(e);let t=()=>{e.hidden=window.scrollY<40};window.addEventListener(`scroll`,t,{passive:!0}),t()}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,Es):Es();var Ds=null,Os=0,ks=[[`normal`,`標準`],[`large`,`大`],[`xl`,`特大`]];function As(){try{let e=JSON.parse(localStorage.getItem(`ppt.scoreSize`));if(ks.some(t=>t[0]===e))return e}catch{}return innerWidth<600?`large`:`normal`}function js(e){try{localStorage.setItem(`ppt.scoreSize`,JSON.stringify(e))}catch{}}function Ms(e,t=As()){return(e<600?.9:e<1e3?1.1:1.25)*({normal:1,large:e<600?1.55:1.25,xl:e<600?1.9:1.5}[t]||1)}var Ns=(e,t,n=150)=>Math.max(1,Math.min(4,Math.round(e/(n*t))));function Ps(e,t=3e3){Ds||(Ds=document.createElement(`div`),Ds.className=`toast`,Ds.hidden=!0,Ds.onclick=()=>{Ds.hidden=!0},document.body.appendChild(Ds)),Ds.textContent=e,Ds.hidden=!1,clearTimeout(Os),Os=setTimeout(()=>{Ds.hidden=!0},t)}var Fs=()=>/iP(hone|ad|od)/.test(navigator.userAgent)||navigator.platform===`MacIntel`&&navigator.maxTouchPoints>1;function Is(e){let t=e?.name||``;return t===`NotAllowedError`||t===`SecurityError`?`MIDI 權限被封鎖了。
+點 Chrome 網址列左邊的圖示 → 權限（或網站設定），把 MIDI 改成允許或按「重設權限」，再重新整理。`:t===`NotSupportedError`?Fs()?`iPhone / iPad 的瀏覽器都不支援 MIDI。基本功右上角可以改用麥克風或螢幕鍵盤。`:`這個瀏覽器不支援 MIDI，請用 Chrome 打開這個網址。`:`這台裝置的 MIDI 功能沒有啟動成功（${t||`未知錯誤`}），不是權限問題。請依序試：\n1. 從最近使用的 App 把 Chrome 滑掉，再重新打開\n2. 拔掉 USB 線再插回去\n3. 關掉其他用 MIDI 的 App（例如 MIDI BLE Connect）\n4. 重新開機`}async function Ls({onMessage:e,onDevices:t,quiet:n=!1}){if(!navigator.requestMIDIAccess)return n||Ps(Is({name:`NotSupportedError`}),8e3),t?.(null),null;if(n)try{let e=await navigator.permissions?.query({name:`midi`});if(e&&e.state!==`granted`)return t?.(null),null}catch{}let r;t?.(void 0);try{r=await navigator.requestMIDIAccess({sysex:!1})}catch(e){return n||Ps(Is(e),12e3),t?.(null),null}let i=()=>{let n=[...r.inputs.values()];n.forEach(t=>{t.onmidimessage=e}),t?.(n.filter(e=>e.state===`connected`).map(e=>e.name||`MIDI 裝置`))};return r.onstatechange=i,i(),r}var Rs=`<wa-spinner class="spin" aria-hidden="true"></wa-spinner>`;function zs(e,t=`開啟中…`){let n=document.getElementById(`busy`);if(!e){n?.remove();return}n||(n=document.createElement(`div`),n.id=`busy`,n.className=`busy`,n.setAttribute(`role`,`status`),document.body.append(n)),n.innerHTML=`<wa-spinner></wa-spinner><span>${t}</span>`}function Bs(e,t){e.classList.toggle(`ok`,!!t?.length),e.innerHTML=t===void 0?`${Rs}連接中…`:`<span class="dot"></span>${t===null?`連接 MIDI`:t.length?t[0]:`找不到琴`}`,e.title=t?.length?`已連接：`+t.join(`、`):``}var Vs={"piano-page-turner":{version:1,stores:[`meta`,`files`]},"ppt-practice":{version:4,stores:[`pieces`,`sessions`,`activity`,`drills`,`items`]}},Hs={};function Us(e){let{version:t,stores:n}=Vs[e];return Hs[e]||=new Promise((r,i)=>{let a=indexedDB.open(e,t);a.onupgradeneeded=t=>{let r=a.result;for(let e of n)r.objectStoreNames.contains(e)||r.createObjectStore(e,{keyPath:`id`});e===`ppt-practice`&&t.oldVersion===1&&Ws(a.transaction)},a.onsuccess=()=>{let t=a.result;t.onversionchange=()=>{t.close(),delete Hs[e]},r(t)},a.onerror=()=>{delete Hs[e],i(a.error)}})}function Ws(e){let t=e.objectStore(`sessions`);e.objectStore(`pieces`).getAll().onsuccess=e=>{for(let n of e.target.result)(n.history||[]).forEach((e,r)=>t.put({...e,id:`${n.id}-${e.at}-${r}`,pieceId:n.id,title:n.title,legacy:!0}))}}function Gs(e,t,n,r){return Us(e).then(e=>new Promise((i,a)=>{let o=e.transaction(t,n),s=r(o);o.oncomplete=()=>i(s&&typeof s==`object`&&`result`in s?s.result:s),o.onerror=()=>a(o.error),o.onabort=()=>a(o.error)}))}var Ks=(e,t)=>Gs(e,[t],`readonly`,e=>e.objectStore(t).getAll()),qs=(e,t,n)=>Gs(e,[t],`readonly`,e=>e.objectStore(t).get(n)),Js=(e,t,n)=>Gs(e,[t],`readwrite`,e=>{e.objectStore(t).put(n)}),Ys=(e,t,n)=>Gs(e,[t],`readwrite`,e=>{e.objectStore(t).delete(n)}),Xs=(e,t,n,r)=>Gs(e,[t],`readwrite`,e=>{let i=e.objectStore(t);i.get(n).onsuccess=e=>i.put(r(e.target.result))}),Zs=null,Qs=!1;async function $s(e=!0){if(Qs=e,!e)return Zs?.release().catch(()=>{}),Zs=null,!1;try{return Zs=await navigator.wakeLock?.request(`screen`),!!Zs}catch{return!1}}document.addEventListener(`visibilitychange`,()=>{document.visibilityState===`visible`&&Qs&&$s(!0)}),`serviceWorker`in navigator&&navigator.serviceWorker.register(`sw.js`).catch(()=>{}),vs();export{As as C,ys as D,js as E,Ps as O,Us as S,bs as T,Ts as _,vs as a,Is as b,ws as c,Ys as d,qs as f,hs as g,gs as h,us as i,mt as k,Ls as l,Xs as m,ks as n,Ns as o,Js as p,Rs as r,zs as s,ds as t,Ks as u,Fs as v,Ms as w,Bs as x,$s as y};
