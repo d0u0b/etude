@@ -2,23 +2,37 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#EFEDE8">
 <title>節拍器 · Étude</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<!-- iPhone home-screen app launch screen (same as index.html) -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1290x2796.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1206x2622.png" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1320x2868.png" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/splash/splash-1260x2736.png" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
 <script>(function(d){var t='ivory',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='ivory';m='dark'}var L={ivory:'#EFEDE8',stage:'#F2F3F7',teal:'#F1F4F3',coral:'#F6F3EF'},D={ivory:'#0E0E0E',stage:'#0B1020',teal:'#0B1615',coral:'#141010'};if(!L[t])t='ivory';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');try{if(sessionStorage.getItem('ppt.nav')){sessionStorage.removeItem('ppt.nav');d.classList.add('nav')}}catch(e){}setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
 <style>html{background:#efede8}html[data-mode=dark]{background:#0e0e0e}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:72px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}html.nav.booting:before,html.nav.booting:after{animation-delay:0s}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
 <style>.page-head h1{font-size:28px}.sec{padding:var(--sp-lg);gap:var(--sp-md);flex-direction:column;display:flex}.tempo{justify-content:center;align-items:center;gap:var(--sp-md);display:flex}.tempo .num{font-variant-numeric:tabular-nums;text-align:center;min-width:2.2em;font-size:72px;font-weight:600;line-height:1}.tempo .num small{color:var(--muted);margin-top:var(--sp-sm);font-size:14px;font-weight:400;display:block}.tempo wa-button::part(base){border-radius:50%;width:52px;height:52px;font-size:22px}#bpm-slider{width:100%}.dots{justify-content:center;gap:var(--sp-md);min-height:22px;display:flex}.dots i{border:2px solid var(--line);border-radius:50%;width:18px;height:18px;transition:background 50ms}.dots i.on{background:var(--beat);border-color:var(--beat)}.dots i.on.first{background:var(--accent);border-color:var(--accent)}.go{justify-content:center;gap:var(--sp-ms);flex-wrap:wrap;display:flex}.go wa-button::part(base){min-width:140px}.opt{align-items:center;gap:var(--sp-ms);flex-wrap:wrap;display:flex}.opt>.k{width:4.5em;color:var(--muted);flex:none;font-size:14px}.opt wa-radio-group{flex-wrap:wrap}#volume{flex:1;min-width:160px}</style>
-  <script type="module" crossorigin src="./assets/metronome-bxuYbwyc.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/common-BvWmakpk.js">
+  <script type="module" crossorigin src="./assets/metronome-pA8xm5Ik.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-yHDhFXCh.js">
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
   <link rel="modulepreload" crossorigin href="./assets/metro-DlDVz_mO.js">
-  <link rel="stylesheet" crossorigin href="./assets/common-BRBnIQ8s.css">
+  <link rel="stylesheet" crossorigin href="./assets/common-CxbxaHs5.css">
 </head>
 <body>
 <main class="page">
