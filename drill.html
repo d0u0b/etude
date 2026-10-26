@@ -13,22 +13,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
 <script>(function(d){var t='ivory',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='ivory';m='dark'}var L={ivory:'#EFEDE8',stage:'#F2F3F7',teal:'#F1F4F3',coral:'#F6F3EF'},D={ivory:'#0E0E0E',stage:'#0B1020',teal:'#0B1615',coral:'#141010'};if(!L[t])t='ivory';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');try{if(sessionStorage.getItem('ppt.nav')){sessionStorage.removeItem('ppt.nav');d.classList.add('nav')}}catch(e){}setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
 <style>html{background:#efede8}html[data-mode=dark]{background:#0e0e0e}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:72px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}html.nav.booting:before,html.nav.booting:after{animation-delay:0s}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
-  <script type="module" crossorigin src="./assets/drill-CZBmWPJ2.js"></script>
+  <script type="module" crossorigin src="./assets/drill-CwzjrQKV.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/common-BvWmakpk.js">
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
-  <link rel="modulepreload" crossorigin href="./assets/tone-DezBH39a.js">
+  <link rel="modulepreload" crossorigin href="./assets/tone-CgTGWbo5.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-BFbQygor.js">
   <link rel="modulepreload" crossorigin href="./assets/charts-B20yvwaY.js">
   <link rel="modulepreload" crossorigin href="./assets/swipe-Dm6hRykM.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-CqUtDhE1.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-CxFlxfgr.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-DPENKkrJ.js">
-  <link rel="modulepreload" crossorigin href="./assets/touch-QXy7r2e2.js">
+  <link rel="modulepreload" crossorigin href="./assets/touch-DWrgYmXj.js">
   <link rel="modulepreload" crossorigin href="./assets/activity-D-o7SZ6t.js">
-  <link rel="modulepreload" crossorigin href="./assets/lesson-B7crYKVL.js">
+  <link rel="modulepreload" crossorigin href="./assets/lesson-D5YnpmNa.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Bk17ObXM.js">
   <link rel="stylesheet" crossorigin href="./assets/common-BRBnIQ8s.css">
   <link rel="stylesheet" crossorigin href="./assets/touch-CIepJdT0.css">
-  <link rel="stylesheet" crossorigin href="./assets/lesson-MW6u8Llh.css">
+  <link rel="stylesheet" crossorigin href="./assets/lesson-Cny6-uHC.css">
 </head>
 <body>
 <main class="page">
@@ -36,6 +36,7 @@
   <div class="daily-bar" id="daily-bar" hidden>
     <span class="daily-dots" id="daily-steps"></span><a href="#" class="grow" id="daily-cur"></a><span class="daily-done" id="daily-done"></span>
     <span class="daily-btns"><wa-button size="small" appearance="plain" id="daily-quit">結束</wa-button><wa-button size="small" id="daily-next">略過</wa-button></span>
+    <ol class="daily-more" id="daily-more" hidden></ol>
   </div>
 
   <!-- ============ hub ============ -->
@@ -96,7 +97,7 @@
     <div class="view-head"><h1>視譜</h1></div>
     <div id="sight-setup">
       <section class="card sec">
-        <div class="opt"><span class="k">方式</span><wa-radio-group id="s-mode" orientation="horizontal" size="small" value="level"><wa-radio appearance="button" value="level">分級練習</wa-radio><wa-radio appearance="button" value="line">一行譜</wa-radio><wa-radio appearance="button" value="note">單音暖身</wa-radio></wa-radio-group></div>
+        <div class="opt"><span class="k">方式</span><wa-radio-group id="s-mode" orientation="horizontal" size="small" value="level"><wa-radio appearance="button" value="level">分級練習</wa-radio><wa-radio appearance="button" value="line">連續讀譜</wa-radio><wa-radio appearance="button" value="note">單音暖身</wa-radio></wa-radio-group></div>
         <div class="sub-stack" id="s-level-opts">
         <a class="learn-link" href="theory.html#staff"><wa-icon name="book-open"></wa-icon>不熟？先看「譜表：高音譜與低音譜」</a>
           <div class="muted small steps-help">每一題四個步驟：<ol><li>先拍節奏</li><li>回答幾個觀察問題</li><li>看譜一下</li><li>跟著節拍器彈完，彈錯也不要停</li></ol>每一級只多一點新東西，穩定 85% 以上就可以往下一級。</div>
@@ -107,7 +108,7 @@
           <div class="row"><span class="grow"></span><wa-button variant="brand" id="s-lv-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
         </div>
         <div class="sub-stack" id="s-note-opts" hidden>
-        <p class="muted small" style="margin:0" id="s-line-text" hidden>一次一行譜，照順序彈，自己的速度就好；彈對變綠色、彈錯變紅色。熟了可以打開「跟著節拍器」。譜號、音域、調號跟單音暖身一樣。</p>
+        <p class="muted small" style="margin:0" id="s-line-text" hidden>一次一段，照順序彈，自己的速度就好；彈對變綠色、彈錯變紅色。熟了可以打開「跟著節拍器」。譜號、音域、調號跟單音暖身一樣。</p>
         <div class="opt"><span class="k">譜號</span><wa-radio-group id="s-clef" orientation="horizontal" size="small" value="treble"><wa-radio appearance="button" value="treble">高音譜</wa-radio><wa-radio appearance="button" value="bass">低音譜</wa-radio><wa-radio appearance="button" value="both">兩個都練</wa-radio></wa-radio-group></div>
         <div class="opt"><span class="k">音域</span><wa-radio-group id="s-preset" orientation="horizontal" size="small"></wa-radio-group></div>
         <div class="range-note" id="s-range-note"></div>
@@ -115,8 +116,8 @@
         <div class="opt sub" id="s-range-bass"><span class="k">低音譜</span><wa-select id="s-b-lo" size="small"></wa-select><span class="muted">到</span><wa-select id="s-b-hi" size="small"></wa-select></div>
         <div class="opt"><span class="k">調號</span><wa-select id="s-key" size="small"></wa-select></div>
         <div class="sub-stack" id="s-line-opts" hidden>
-          <div class="opt"><span class="k">每行</span><wa-radio-group id="s-line-n" orientation="horizontal" size="small" value="8"><wa-radio appearance="button" value="8">8 個音</wa-radio><wa-radio appearance="button" value="12">12 個音</wa-radio><wa-radio appearance="button" value="16">16 個音</wa-radio></wa-radio-group></div>
-          <div class="opt"><span class="k">行數</span><wa-radio-group id="s-lines" orientation="horizontal" size="small" value="5"><wa-radio appearance="button" value="3">3 行</wa-radio><wa-radio appearance="button" value="5">5 行</wa-radio><wa-radio appearance="button" value="10">10 行</wa-radio><wa-radio appearance="button" value="0">不限</wa-radio></wa-radio-group></div>
+          <div class="opt"><span class="k">一段</span><wa-radio-group id="s-line-n" orientation="horizontal" size="small" value="8"><wa-radio appearance="button" value="8">8 個音</wa-radio><wa-radio appearance="button" value="12">12 個音</wa-radio><wa-radio appearance="button" value="16">16 個音</wa-radio></wa-radio-group></div>
+          <div class="opt"><span class="k">段數</span><wa-radio-group id="s-lines" orientation="horizontal" size="small" value="5"><wa-radio appearance="button" value="3">3 段</wa-radio><wa-radio appearance="button" value="5">5 段</wa-radio><wa-radio appearance="button" value="10">10 段</wa-radio><wa-radio appearance="button" value="0">不限</wa-radio></wa-radio-group></div>
           <wa-switch id="s-line-strict" checked>彈錯要改對才前進</wa-switch>
           <div class="opt"><wa-switch id="s-line-metro">跟著節拍器</wa-switch><span class="custom" id="s-line-bpm-wrap" hidden><span class="muted">♩ =</span><wa-number-input id="s-line-bpm" size="small" min="40" max="140" step="4" value="60"></wa-number-input></span></div>
         </div>
@@ -129,7 +130,7 @@
         </div>
       </section>
       <div id="s-weak-wrap" hidden>
-        <div class="label">弱點分析<span class="muted"> ・ 最近 10 次單音、一行譜</span></div>
+        <div class="label">弱點分析<span class="muted"> ・ 最近 10 次單音、連續讀譜</span></div>
         <section class="card sec"><div id="s-weak"></div><div id="s-heat"></div></section>
       </div>
     </div>
