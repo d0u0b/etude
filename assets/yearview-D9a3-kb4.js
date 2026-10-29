@@ -1,4 +1,4 @@
-import{u as e}from"./common-CYQnF57p.js";import{A as t,C as n,d as r,g as i,h as a,k as o,m as s,n as c,p as l,s as u,t as d,u as f,x as p}from"./charts-BfhJE8bx.js";var m={all:`總共`,play:`練琴`},h=e=>l(e).replace(/(小時|分鐘|分|秒)/g,`<small>$1</small>`),g=e=>{let t=new Date(e+`T12:00`);return`${t.getMonth()+1} 月 ${t.getDate()} 日　星期${u[t.getDay()]}`},_=e=>String(e).padStart(2,`0`),v=`
+import{u as e}from"./common-CYQnF57p.js";import{A as t,C as n,d as r,g as i,h as a,k as o,m as s,n as c,p as l,s as u,t as d,u as f,x as p}from"./charts-EXfgV-Xr.js";var m={all:`總共`,play:`練琴`},h=e=>l(e).replace(/(小時|分鐘|分|秒)/g,`<small>$1</small>`),g=e=>{let t=new Date(e+`T12:00`);return`${t.getMonth()+1} 月 ${t.getDate()} 日　星期${u[t.getDay()]}`},_=e=>String(e).padStart(2,`0`),v=`
   <div class="tiles" id="tiles"></div>
   <section class="card box">
     <div class="box-head"><h2>每天練了多久</h2><span class="muted" style="font-size:14px">點一天看練了什麼</span></div>
