@@ -27,21 +27,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
 <script>(function(d){var t='ivory',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='ivory';m='dark'}var L={ivory:'#EFEDE8',lavender:'#F6F4FB',mint:'#F2F8F5',peach:'#FCF3F4',sky:'#F3F7FC'},D={ivory:'#181818',lavender:'#17141F',mint:'#111A17',peach:'#1C1315',sky:'#121822'};t={stage:'sky',teal:'mint',coral:'peach'}[t]||t;if(!L[t])t='ivory';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');try{if(sessionStorage.getItem('ppt.nav')){sessionStorage.removeItem('ppt.nav');d.classList.add('nav')}}catch(e){}setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
 <style>html{background:#efede8}html[data-mode=dark]{background:#181818}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:64px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}html.nav.booting:before,html.nav.booting:after{animation-delay:0s}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
-  <script type="module" crossorigin src="./assets/drill-CnpKuqAd.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/common-BqlI_rL7.js">
+  <script type="module" crossorigin src="./assets/drill-j5T-V7w2.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/common-ZrvZFDNP.js">
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
   <link rel="modulepreload" crossorigin href="./assets/tone-CgTGWbo5.js">
-  <link rel="modulepreload" crossorigin href="./assets/charts-BX2leRW7.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-CLcpThXa.js">
   <link rel="modulepreload" crossorigin href="./assets/swipe-Dm6hRykM.js">
-  <link rel="modulepreload" crossorigin href="./assets/data-DFDpg8TF.js">
+  <link rel="modulepreload" crossorigin href="./assets/data-DOyDCnGX.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-DPENKkrJ.js">
-  <link rel="modulepreload" crossorigin href="./assets/touch-CPtZ16Jj.js">
-  <link rel="modulepreload" crossorigin href="./assets/activity-D7OgKD6y.js">
-  <link rel="modulepreload" crossorigin href="./assets/lesson-AtQr-Iua.js">
+  <link rel="modulepreload" crossorigin href="./assets/touch-BgvELX2U.js">
+  <link rel="modulepreload" crossorigin href="./assets/activity-CgMdIAQV.js">
+  <link rel="modulepreload" crossorigin href="./assets/lesson-2sQc_1wF.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Bk17ObXM.js">
-  <link rel="stylesheet" crossorigin href="./assets/common-BA94rND6.css">
+  <link rel="stylesheet" crossorigin href="./assets/common-CJCo_yOy.css">
   <link rel="stylesheet" crossorigin href="./assets/touch-CiiSCDel.css">
-  <link rel="stylesheet" crossorigin href="./assets/lesson-B6e2JFO_.css">
+  <link rel="stylesheet" crossorigin href="./assets/lesson-xonVG8iP.css">
 </head>
 <body>
 <main class="page">
@@ -62,7 +62,7 @@
         <wa-dropdown-item type="checkbox" value="screen"><wa-icon slot="icon" name="smartphone"></wa-icon>螢幕鍵盤<small>點畫面</small></wa-dropdown-item>
       </wa-dropdown></div>
     <section class="card daily-card" id="daily-card">
-      <div class="daily-top"><div class="grow"><div class="t">每日基本功</div><div class="muted small" id="daily-week"></div></div><wa-button variant="brand" id="daily-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
+      <div class="daily-top"><div class="grow"><div class="t">每日基本功</div><div class="muted small" id="daily-week"></div></div><wa-button variant="brand" id="daily-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button><button class="icon-btn daily-fold" id="daily-fold" hidden aria-expanded="false" aria-label="展開今天的四個步驟"><wa-icon name="chevron-down"></wa-icon></button></div>
       <ol class="daily-list" id="daily-plan"></ol>
     </section>
     <div id="quick-box" hidden><div class="label row"><span class="grow">最近練的</span><a href="drill-log.html" class="small" id="to-history">全部紀錄 ›</a></div><div class="quick" id="quick"></div></div>
@@ -347,6 +347,11 @@
         <div class="row"><span class="grow"></span><wa-button variant="brand" id="m-start"><wa-icon slot="start" name="play"></wa-icon>開始</wa-button></div>
       </section>
     </div>
+    <section class="card sec sound-check" id="m-check" hidden>
+      <div class="sc-head"><wa-icon name="ear"></wa-icon><b>先聽一下聲音</b></div>
+      <p class="muted small" style="margin:0">現在播的是伴奏和節拍器。聽得到就開始；聽不到的話把音量調大，iPhone 要關掉側邊的靜音開關。</p>
+      <div class="row"><wa-button appearance="outlined" id="m-check-again"><wa-icon slot="start" name="repeat"></wa-icon>再聽一次</wa-button><span class="grow"></span><wa-button appearance="plain" id="m-check-back">返回</wa-button><wa-button variant="brand" id="m-check-go"><wa-icon slot="start" name="play"></wa-icon>聽得到，開始</wa-button></div>
+    </section>
     <div id="m-run" hidden>
       <div class="run-bar"><span class="beats" id="m-beats"><i></i><i></i><i></i><i></i></span><span class="fb" id="m-fb"></span><wa-button size="small" appearance="outlined" id="m-stop">結束</wa-button></div>
       <div class="improv-stage card"><div class="im-now" id="m-chord"></div><div class="im-next muted" id="m-next"></div><div class="im-bar muted" id="m-bar"></div></div>
