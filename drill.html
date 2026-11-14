@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap" rel="stylesheet">
 <script>(function(d){var t='ivory',m='light';try{t=localStorage.getItem('ppt.theme')||t;m=localStorage.getItem('ppt.mode')||m}catch(e){}if(t==='night'){t='ivory';m='dark'}var L={ivory:'#FCFCFB',lavender:'#FCFCFB',mint:'#FCFCFB',peach:'#FCFCFB',sky:'#FCFCFB'},D={ivory:'#161616',lavender:'#161616',mint:'#161616',peach:'#161616',sky:'#161616'};t={stage:'sky',teal:'mint',coral:'peach'}[t]||t;if(!L[t])t='ivory';if(m==='auto')m=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(m!=='dark')m='light';d.dataset.theme=t;d.dataset.mode=m;d.classList.add('booting');try{if(sessionStorage.getItem('ppt.nav')){sessionStorage.removeItem('ppt.nav');d.classList.add('nav')}}catch(e){}setTimeout(function(){d.classList.remove('booting')},4000);if(m==='dark')d.classList.add('wa-dark');var e=document.querySelector('meta[name=theme-color]');if(e)e.content=(m==='dark'?D:L)[t]})(document.documentElement)</script>
 <style>html{background:#fcfcfb}html[data-mode=dark]{background:#161616}html.booting body{visibility:hidden}html.booting:before{content:"載入中";letter-spacing:.2em;color:#8a8c90;place-items:center;padding-top:64px;font:14px sans-serif;animation:.2s .3s both boot;display:grid;position:fixed;inset:0}html.booting:after{content:"";box-sizing:border-box;border:2px solid #8a8c9033;border-top-color:#8a8c90;border-radius:50%;width:26px;height:26px;margin:-24px 0 0 -13px;animation:.2s .3s both boot,.8s linear infinite spin;position:fixed;top:50%;left:50%}html.nav.booting:before,html.nav.booting:after{animation-delay:0s}@keyframes boot{0%{opacity:0}to{opacity:1}}@keyframes spin{to{rotate:360deg}}</style>
-  <script type="module" crossorigin src="./assets/drill-DRiZ8nyQ.js"></script>
+  <script type="module" crossorigin src="./assets/drill-Bi0G53vC.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/common-CR8nW_Ym.js">
   <link rel="modulepreload" crossorigin href="./assets/sound-B5FxSpfP.js">
   <link rel="modulepreload" crossorigin href="./assets/tone-CgTGWbo5.js">
@@ -36,7 +36,7 @@
   <link rel="modulepreload" crossorigin href="./assets/data-ByP8045l.js">
   <link rel="modulepreload" crossorigin href="./assets/mic-DPENKkrJ.js">
   <link rel="modulepreload" crossorigin href="./assets/touch-CsqLnpON.js">
-  <link rel="modulepreload" crossorigin href="./assets/today-sight-BKQh2ERg.js">
+  <link rel="modulepreload" crossorigin href="./assets/today-sight-DYxRphnS.js">
   <link rel="modulepreload" crossorigin href="./assets/activity-BWbva-9Z.js">
   <link rel="modulepreload" crossorigin href="./assets/lesson-d6YHhgM1.js">
   <link rel="modulepreload" crossorigin href="./assets/stats-Bk17ObXM.js">
@@ -156,6 +156,7 @@
     <div id="s-ready" hidden>
       <section class="card pad ready-card">
         <div class="ready-kicker" id="s-ready-kicker"></div>
+        <wa-radio-group id="s-ready-clef" orientation="horizontal" size="small" hidden><wa-radio appearance="button" value="treble">高音譜</wa-radio><wa-radio appearance="button" value="bass">低音譜</wa-radio></wa-radio-group>
         <div class="narrow ready-staff"><div class="paper" id="s-ready-score"></div></div>
         <ul class="ready-facts" id="s-ready-facts"></ul>
         <div class="ready-count" id="s-ready-count" hidden></div>
